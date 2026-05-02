@@ -40,6 +40,22 @@ const {
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+
+const isES = Astro.url.pathname.includes('/es');
+const isEN = Astro.url.pathname.includes('/en');
+const t = (text: string) => {
+  if (isEN) {
+    return (
+      {
+        Viajes: 'Trips',
+        'Rutas GPX': 'GPX Tracks',
+        Galería: 'Gallery',
+        'Sobre mí': 'About me',
+      }[text] || text
+    );
+  }
+  return text;
+};
 ---
 
 <header
@@ -85,7 +101,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     type="button"
                     class="flex items-center whitespace-nowrap px-4 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:text-red-500"
                   >
-                    {text}{' '}
+                    {t(text ?? '')}
                     <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
                   </button>
                   <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
@@ -98,7 +114,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                           ]}
                           href={href2}
                         >
-                          {text2}
+                          {t(text2 ?? '')}
                         </a>
                       </li>
                     ))}
@@ -114,7 +130,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                   ]}
                   href={href}
                 >
-                  {text}
+                  {t(text ?? '')}
                 </a>
               )}
             </li>
@@ -129,15 +145,27 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       ]}
     >
       <div class="items-center flex justify-between w-full md:w-auto">
-        <div class="flex">
+        <div class="flex items-center gap-4">
+          <a
+            href={`${import.meta.env.BASE_URL}/es`}
+            class={`font-display text-sm transition hover:text-red-500 ${isES ? 'text-red-600' : 'text-white'}`}
+          >
+            ESP
+          </a>
+          <a
+            href={`${import.meta.env.BASE_URL}/en`}
+            class={`font-display text-sm transition hover:text-red-500 ${isEN ? 'text-red-600' : 'text-white'}`}
+          >
+            ENG
+          </a>
+
           <a
             href="https://instagram.com/davidmotorider"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram"
             class="text-white hover:text-red-500 transition"
           >
-            <Icon name="tabler:brand-instagram" class="w-6 h-6" />
+            <Icon name="tabler:brand-instagram" class="w-5 h-5" />
           </a>
         </div>
         {
