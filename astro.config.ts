@@ -25,11 +25,11 @@ export default defineConfig({
   site: 'https://david-rojo.github.io',
   base: '/davidmotorider',
 
-   i18n: {
+  i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en'],
   },
-  
+
   output: 'static',
 
   integrations: [
