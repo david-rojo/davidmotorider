@@ -1,9 +1,11 @@
 ---
-import { SITE } from 'astrowind:config';
+
 ---
 
-<span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
->
-  🚀 {SITE?.name}
-</span>
+<a href={import.meta.env.BASE_URL} class="flex items-center gap-3">
+  <img src={`${import.meta.env.BASE_URL}/images/logo.png`} alt="DavidMotoRider" class="h-11 w-auto shrink-0" />
+
+  <span class="font-logo text-[30px] uppercase leading-none tracking-[0.01em]">
+    <span class="text-white">DAVID</span><span class="text-red-600">MOTORIDER</span>
+  </span>
+</a>

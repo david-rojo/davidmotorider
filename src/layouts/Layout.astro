@@ -4,7 +4,6 @@ import '~/assets/styles/tailwind.css';
 import { I18N } from 'astrowind:config';
 
 import CommonMeta from '~/components/common/CommonMeta.astro';
-import Favicons from '~/components/Favicons.astro';
 import CustomStyles from '~/components/CustomStyles.astro';
 import ApplyColorMode from '~/components/common/ApplyColorMode.astro';
 import Metadata from '~/components/common/Metadata.astro';
@@ -29,12 +28,14 @@ const { language, textDirection } = I18N;
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <CommonMeta />
-    <Favicons />
     <CustomStyles />
     <ApplyColorMode />
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+
+    <link rel="icon" href={`${import.meta.env.BASE_URL}/images/favicon.ico`} />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet" />
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
