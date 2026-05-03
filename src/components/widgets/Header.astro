@@ -41,8 +41,8 @@ const {
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 
-const isES = Astro.url.pathname.includes('/es');
 const isEN = Astro.url.pathname.includes('/en');
+const isES = Astro.url.pathname.includes('/es') || !isEN;
 const t = (text: string) => {
   if (isEN) {
     return (
