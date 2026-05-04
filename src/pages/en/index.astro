@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import TripCard from '~/components/trips/TripCard.astro';
 
 const metadata = {
   title: 'DavidMotoRider | Experiences on two wheels',
@@ -7,6 +8,9 @@ const metadata = {
 };
 
 const heroImage = `${import.meta.env.BASE_URL}/images/hero-davidmotorider.jpg`;
+const imgMorocco = `${import.meta.env.BASE_URL}/images/trips/marruecos.jpg`;
+const imgTranspyrenees = `${import.meta.env.BASE_URL}/images/trips/transpirenaica.jpg`;
+const imgPicosEuropa = `${import.meta.env.BASE_URL}/images/trips/picos-europa.jpg`;
 ---
 
 <Layout metadata={metadata}>
@@ -68,7 +72,7 @@ const heroImage = `${import.meta.env.BASE_URL}/images/hero-davidmotorider.jpg`;
         </div>
 
         <a
-          href={`${import.meta.env.BASE_URL}/es/viajes`}
+          href={`${import.meta.env.BASE_URL}/en/trips`}
           class="font-display text-xl uppercase tracking-wide text-white transition hover:text-red-600"
         >
           View all →
@@ -76,86 +80,32 @@ const heroImage = `${import.meta.env.BASE_URL}/images/hero-davidmotorider.jpg`;
       </div>
 
       <div class="grid gap-8 md:grid-cols-3">
-        <article class="group overflow-hidden rounded-2xl bg-zinc-900">
-          <a href={`${import.meta.env.BASE_URL}/en/trips/morocco`}>
-            <div class="relative h-80 overflow-hidden">
-              <img
-                src={`${import.meta.env.BASE_URL}/images/trips/marruecos.jpg`}
-                alt="Viaje en moto por Marruecos"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-              <span
-                class="absolute left-5 top-5 rounded-full bg-red-600 px-4 py-1 font-display text-sm uppercase tracking-wide"
-              >
-                Morocco
-              </span>
-            </div>
+        <TripCard
+          title="Morocco"
+          description="From Madrid to the desert: easy roads, mountain passes, gorges and nights by the dunes."
+          image={imgMorocco}
+          category="Morocco"
+          tags="Adventure · Offroad · Desert"
+          href={`${import.meta.env.BASE_URL}/en/trips/morocco`}
+        />
 
-            <div class="p-6">
-              <p class="font-display text-sm uppercase tracking-[0.25em] text-zinc-400">Adventure · Offroad · Desert</p>
-              <h3 class="mt-3 font-display text-3xl uppercase leading-none text-white">Morocco on BMW F850GS</h3>
-              <p class="mt-4 text-sm leading-6 text-zinc-400">
-                From Madrid to the dessert: easy roads, mountain passes, gorges and nights by the dunes.
-              </p>
-            </div>
-          </a>
-        </article>
+        <TripCard
+          title="Trans-Pyrenees"
+          description="From the Cantabrian Sea to the Mediterranean and back, crossing mountain passes, valleys and some of the best landscapes in the north."
+          image={imgTranspyrenees}
+          category="Pyrenees"
+          tags="Curves · Mountain · Landscapes"
+          href={`${import.meta.env.BASE_URL}/en/trips/trans-pyrenees`}
+        />
 
-        <article class="group overflow-hidden rounded-2xl bg-zinc-900">
-          <a href={`${import.meta.env.BASE_URL}/en/trips/trans-pyrenees`}>
-            <div class="relative h-80 overflow-hidden">
-              <img
-                src={`${import.meta.env.BASE_URL}/images/trips/transpirenaica.jpg`}
-                alt="Ruta Transpirenaica en moto"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-              <span
-                class="absolute left-5 top-5 rounded-full bg-red-600 px-4 py-1 font-display text-sm uppercase tracking-wide"
-              >
-                Pyrenees
-              </span>
-            </div>
-
-            <div class="p-6">
-              <p class="font-display text-sm uppercase tracking-[0.25em] text-zinc-400">
-                Curves · Mountain · Landscapes
-              </p>
-              <h3 class="mt-3 font-display text-3xl uppercase leading-none text-white">Trans-Pyrenees</h3>
-              <p class="mt-4 text-sm leading-6 text-zinc-400">
-                From the Cantabrian Sea to the Mediterranean, crossing mountain passes, valleys and some of the best
-                landscapes in the north.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <article class="group overflow-hidden rounded-2xl bg-zinc-900">
-          <a href={`${import.meta.env.BASE_URL}/en/trips/picos-de-europa`}>
-            <div class="relative h-80 overflow-hidden">
-              <img
-                src={`${import.meta.env.BASE_URL}/images/trips/picos-europa.jpg`}
-                alt="Ruta en moto por Picos de Europa"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-              <span
-                class="absolute left-5 top-5 rounded-full bg-red-600 px-4 py-1 font-display text-sm uppercase tracking-wide"
-              >
-                Picos de Europa
-              </span>
-            </div>
-
-            <div class="p-6">
-              <p class="font-display text-sm uppercase tracking-[0.25em] text-zinc-400">Asphalt · Mountain · North</p>
-              <h3 class="mt-3 font-display text-3xl uppercase leading-none text-white">Picos de Europa</h3>
-              <p class="mt-4 text-sm leading-6 text-zinc-400">
-                Spectacular roads, viewpoints, gorges and villages perfect for a motorcycle getaway.
-              </p>
-            </div>
-          </a>
-        </article>
+        <TripCard
+          title="Picos de Europa"
+          description="Spectacular roads, viewpoints, gorges and villages perfect for a motorcycle getaway."
+          image={imgPicosEuropa}
+          category="Picos de Europa"
+          tags="Asphalt · Mountain · North"
+          href={`${import.meta.env.BASE_URL}/en/trips/picos-de-europa`}
+        />
       </div>
     </div>
   </section>
