@@ -1,0 +1,43 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import TripCard from '~/components/trips/TripCard.astro';
+
+const metadata = {
+  title: 'Viajes | DavidMotoRider',
+  description: 'Todos mis viajes en moto, rutas, fotos y experiencias.',
+};
+
+const trips = (await getCollection('trips')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<Layout metadata={metadata}>
+  <section class="bg-black px-6 pt-40 pb-28 text-white">
+    <div class="mx-auto max-w-7xl">
+      <header class="mb-16 max-w-3xl">
+        <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Archivo de aventuras</p>
+
+        <h1 class="mt-5 font-display text-7xl uppercase leading-none md:text-9xl">Viajes</h1>
+
+        <p class="mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
+          Mis viajes en moto, con fotos, rutas, aprendizajes y detalles útiles para preparar tu próxima escapada.
+        </p>
+      </header>
+
+      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        {
+          trips.map((trip) => (
+            <TripCard
+              title={trip.data.title}
+              description={trip.data.description}
+              image={`${import.meta.env.BASE_URL}${trip.data.image}`}
+              category={trip.data.category}
+              tags={trip.data.tags.join(' · ')}
+              href={`${import.meta.env.BASE_URL}/viajes/${trip.data.slug}`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -65,6 +65,20 @@ const postCollection = defineCollection({
   }),
 });
 
+const tripsCollection = defineCollection({
+  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/trips' }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    image: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    date: z.coerce.date(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
+  trips: tripsCollection,
 };
