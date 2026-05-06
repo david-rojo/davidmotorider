@@ -11,14 +11,6 @@ export const headerData = {
       href: '/escapadas',
     },
     {
-      text: 'Rutas GPX',
-      href: '/rutas-gpx',
-    },
-    {
-      text: 'Galería',
-      href: '/galeria',
-    },
-    {
       text: 'Sobre mí',
       href: '/sobre-mi',
     },

@@ -11,6 +11,8 @@ tags:
 date: '2022-05-15'
 lang: 'es'
 type: 'escapada'
+days: 1
+km: 100
 ---
 
 Aquí irá el contenido de la escapada por el atazar

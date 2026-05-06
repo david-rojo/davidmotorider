@@ -6,9 +6,11 @@ export interface Props {
   category: string;
   tags: string;
   href: string;
+  days: number;
+  km: number;
 }
 
-const { title, description, image, category, tags, href } = Astro.props;
+const { title, description, image, category, tags, href, days, km } = Astro.props;
 const tagList = tags.split(' · ');
 ---
 
@@ -49,6 +51,21 @@ const tagList = tags.split(' · ');
       <h3 class="font-display text-4xl uppercase leading-none text-white transition group-hover:text-red-500">
         {title}
       </h3>
+
+      <div class="mt-5 flex items-center gap-3">
+        <div
+          class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-zinc-400"
+        >
+          {days}
+          {days === 1 ? 'día' : 'días'}
+        </div>
+
+        <div
+          class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-zinc-400"
+        >
+          {km.toLocaleString('es-ES')} km
+        </div>
+      </div>
 
       <p class="mt-4 text-sm leading-6 text-zinc-400">
         {description}

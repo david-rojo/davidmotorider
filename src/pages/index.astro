@@ -92,6 +92,8 @@ const trips = (await getCollection('trips'))
               category={trip.data.category}
               tags={trip.data.tags.join(' · ')}
               href={`${import.meta.env.BASE_URL}/viajes/${trip.data.slug}`}
+              days={trip.data.days}
+              km={trip.data.km}
             />
           ))
         }

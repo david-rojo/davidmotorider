@@ -5,12 +5,14 @@ description: 'Del Cantábrico al Mediterráneo y vuelta, cruzando puertos, valle
 image: '/images/trips/transpirenaica.jpg'
 category: 'Pirineos'
 tags:
-  - Curvas
+  - Internacional
   - Montaña
   - Paisajes
 date: '2025-10-11'
 lang: 'es'
 type: 'viaje'
+days: 7
+km: 1821
 ---
 
 Aquí irá el contenido del viaje de la Transpirenaica

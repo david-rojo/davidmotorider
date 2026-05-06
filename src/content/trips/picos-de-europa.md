@@ -7,10 +7,12 @@ category: 'Picos de Europa'
 tags:
   - Asfalto
   - Montaña
-  - Norte
+  - España
 date: '2025-10-04'
 lang: 'es'
 type: 'viaje'
+days: 3
+km: 435
 ---
 
 Aquí irá el contenido del viaje por Picos de Europa
