@@ -10,6 +10,7 @@ tags:
   - Norte
 date: '2025-10-04'
 lang: 'es'
+type: 'viaje'
 ---
 
 Aquí irá el contenido del viaje por Picos de Europa

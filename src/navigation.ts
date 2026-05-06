@@ -7,6 +7,10 @@ export const headerData = {
       href: '/viajes',
     },
     {
+      text: 'Escapadas',
+      href: '/escapadas',
+    },
+    {
       text: 'Rutas GPX',
       href: '/rutas-gpx',
     },

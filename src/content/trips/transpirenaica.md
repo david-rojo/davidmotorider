@@ -10,6 +10,7 @@ tags:
   - Paisajes
 date: '2025-10-11'
 lang: 'es'
+type: 'viaje'
 ---
 
 Aquí irá el contenido del viaje de la Transpirenaica

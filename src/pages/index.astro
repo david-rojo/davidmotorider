@@ -10,7 +10,10 @@ const metadata = {
 
 const heroImage = `${import.meta.env.BASE_URL}/images/hero-davidmotorider.jpg`;
 
-const trips = (await getCollection('trips')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 3);
+const trips = (await getCollection('trips'))
+  .filter((trip) => trip.data.type === 'viaje')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
 ---
 
 <Layout metadata={metadata}>
@@ -46,10 +49,10 @@ const trips = (await getCollection('trips')).sort((a, b) => b.data.date.getTime(
           </a>
 
           <a
-            href={`${import.meta.env.BASE_URL}/rutas-gpx`}
+            href={`${import.meta.env.BASE_URL}/escapadas`}
             class="rounded border border-white/40 px-8 py-4 text-sm font-bold uppercase text-white transition hover:bg-white hover:text-black"
           >
-            Rutas GPX
+            Ver escapadas
           </a>
 
           <a

@@ -44,6 +44,16 @@ const pathname = Astro.url.pathname;
 const pathWithoutBase = pathname.replace(base, '') || '/';
 
 const currentPath = `/${trimSlash(pathWithoutBase)}`;
+
+const withBase = (href?: string) => {
+  if (!href) return '#';
+
+  if (href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) {
+    return href;
+  }
+
+  return `${base}${href.startsWith('/') ? href : `/${href}`}`;
+};
 ---
 
 <header
@@ -100,7 +110,7 @@ const currentPath = `/${trimSlash(pathWithoutBase)}`;
                             'first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap',
                             { 'aw-link-active': href2 === currentPath },
                           ]}
-                          href={href2}
+                          href={withBase(href2)}
                         >
                           {text2}
                         </a>
@@ -116,7 +126,7 @@ const currentPath = `/${trimSlash(pathWithoutBase)}`;
                       'text-red-600 after:w-[calc(100%-2rem)]': href === currentPath,
                     },
                   ]}
-                  href={href}
+                  href={withBase(href)}
                 >
                   {text}
                 </a>

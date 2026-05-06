@@ -10,6 +10,7 @@ tags:
   - Desierto
 date: '2026-04-12'
 lang: 'es'
+type: 'viaje'
 ---
 
 Aquí irá el contenido del viaje a Marruecos

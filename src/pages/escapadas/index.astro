@@ -4,12 +4,12 @@ import { getCollection } from 'astro:content';
 import TripCard from '~/components/trips/TripCard.astro';
 
 const metadata = {
-  title: 'Viajes | DavidMotoRider',
-  description: 'Todos mis viajes en moto, rutas, fotos y experiencias.',
+  title: 'Escapadas | DavidMotoRider',
+  description: 'Rutas de un día y escapadas de fin de semana para desconectar.',
 };
 
 const trips = (await getCollection('trips'))
-  .filter((trip) => trip.data.type === 'viaje')
+  .filter((trip) => trip.data.type === 'escapada')
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const allTags = [...new Set(trips.flatMap((trip) => trip.data.tags))].sort();
 ---
@@ -20,10 +20,10 @@ const allTags = [...new Set(trips.flatMap((trip) => trip.data.tags))].sort();
       <header class="mb-16 max-w-3xl">
         <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Archivo de aventuras</p>
 
-        <h1 class="mt-5 font-display text-7xl uppercase leading-none md:text-9xl">Viajes</h1>
+        <h1 class="mt-5 font-display text-7xl uppercase leading-none md:text-9xl">Escapadas</h1>
 
         <p class="mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
-          Mis viajes en moto, con fotos, rutas, aprendizajes y detalles útiles para preparar tu próxima escapada.
+          Rutas de un día y escapadas de fin de semana para desconectar
         </p>
       </header>
 
