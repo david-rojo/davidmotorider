@@ -9,6 +9,7 @@ const metadata = {
 };
 
 const trips = (await getCollection('trips')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const allTags = [...new Set(trips.flatMap((trip) => trip.data.tags))].sort();
 ---
 
 <Layout metadata={metadata}>
@@ -24,20 +25,75 @@ const trips = (await getCollection('trips')).sort((a, b) => b.data.date.getTime(
         </p>
       </header>
 
-      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+      <div class="mb-10 flex flex-wrap gap-3" data-trip-filters>
+        <button
+          type="button"
+          data-filter="all"
+          class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
+        >
+          Todos
+        </button>
+
+        {
+          allTags.map((tag) => (
+            <button
+              type="button"
+              data-filter={tag}
+              class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+            >
+              {tag}
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3" data-trip-grid>
         {
           trips.map((trip) => (
-            <TripCard
-              title={trip.data.title}
-              description={trip.data.description}
-              image={`${import.meta.env.BASE_URL}${trip.data.image}`}
-              category={trip.data.category}
-              tags={trip.data.tags.join(' · ')}
-              href={`${import.meta.env.BASE_URL}/viajes/${trip.data.slug}`}
-            />
+            <div data-trip-card data-tags={trip.data.tags.join('|')}>
+              <TripCard
+                title={trip.data.title}
+                description={trip.data.description}
+                image={`${import.meta.env.BASE_URL}${trip.data.image}`}
+                category={trip.data.category}
+                tags={trip.data.tags.join(' · ')}
+                href={`${import.meta.env.BASE_URL}/viajes/${trip.data.slug}`}
+              />
+            </div>
           ))
         }
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterContainer = document.querySelector('[data-trip-filters]');
+      const cards = Array.from(document.querySelectorAll('[data-trip-card]'));
+
+      if (!filterContainer || !cards.length) return;
+
+      filterContainer.addEventListener('click', (event) => {
+        const target = event.target.closest('button[data-filter]');
+        if (!target) return;
+
+        const selectedTag = target.dataset.filter;
+
+        filterContainer.querySelectorAll('button[data-filter]').forEach((button) => {
+          button.classList.remove('bg-red-600', 'text-white');
+          button.classList.add('border', 'border-white/10', 'bg-white/5', 'text-zinc-300');
+        });
+
+        target.classList.add('bg-red-600', 'text-white');
+        target.classList.remove('border', 'border-white/10', 'bg-white/5', 'text-zinc-300');
+
+        cards.forEach((card) => {
+          const tags = card.dataset.tags?.split('|') ?? [];
+          const shouldShow = selectedTag === 'all' || tags.includes(selectedTag);
+
+          card.classList.toggle('hidden', !shouldShow);
+        });
+      });
+    });
+  </script>
 </Layout>
