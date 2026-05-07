@@ -1,6 +1,6 @@
 ---
-title: 'Transpirenaica'
-slug: 'transpirenaica'
+title: 'Transpirenaica circular'
+slug: 'transpirenaica-circular'
 description: 'Del Cantábrico al Mediterráneo y vuelta, cruzando puertos, valles y algunos de los mejores paisajes del norte.'
 image: '/images/trips/transpirenaica.jpg'
 category: 'Pirineos'
