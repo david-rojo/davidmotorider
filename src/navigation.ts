@@ -11,6 +11,10 @@ export const headerData = {
       href: '/escapadas',
     },
     {
+      text: 'Dónde dormir',
+      href: '/donde-dormir',
+    },
+    {
       text: 'Sobre mí',
       href: '/sobre-mi',
     },
