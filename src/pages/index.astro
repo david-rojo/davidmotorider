@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { getCollection } from 'astro:content';
 import TripCard from '~/components/trips/TripCard.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'DavidMotoRider | Experiencias sobre dos ruedas',
@@ -97,6 +98,50 @@ const trips = (await getCollection('trips'))
             />
           ))
         }
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-white/10 bg-white py-10 text-black">
+    <div class="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="flex items-start gap-4 border-black/10 lg:border-r lg:pr-6">
+        <Icon name="tabler:route" class="mt-1 h-10 w-10 shrink-0 text-black" />
+
+        <div>
+          <h3 class="font-display text-xl uppercase">Viajes reales</h3>
+
+          <p class="mt-1 text-sm leading-6 text-zinc-600">Mis viajes realizados con todos los detalles</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 border-black/10 lg:border-r lg:pr-6">
+        <Icon name="tabler:map-2" class="mt-1 h-10 w-10 shrink-0 text-black" />
+
+        <div>
+          <h3 class="font-display text-xl uppercase">Tracks</h3>
+
+          <p class="mt-1 text-sm leading-6 text-zinc-600">Tracks GPX y rutas Google Maps de cada viaje</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 border-black/10 lg:border-r lg:pr-6">
+        <Icon name="tabler:camera" class="mt-1 h-10 w-10 shrink-0 text-black" />
+
+        <div>
+          <h3 class="font-display text-xl uppercase">Fotografía</h3>
+
+          <p class="mt-1 text-sm leading-6 text-zinc-600">Momentos captados durante los viajes</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <Icon name="tabler:tools" class="mt-1 h-10 w-10 shrink-0 text-black" />
+
+        <div>
+          <h3 class="font-display text-xl uppercase">Consejos útiles</h3>
+
+          <p class="mt-1 text-sm leading-6 text-zinc-600">Equipamiento, rutas y preparación</p>
+        </div>
       </div>
     </div>
   </section>
