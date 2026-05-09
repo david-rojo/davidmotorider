@@ -1,23 +1,33 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import { getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
 
-const title = `Error 404`;
+const metadata = {
+  title: 'Página no encontrada | DavidMotoRider',
+  description: 'La página que buscas no existe.',
+};
 ---
 
-<Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
-    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-      <div class="max-w-md text-center">
-        <h2 class="mb-8 font-bold text-9xl">
-          <span class="sr-only">Error</span>
-          <span class="text-primary">404</span>
-        </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
-        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
-        </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
+<Layout metadata={metadata}>
+  <section class="relative flex min-h-screen items-center overflow-hidden bg-black px-6 py-32 text-white">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.18),transparent_35%)]"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black"></div>
+
+    <div class="relative z-10 mx-auto max-w-4xl text-center">
+      <p class="font-display text-xl uppercase tracking-[0.45em] text-red-600">Error 404</p>
+
+      <h1 class="mt-6 font-display text-7xl uppercase leading-none md:text-9xl">Página no encontrada</h1>
+
+      <p class="mx-auto mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
+        Parece que este camino no lleva a ninguna parte
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a
+          href={`${import.meta.env.BASE_URL}`}
+          class="rounded bg-red-600 px-8 py-4 font-display text-lg uppercase tracking-wide text-white transition hover:bg-red-700"
+        >
+          Volver al inicio
+        </a>
       </div>
     </div>
   </section>
