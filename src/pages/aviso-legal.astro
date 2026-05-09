@@ -1,0 +1,57 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Aviso legal | DavidMotoRider',
+  description: 'Aviso legal de DavidMotoRider.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="bg-black px-6 pt-32 pb-24 text-white">
+    <div class="mx-auto max-w-4xl">
+      <p class="font-display text-sm uppercase tracking-[0.35em] text-red-600">Información legal</p>
+
+      <h1 class="mt-5 font-display text-4xl uppercase leading-none md:text-6xl">Aviso legal</h1>
+
+      <div class="prose prose-sm prose-invert mt-12 max-w-none text-justify text-zinc-400">
+        <p>
+          Este sitio web, davidmotorider.com, es un proyecto personal dedicado a compartir viajes en moto, escapadas,
+          rutas, fotografías y experiencias propias.
+        </p>
+
+        <h2>Titularidad</h2>
+        <p>
+          Responsable: David Rojo<br />
+          Contacto: <a href="mailto:davidmotorider@gmail.com">davidmotorider@gmail.com</a>
+        </p>
+
+        <h2>Uso del sitio web</h2>
+        <p>
+          El contenido publicado tiene carácter informativo y personal. Las rutas, recomendaciones y experiencias
+          compartidas se basan en vivencias propias y pueden variar según condiciones meteorológicas, estado de las
+          carreteras, normativa local o circunstancias del viaje.
+        </p>
+
+        <h2>Propiedad intelectual</h2>
+        <p>
+          Salvo que se indique lo contrario, los textos, fotografías, diseños y contenidos publicados en esta web
+          pertenecen a DavidMotoRider. No está permitida su reproducción o uso sin autorización previa.
+        </p>
+
+        <h2>Enlaces externos</h2>
+        <p>
+          Esta web puede incluir enlaces a servicios externos como Instagram, Wikiloc, Google Maps u otros sitios de
+          terceros. DavidMotoRider no se responsabiliza del contenido, funcionamiento o políticas de dichos servicios.
+        </p>
+
+        <h2>Responsabilidad</h2>
+        <p>
+          Cada persona es responsable de preparar sus viajes, revisar la normativa vigente, valorar su nivel de
+          conducción y circular con seguridad. La información publicada no sustituye una planificación propia y
+          actualizada.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

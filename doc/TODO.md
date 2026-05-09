@@ -7,9 +7,9 @@
 - en cada viaje: imagen hero enorme, overlay oscuro y título encima de la imagen
 - añadir icono correo
 - añadir página alojamientos recomendados
+- 404 personalizada
 
 # NEXT STEPS:
 
 - mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
 - añadir sobre mi
-- 404 personalizada

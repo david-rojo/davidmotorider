@@ -17,7 +17,7 @@ const base = import.meta.env.BASE_URL;
   </div>
 
   <!-- Contenido -->
-  <div class="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-4">
+  <div class="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
     <!-- Marca -->
     <div>
       <Logo />
@@ -97,36 +97,25 @@ const base = import.meta.env.BASE_URL;
         </li>
       </ul>
     </div>
-
-    <!-- Newsletter (placeholder futuro) -->
-    <div>
-      <h3 class="font-display text-xl uppercase tracking-wide text-red-600">Newsletter</h3>
-      <p class="mt-4 text-sm text-zinc-400">
-        Próximamente podrás recibir rutas, viajes y novedades directamente en tu correo
-      </p>
-
-      <form class="mt-5 flex gap-2">
-        <input
-          type="email"
-          placeholder="Tu email"
-          class="min-w-0 flex-1 rounded border border-white/10 bg-black px-4 py-3 text-sm text-white placeholder:text-zinc-600"
-        />
-        <button
-          type="button"
-          class="rounded bg-red-600 px-4 py-3 font-display text-sm uppercase tracking-wide text-white hover:bg-red-700"
-        >
-          Suscribirme
-        </button>
-      </form>
-    </div>
   </div>
 
   <!-- Bottom -->
   <div class="border-t border-white/10 px-6 py-5">
     <div
-      class="mx-auto flex max-w-7xl flex-col gap-3 text-xs text-zinc-500 md:flex-row md:items-center md:justify-between"
+      class="mx-auto flex max-w-7xl flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:justify-between"
     >
-      <p>© {year} DavidMotoRider. Todos los derechos reservados.</p>
+      <p>
+        © {year} DavidMotoRider. Todos los derechos reservados.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a href={`${base}/aviso-legal`} class="transition hover:text-white"> Aviso legal </a>
+
+        <a href={`${base}/privacidad`} class="transition hover:text-white"> Privacidad </a>
+
+        <a href={`${base}/cookies`} class="transition hover:text-white"> Cookies </a>
+      </div>
+
       <p class="hidden md:block">Viajes reales, experiencias auténticas</p>
     </div>
   </div>
