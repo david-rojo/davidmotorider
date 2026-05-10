@@ -8,8 +8,10 @@
 - añadir icono correo
 - añadir página alojamientos recomendados
 - 404 personalizada
+- mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
 
 # NEXT STEPS:
 
-- mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
 - añadir sobre mi
+- la galería que aparezcan en miniatura y que se pueda pinchar para ver
+- mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
