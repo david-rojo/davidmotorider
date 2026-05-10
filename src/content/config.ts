@@ -78,6 +78,17 @@ const tripsCollection = defineCollection({
     type: z.enum(['viaje', 'escapada']),
     days: z.number(),
     km: z.number(),
+    itinerary: z
+      .array(
+        z.object({
+          day: z.number(),
+          title: z.string(),
+          km: z.number(),
+          image: z.string().optional(),
+          description: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 
