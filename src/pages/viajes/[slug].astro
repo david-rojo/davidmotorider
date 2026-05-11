@@ -151,7 +151,139 @@ const metadata = {
         class="prose prose-invert max-w-none prose-headings:font-display prose-headings:uppercase prose-h2:text-5xl prose-p:text-zinc-400 prose-p:leading-8 prose-li:text-zinc-400 prose-strong:text-white"
       >
         <Content />
+        {
+          trip.data.gallery?.length ? (
+            <>
+              <div class="not-prose mt-20">
+                <h2 class="font-display text-4xl uppercase leading-none text-white md:text-5xl">Galería</h2>
+
+                <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {trip.data.gallery.map((image) => (
+                    <button
+                      type="button"
+                      class="group block overflow-hidden rounded-2xl bg-transparent p-0"
+                      data-gallery-image
+                      data-src={`${import.meta.env.BASE_URL}${image.src}`}
+                      data-alt={image.alt}
+                    >
+                      <img
+                        src={`${import.meta.env.BASE_URL}${image.src}`}
+                        alt={image.alt}
+                        loading="lazy"
+                        decoding="async"
+                        class="aspect-[4/3] w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <dialog
+                id="gallery-dialog"
+                class="m-auto w-[95vw] max-w-6xl rounded-2xl bg-black p-0 backdrop:bg-black/80"
+              >
+                <button
+                  id="gallery-prev"
+                  type="button"
+                  class="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 font-display text-3xl leading-none text-white backdrop-blur-sm transition hover:bg-red-600 md:left-6 md:h-16 md:w-16 md:text-6xl"
+                >
+                  ‹
+                </button>
+
+                <button
+                  id="gallery-next"
+                  type="button"
+                  class="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 font-display text-3xl leading-none text-white backdrop-blur-sm transition hover:bg-red-600 md:right-6 md:h-16 md:w-16 md:text-6xl"
+                >
+                  ›
+                </button>
+                <button
+                  id="gallery-close"
+                  type="button"
+                  class="absolute right-4 top-4 z-10 rounded-full bg-black/70 px-4 py-2 font-display text-xl text-white"
+                >
+                  Cerrar
+                </button>
+                <p id="gallery-dialog-caption" class="px-6 py-5 text-center text-sm leading-7 text-zinc-300" />
+                <img id="gallery-dialog-image" src="" alt="" class="max-h-[85vh] w-full object-contain" />
+              </dialog>
+            </>
+          ) : null
+        }
       </article>
     </div>
   </section>
-</Layout>
+
+  <script is:inline>
+    const dialog = document.getElementById('gallery-dialog');
+    const dialogImage = document.getElementById('gallery-dialog-image');
+    const dialogCaption = document.getElementById('gallery-dialog-caption');
+    const closeButton = document.getElementById('gallery-close');
+    const prevButton = document.getElementById('gallery-prev');
+    const nextButton = document.getElementById('gallery-next');
+
+    const galleryButtons = Array.from(document.querySelectorAll('[data-gallery-image]'));
+    let currentIndex = 0;
+
+    const showImage = (index) => {
+      const button = galleryButtons[index];
+      if (!button || !(dialogImage instanceof HTMLImageElement)) return;
+
+      currentIndex = index;
+
+      dialogImage.src = button.dataset.src ?? '';
+      dialogImage.alt = button.dataset.alt ?? '';
+
+      if (dialogCaption) {
+        dialogCaption.textContent = button.dataset.alt ?? '';
+      }
+    };
+
+    galleryButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        if (!(dialog instanceof HTMLDialogElement)) return;
+
+        showImage(index);
+        dialog.showModal();
+      });
+    });
+
+    prevButton?.addEventListener('click', () => {
+      const prevIndex = (currentIndex - 1 + galleryButtons.length) % galleryButtons.length;
+      showImage(prevIndex);
+    });
+
+    nextButton?.addEventListener('click', () => {
+      const nextIndex = (currentIndex + 1) % galleryButtons.length;
+      showImage(nextIndex);
+    });
+
+    closeButton?.addEventListener('click', () => {
+      if (dialog instanceof HTMLDialogElement) dialog.close();
+    });
+
+    dialog?.addEventListener('click', (event) => {
+      if (event.target === dialog && dialog instanceof HTMLDialogElement) {
+        dialog.close();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!(dialog instanceof HTMLDialogElement) || !dialog.open) return;
+
+      if (event.key === 'ArrowLeft') {
+        const prevIndex = (currentIndex - 1 + galleryButtons.length) % galleryButtons.length;
+        showImage(prevIndex);
+      }
+
+      if (event.key === 'ArrowRight') {
+        const nextIndex = (currentIndex + 1) % galleryButtons.length;
+        showImage(nextIndex);
+      }
+
+      if (event.key === 'Escape') {
+        dialog.close();
+      }
+    });
+  </script></Layout
+>

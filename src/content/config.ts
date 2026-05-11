@@ -89,6 +89,14 @@ const tripsCollection = defineCollection({
         })
       )
       .optional(),
+    gallery: z
+      .array(
+        z.object({
+          src: z.string(),
+          alt: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 

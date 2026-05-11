@@ -31,6 +31,13 @@ itinerary:
     km: 280
     image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
     description: 'Ruta por el Atlas Medio, parada en el Bosque de Cedros y llegada a la presa de Bin el Ouidane.'
+gallery:
+  - src: '/images/trips/descubriendo-marruecos/dia-01.jpg'
+    alt: 'Calles de Chefchaouen, la ciudad azul'
+  - src: '/images/trips/descubriendo-marruecos/dia-02.jpg'
+    alt: 'León de Ifrane'
+  - src: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    alt: 'Macacos de Berbería en el bosque de cedros'
 ---
 
 Aquí irá el contenido del viaje a Marruecos
@@ -54,7 +61,3 @@ Detalles del recorrido, etapas y zonas principales.
 - Consejo 1
 - Consejo 2
 - Consejo 3
-
-## Galería
-
-![Chefchaouen](/davidmotorider/images/trips/descubriendo-marruecos/dia-01.jpg)

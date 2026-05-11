@@ -9,9 +9,9 @@
 - añadir página alojamientos recomendados
 - 404 personalizada
 - mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
+- mejorar galería, se muestran miniaturas y se puede navegar al verlas en grande
 
 # NEXT STEPS:
 
 - añadir sobre mi
-- la galería que aparezcan en miniatura y que se pueda pinchar para ver
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
