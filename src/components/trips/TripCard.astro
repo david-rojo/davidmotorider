@@ -35,6 +35,15 @@ const tagList = tags.split(' · ');
       >
         {category}
       </span>
+
+      <div class="absolute inset-x-0 bottom-6 z-10 px-6">
+        <p class="font-display text-lg uppercase tracking-[0.18em] text-white/90 drop-shadow-lg">
+          {days}
+          {days === 1 ? 'día' : 'días'}
+          <span class="mx-2 text-red-600">·</span>
+          {km.toLocaleString('es-ES')} km
+        </p>
+      </div>
     </div>
 
     <div class="relative p-6">
@@ -51,21 +60,6 @@ const tagList = tags.split(' · ');
       <h3 class="font-display text-4xl uppercase leading-none text-white transition group-hover:text-red-500">
         {title}
       </h3>
-
-      <div class="mt-5 flex items-center gap-3">
-        <div
-          class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-zinc-400"
-        >
-          {days}
-          {days === 1 ? 'día' : 'días'}
-        </div>
-
-        <div
-          class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-zinc-400"
-        >
-          {km.toLocaleString('es-ES')} km
-        </div>
-      </div>
 
       <p class="mt-4 text-sm leading-6 text-zinc-400">
         {description}

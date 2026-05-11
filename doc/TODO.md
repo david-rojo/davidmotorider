@@ -10,6 +10,7 @@
 - 404 personalizada
 - mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
 - mejorar galería, se muestran miniaturas y se puede navegar al verlas en grande
+- mejorar tripcards
 
 # NEXT STEPS:
 
