@@ -78,6 +78,7 @@ const tripsCollection = defineCollection({
     type: z.enum(['viaje', 'escapada']),
     days: z.number(),
     km: z.number(),
+    map: z.string().optional(),
     itinerary: z
       .array(
         z.object({
@@ -85,10 +86,12 @@ const tripsCollection = defineCollection({
           title: z.string(),
           km: z.number(),
           image: z.string().optional(),
-          description: z.string(),
+          wikiloc: z.string().url().optional(),
+          googleMaps: z.string().url().optional(),
         })
       )
       .optional(),
+    tips: z.array(z.string()).optional(),
     gallery: z
       .array(
         z.object({

@@ -11,6 +11,7 @@
 - mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
 - mejorar galería, se muestran miniaturas y se puede navegar al verlas en grande
 - mejorar tripcards
+- ordenar secciones de la página del viaje
 
 # NEXT STEPS:
 
