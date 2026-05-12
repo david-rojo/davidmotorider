@@ -10,44 +10,51 @@ export interface Props {
   km: number;
 }
 
-const { title, description, image, category, tags, href, days, km } = Astro.props;
+const { title, image, category, tags, href, days, km } = Astro.props;
 const tagList = tags.split(' · ');
 ---
 
 <article
-  class="group relative overflow-hidden rounded-2xl bg-zinc-950 shadow-2xl shadow-black/40 ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 hover:ring-red-600/60"
+  class="group overflow-hidden rounded-2xl bg-zinc-950 ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 hover:ring-red-600/60"
 >
   <a href={href} class="block">
-    <div class="relative h-80 overflow-hidden">
-      <img
-        src={image}
-        alt={title}
-        loading="lazy"
-        decoding="async"
-        class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-      />
+    <div class="grid h-72 grid-rows-[1fr_auto] overflow-hidden">
+      <div class="relative row-span-2 col-start-1 row-start-1">
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+        />
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-      <div class="absolute inset-0 bg-black/10 transition duration-300 group-hover:bg-black/0"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent"></div>
 
-      <span
-        class="absolute left-5 top-5 rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white shadow-lg shadow-black/30"
-      >
-        {category}
-      </span>
+        <span
+          class="absolute left-5 top-5 rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white shadow-lg shadow-black/30"
+        >
+          {category}
+        </span>
+      </div>
 
-      <div class="absolute inset-x-0 bottom-6 z-10 px-6">
-        <p class="font-display text-lg uppercase tracking-[0.18em] text-white/90 drop-shadow-lg">
+      <div class="z-10 col-start-1 row-start-2 flex items-center gap-3 px-5 pb-5">
+        <span
+          class="rounded-full border border-white/15 bg-black/45 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-white backdrop-blur-sm"
+        >
           {days}
           {days === 1 ? 'día' : 'días'}
-          <span class="mx-2 text-red-600">·</span>
+        </span>
+
+        <span
+          class="rounded-full border border-white/15 bg-black/45 px-3 py-1.5 font-display text-xs uppercase tracking-wide text-white backdrop-blur-sm"
+        >
           {km.toLocaleString('es-ES')} km
-        </p>
+        </span>
       </div>
     </div>
 
-    <div class="relative p-6">
-      <div class="mb-4 flex flex-wrap gap-2">
+    <div class="p-5">
+      <div class="flex flex-wrap gap-2">
         {
           tagList.map((tag) => (
             <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-display text-xs uppercase tracking-wide text-zinc-400">
@@ -57,16 +64,14 @@ const tagList = tags.split(' · ');
         }
       </div>
 
-      <h3 class="font-display text-4xl uppercase leading-none text-white transition group-hover:text-red-500">
+      <h3
+        class="mt-5 font-display text-3xl uppercase leading-none text-white transition group-hover:text-red-500 md:text-4xl"
+      >
         {title}
       </h3>
 
-      <p class="mt-4 text-sm leading-6 text-zinc-400">
-        {description}
-      </p>
-
       <div
-        class="mt-6 font-display text-lg uppercase tracking-wide text-red-600 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100"
+        class="mt-5 font-display text-base uppercase tracking-wide text-red-600 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100"
       >
         Ver viaje →
       </div>
