@@ -15,5 +15,6 @@
 
 # NEXT STEPS:
 
+- viajes en draft y publish
 - añadir sobre mi
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown

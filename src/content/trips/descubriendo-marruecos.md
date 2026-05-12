@@ -16,28 +16,29 @@ km: 2784
 map: '/images/trips/descubriendo-marruecos/mapa.jpg'
 
 tips:
-  - 'Fechas para ir'
+  - 'Fechas recomendadas para ir: marzo/abril y octubre/noviembre'
   - 'El ferry cuanto mas temprano lo reserves, menos se retrasará'
-  - 'Consejo 3'
+  - 'Dinero en efectivo imprescindible, en muy pocos sitios se admite el pago con tarjeta, recomendado cambiar lo mínimo posible al cruzar la frontera para tener algo y mas adelante, ir sacando dinero en cajeros o cambiar en casas de cambio. Recomendado llevar tarjetas tipo WISE, REVOLUT, N26'
+  - 'Llevar internet mediante tarjeta eSIM o tarjeta SIM local, para no depender de internet de los alojamientos y tenerlo en ruta'
 
 itinerary:
   - day: 1
     title: 'Tanger Med - Chefchaouen'
-    km: 115
+    km: 112
     image: '/images/trips/descubriendo-marruecos/dia-01.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 2
     title: 'Chefchaouen - Ifrane - Azrou'
-    km: 320
+    km: 301
     image: '/images/trips/descubriendo-marruecos/dia-02.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 3
     title: 'Azrou - Bosque de Cedros - Bin el Ouidane'
-    km: 280
+    km: 283
     image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
@@ -45,75 +46,102 @@ itinerary:
   - day: 4
     title: 'Bin el Ouidane - Ait Ben Haddu'
     km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    image: '/images/trips/descubriendo-marruecos/dia-04.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 5
     title: 'Ait Ben Haddu - Zagora'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 188
+    image: '/images/trips/descubriendo-marruecos/dia-05.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 6
     title: 'Zagora - Tinerhir'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 206
+    image: '/images/trips/descubriendo-marruecos/dia-06.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 7
     title: 'Tinerhir - Todra - Dades - Tinerhir'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 263
+    image: '/images/trips/descubriendo-marruecos/dia-07.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 8
-    title: 'Tinerhir - Merzouga'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    title: 'Tinerhir - Cárcel Portuguesa - Merzouga'
+    km: 348
+    image: '/images/trips/descubriendo-marruecos/dia-08.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 9
     title: 'Merzouga - Valle del Ziz - Midelt'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 257
+    image: '/images/trips/descubriendo-marruecos/dia-09.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 10
     title: 'Midelt - Walili'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 221
+    image: '/images/trips/descubriendo-marruecos/dia-10.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 11
     title: 'Walili - Assilah'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 217
+    image: '/images/trips/descubriendo-marruecos/dia-11.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 12
     title: 'Assilah - Tanger Med'
-    km: 280
-    image: '/images/trips/descubriendo-marruecos/dia-03.jpg'
+    km: 108
+    image: '/images/trips/descubriendo-marruecos/dia-12.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
 gallery:
-  - src: '/images/trips/descubriendo-marruecos/dia-01.jpg'
+  - src: '/images/trips/descubriendo-marruecos/chefchaouen.jpg'
     alt: 'Calles de Chefchaouen, la ciudad azul'
 
-  - src: '/images/trips/descubriendo-marruecos/dia-02.jpg'
-    alt: 'León de Ifrane'
+  - src: '/images/trips/descubriendo-marruecos/cedro-gouraud.jpg'
+    alt: 'Cedro Gouraud, 40 metros de alto y vivió durante unos 800 años'
 
-  - src: '/images/trips/descubriendo-marruecos/dia-03.jpg'
-    alt: 'Macacos de Berbería en el bosque de cedros'
+  - src: '/images/trips/descubriendo-marruecos/te-marroqui.jpg'
+    alt: 'Té marroquí'
+
+  - src: '/images/trips/descubriendo-marruecos/gargantas-todra.jpg'
+    alt: 'Gargantas del Todra'
+
+  - src: '/images/trips/descubriendo-marruecos/presa-todra.jpg'
+    alt: 'Presa del Todra'
+
+  - src: '/images/trips/descubriendo-marruecos/gargantas-dades.jpg'
+    alt: 'Gargantas del Dades'
+
+  - src: '/images/trips/descubriendo-marruecos/tajines.jpg'
+    alt: 'El tajín, uno de los platos tradicionales de Marruecos'
+
+  - src: '/images/trips/descubriendo-marruecos/gara-medouar.jpg'
+    alt: 'Gara Medouar, la Cárcel Portuguesa'
+
+  - src: '/images/trips/descubriendo-marruecos/kasbah.jpg'
+    alt: 'Las kasbahs están hechas con adobe'
+
+  - src: '/images/trips/descubriendo-marruecos/buggy.jpg'
+    alt: 'Un buggy para recorrer las dunas de Erg Chebbi'
+
+  - src: '/images/trips/descubriendo-marruecos/valle-ziz.jpg'
+    alt: 'Valle del Ziz'
+
+  - src: '/images/trips/descubriendo-marruecos/assilah.jpg'
+    alt: 'Assilah'
 ---
 
 Una ruta pensada para descubrir Marruecos por primera vez, combinando ciudades, Atlas, gargantas, vadeos y desierto.
