@@ -6,10 +6,11 @@ export const headerData = {
       text: 'Viajes',
       href: '/viajes',
     },
-    {
-      text: 'Escapadas',
-      href: '/escapadas',
-    },
+    //    disable escapadas
+    //    {
+    //      text: 'Escapadas',
+    //      href: '/escapadas',
+    //    },
     {
       text: 'Dónde dormir',
       href: '/donde-dormir',
