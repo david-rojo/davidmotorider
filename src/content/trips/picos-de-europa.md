@@ -1,5 +1,6 @@
 ---
 title: 'Picos de Europa'
+status: 'draft'
 slug: 'picos-de-europa'
 description: 'Carreteras espectaculares, miradores, desfiladeros y pueblos perfectos para una escapada motera.'
 image: '/images/trips/picos-europa.jpg'

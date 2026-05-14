@@ -8,10 +8,10 @@ const metadata = {
   description: 'Rutas de un día y escapadas de fin de semana para desconectar.',
 };
 
-const trips = (await getCollection('trips'))
-  .filter((trip) => trip.data.type === 'escapada')
+const publishedTrips = (await getCollection('trips'))
+  .filter((trip) => trip.data.type === 'escapada' && trip.data.status === 'published')
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const allTags = [...new Set(trips.flatMap((trip) => trip.data.tags))].sort();
+const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].sort();
 ---
 
 <Layout metadata={metadata}>
@@ -51,7 +51,7 @@ const allTags = [...new Set(trips.flatMap((trip) => trip.data.tags))].sort();
 
       <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3" data-trip-grid>
         {
-          trips.map((trip) => (
+          publishedTrips.map((trip) => (
             <div data-trip-card data-tags={trip.data.tags.join('|')}>
               <TripCard
                 title={trip.data.title}

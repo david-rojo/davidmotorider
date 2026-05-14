@@ -12,9 +12,9 @@
 - mejorar galería, se muestran miniaturas y se puede navegar al verlas en grande
 - mejorar tripcards
 - ordenar secciones de la página del viaje
+- viajes en draft y published
 
 # NEXT STEPS:
 
-- viajes en draft y publish
 - añadir sobre mi
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown

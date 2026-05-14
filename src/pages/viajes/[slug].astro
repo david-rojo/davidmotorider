@@ -3,9 +3,9 @@ import { getCollection, render } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
 
 export async function getStaticPaths() {
-  const trips = await getCollection('trips');
+  const publishedTrips = (await getCollection('trips')).filter((trip) => trip.data.status === 'published');
 
-  return trips.map((trip) => ({
+  return publishedTrips.map((trip) => ({
     params: { slug: trip.data.slug },
     props: { trip },
   }));

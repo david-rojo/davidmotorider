@@ -69,6 +69,7 @@ const tripsCollection = defineCollection({
   loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/trips' }),
   schema: z.object({
     title: z.string(),
+    status: z.enum(['draft', 'published']).default('draft'),
     slug: z.string(),
     description: z.string(),
     image: z.string(),

@@ -1,5 +1,6 @@
 ---
 title: 'Descubriendo Marruecos'
+status: 'published'
 slug: 'descubriendo-marruecos'
 description: 'De Madrid al desierto: pistas sencillas, puertos de montaña, gargantas y noches junto a las dunas.'
 image: '/images/trips/marruecos.jpg'

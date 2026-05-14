@@ -1,5 +1,6 @@
 ---
 title: 'El Atazar'
+status: 'draft'
 slug: 'atazar'
 description: 'Una locura de curvas con una vistas privilegiadas en uno de los lugares con mas tradición motera de todo Madrid.'
 image: '/images/trips/atazar.jpg'
