@@ -1,0 +1,103 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Sobre mí | DavidMotoRider',
+  description: 'Quién está detrás de DavidMotoRider y por qué comparto mis viajes en moto.',
+};
+
+const profileImage = `${import.meta.env.BASE_URL}/images/sobre-mi.jpg`;
+---
+
+<Layout metadata={metadata}>
+  <section class="bg-black px-6 pt-40 pb-24 text-white">
+    <div class="mx-auto max-w-7xl">
+      <div>
+        <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Sobre mí</p>
+
+        <h1 class="mt-5 font-logo text-[42px] uppercase leading-none tracking-[0.01em] md:text-[56px]">
+          <span class="text-white">DAVID</span><span class="text-red-600">MOTORIDER</span>
+        </h1>
+
+        <p class="mt-8 text-justify text-xl leading-10 text-zinc-400">
+          Mi nombre es David y viajo en moto desde Madrid. Disfruto preparando rutas, descubriendo carreteras y
+          aprendiendo cada día, porque encima de una moto siempre hay algo en lo que mejorar. Cuanto más cómodos y
+          seguros nos sentimos sobre ella, más disfrutamos del viaje.
+        </p>
+      </div>
+
+      <div class="mt-16 grid gap-12 lg:grid-cols-[420px_1fr] lg:items-start">
+        <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] lg:sticky lg:top-28">
+          <img
+            src={profileImage}
+            alt="David con su moto"
+            loading="lazy"
+            decoding="async"
+            class="aspect-[4/3] w-full object-cover lg:aspect-[4/5]"
+          />
+        </div>
+
+        <div class="space-y-10 text-justify text-base leading-8 text-zinc-400">
+          <div>
+            <h2 class="font-display text-4xl uppercase leading-none text-white md:text-5xl">Cómo empezó todo</h2>
+
+            <p class="mt-6">
+              Mi historia con las motos comenzó en 2020 con una Honda CB125R. Buscaba una forma más cómoda de
+              desplazarme en mi día a día cuando comenzaba a terminar la pandemia del COVID, debido a la mala
+              combinación en transporte público hasta mi trabajo.
+            </p>
+
+            <p class="mt-5">
+              Gracias a la convalidación del carnet B de coche en España para motos de hasta 125 cc, me animé a probar,
+              ya que antes había tenido curiosidad pero no había llegado a dar el paso. Lo que empezó como una solución
+              práctica terminó convirtiéndose en una afición mucho mayor de lo que me había imaginado.
+            </p>
+
+            <p class="mt-5">
+              Dos años después y como quería dar un paso mas, me saqué el carnet A2 y di el salto a mi actual BMW
+              F850GS, empecé a hacer rutas cada vez más largas, escapadas de fin de semana y viajes donde el camino
+              empezó a ser tan importante como el destino.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-display text-4xl uppercase leading-none text-white md:text-5xl">Por qué esta web</h2>
+
+            <p class="mt-6">
+              DavidMotoRider nace como una forma de recopilar y compartir rutas, experiencias y viajes en moto que he
+              ido haciendo durante estos años, por si pueden servir de inspiración o ayuda a otras personas.
+            </p>
+
+            <p class="mt-5">
+              No pretende ser una guía cerrada ni una colección de tracks para seguir sin más. Cada persona viaja de una
+              forma distinta, y parte de la gracia está en adaptar cada ruta a tus propios gustos, ritmo y forma de
+              viajar.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-display text-4xl uppercase leading-none text-white md:text-5xl">
+              Preparar también es viajar
+            </h2>
+
+            <p class="mt-6">
+              Una de las cosas que más disfruto no son solo los días del viaje, sino todo lo que viene antes: preparar
+              la ruta, elegir por dónde pasar, descubrir carreteras, buscar alojamientos y empezar a imaginar el viaje
+              antes de arrancar la moto.
+            </p>
+
+            <p class="mt-5">
+              Aquí encontrarás itinerarios, alojamientos recomendados, consejos y fotografías tomadas durante mis
+              viajes. Si algo de lo que ves te ayuda a preparar tu próxima ruta, habrá merecido la pena compartirlo.
+            </p>
+
+            <p class="mt-5">
+              Gracias por pasarte por DavidMotoRider y llegar hasta aquí. Si tienes cualquier consulta, no dudes en
+              contactarme.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
