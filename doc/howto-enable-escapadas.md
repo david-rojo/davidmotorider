@@ -7,3 +7,4 @@ Ahora al intentar acceder a /escapadas se está devolviendo 404
 - Buscar `disable escapadas` y descomentar código:
   - en `src/navigation.ts`
   - en `src/pages/index.astro`
+  - en `src/components/widgets/Footer.astro`
