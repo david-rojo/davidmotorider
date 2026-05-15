@@ -28,84 +28,84 @@ itinerary:
     km: 112
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-01.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/9dqnzynjZhUo8g7Q7'
 
   - day: 2
     title: 'Chefchaouen - Ifrane - Azrou'
     km: 301
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-02.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/oKsfVSRAGw9BaCeP7'
 
   - day: 3
     title: 'Azrou - Bosque de Cedros - Bin el Ouidane'
     km: 283
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-03.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/nJ5ASGmu9sRDs5WZ7'
 
   - day: 4
     title: 'Bin el Ouidane - Ait Ben Haddu'
     km: 280
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-04.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/Vfweb1saYwGbeVPj9'
 
   - day: 5
     title: 'Ait Ben Haddu - Zagora'
     km: 188
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-05.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/m87YoHAYPcwAbBHT9'
 
   - day: 6
     title: 'Zagora - Tinerhir'
     km: 206
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-06.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/X3EySVGEpzapo3LFA'
 
   - day: 7
     title: 'Tinerhir - Todra - Dades - Tinerhir'
     km: 263
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-07.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/SQFsJuCseqGBZcPs9'
 
   - day: 8
     title: 'Tinerhir - Cárcel Portuguesa - Merzouga'
     km: 348
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-08.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/gNypnVZajr7Xnty56'
 
   - day: 9
     title: 'Merzouga - Valle del Ziz - Midelt'
     km: 257
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-09.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/tcFFEvZ1zKKe14RC8'
 
   - day: 10
     title: 'Midelt - Walili'
     km: 221
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-10.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/zokChMLSwNTNdSKdA'
 
   - day: 11
     title: 'Walili - Assilah'
     km: 217
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-11.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/X3KjVgrV2chJ6HAU7'
 
   - day: 12
     title: 'Assilah - Tanger Med'
     km: 108
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-12.jpg'
     wikiloc: 'https://google.es'
-    googleMaps: 'https://google.es'
+    googleMaps: 'https://maps.app.goo.gl/diNhFGwurQJr2Jbg6'
 
 gallery:
   - src: '/images/trips/descubriendo-marruecos/galeria/chefchaouen.jpg'
