@@ -22,50 +22,50 @@ tips:
 itinerary:
   - day: 1
     title: 'Irún - Isaba: Pirineos Atlánticos'
-    km: 112
+    km: 184
     image: '/images/trips/transpirenaica-circular/itinerario/dia-01.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 2
     title: 'Isaba - Vielha: Altos Pirineos'
-    km: 112
+    km: 303
     image: '/images/trips/transpirenaica-circular/itinerario/dia-02.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 3
     title: 'Vielha - Embalse del Llauset - Vielha'
-    km: 68
+    km: 65
     image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 4
-    title: 'Vielha - Castellfollit de la Roca'
-    km: 112
-    image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
+    title: 'Vielha - Castellfollit de la Roca: Pirineos Orientales'
+    km: 446
+    image: '/images/trips/transpirenaica-circular/itinerario/dia-04.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 5
     title: 'Castellfollit de la Roca - Andorra'
-    km: 112
-    image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
+    km: 186
+    image: '/images/trips/transpirenaica-circular/itinerario/dia-05.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 6
     title: 'Andorra - Aínsa'
-    km: 112
-    image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
+    km: 250
+    image: '/images/trips/transpirenaica-circular/itinerario/dia-06.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
   - day: 7
-    title: 'Aínsa - Irún'
-    km: 112
-    image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
+    title: 'Aínsa - Cañón del Añisclo - Irún'
+    km: 387
+    image: '/images/trips/transpirenaica-circular/itinerario/dia-07.jpg'
     wikiloc: 'https://google.es'
     googleMaps: 'https://google.es'
 
@@ -82,8 +82,29 @@ gallery:
   - src: '/images/trips/transpirenaica-circular/galeria/tourmalet.jpg'
     alt: 'Subiendo el Tourmalet'
 
+  - src: '/images/trips/transpirenaica-circular/galeria/tunel-llauset.jpg'
+    alt: 'Entrada del túnel del Llauset'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/embalse-llauset.jpg'
+    alt: 'Embalse del Llauset, 2200 metros de altitud'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/descenso-llauset.jpg'
+    alt: 'Bajando del Llauset'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/valle-barrabes.jpg'
+    alt: 'Valle de Barrabés'
+
   - src: '/images/trips/transpirenaica-circular/galeria/ganadores-espanoles-tour-france.jpg'
     alt: 'Monumento a los ganadores españoles del Tour de France'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/port-bonaigua.jpg'
+    alt: 'Port de la Bonaigua'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/mirador-roc-del-quer.jpg'
+    alt: 'Mirador del Roc del Quer'
+
+  - src: '/images/trips/transpirenaica-circular/galeria/foz-arbayun.jpg'
+    alt: 'Foz de Arbayún'
 ---
 
 Aquí irá el contenido del viaje de la Transpirenaica
