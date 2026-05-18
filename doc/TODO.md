@@ -13,8 +13,13 @@
 - mejorar tripcards
 - ordenar secciones de la página del viaje
 - viajes en draft y published
+- añadido fecha de publicación y fecha del viaje
+- ordenar por fecha de publicación y fecha del viaje
+- añadir sobre mi
 
 # NEXT STEPS:
 
-- añadir sobre mi
+- añadir formulario de contacto
+- añadir blog
+- añadir mis motos
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown

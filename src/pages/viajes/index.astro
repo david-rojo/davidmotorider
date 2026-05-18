@@ -27,32 +27,57 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
         </p>
       </header>
 
-      <div class="mb-10 flex flex-wrap gap-3" data-trip-filters>
-        <button
-          type="button"
-          data-filter="all"
-          class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
-        >
-          Todos
-        </button>
+      <div class="mb-12 flex flex-wrap items-center justify-between gap-6">
+        <div class="flex flex-wrap gap-3" data-trip-filters>
+          <button
+            type="button"
+            data-filter="all"
+            class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
+          >
+            Todos
+          </button>
 
-        {
-          allTags.map((tag) => (
-            <button
-              type="button"
-              data-filter={tag}
-              class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
-            >
-              {tag}
-            </button>
-          ))
-        }
+          {
+            allTags.map((tag) => (
+              <button
+                type="button"
+                data-filter={tag}
+                class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+              >
+                {tag}
+              </button>
+            ))
+          }
+        </div>
+
+        <div class="flex items-center gap-2" data-trip-sort>
+          <button
+            type="button"
+            data-sort="publishedAt"
+            class="rounded-full bg-white px-4 py-2 font-display text-xs uppercase tracking-wide text-red-600 transition"
+          >
+            Publicación
+          </button>
+
+          <button
+            type="button"
+            data-sort="date"
+            class="rounded-full border border-white/10 bg-white/5 px-4 py-2 font-display text-xs uppercase tracking-wide text-zinc-400 transition hover:border-white hover:text-white"
+          >
+            Fecha del viaje
+          </button>
+        </div>
       </div>
 
       <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3" data-trip-grid>
         {
           publishedTrips.map((trip) => (
-            <div data-trip-card data-tags={trip.data.tags.join('|')}>
+            <div
+              data-trip-card
+              data-tags={trip.data.tags.join('|')}
+              data-date={trip.data.date.getTime()}
+              data-published-at={trip.data.publishedAt.getTime()}
+            >
               <TripCard
                 title={trip.data.title}
                 description={trip.data.description}
@@ -74,6 +99,8 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
     document.addEventListener('DOMContentLoaded', () => {
       const filterContainer = document.querySelector('[data-trip-filters]');
       const cards = Array.from(document.querySelectorAll('[data-trip-card]'));
+      const grid = document.querySelector('[data-trip-grid]');
+      const sortContainer = document.querySelector('[data-trip-sort]');
 
       if (!filterContainer || !cards.length) return;
 
@@ -83,13 +110,17 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
 
         const selectedTag = target.dataset.filter;
 
+        const selectedFilterClass =
+          'rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700';
+
+        const unselectedFilterClass =
+          'rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white';
+
         filterContainer.querySelectorAll('button[data-filter]').forEach((button) => {
-          button.classList.remove('bg-red-600', 'text-white');
-          button.classList.add('border', 'border-white/10', 'bg-white/5', 'text-zinc-300');
+          button.className = unselectedFilterClass;
         });
 
-        target.classList.add('bg-red-600', 'text-white');
-        target.classList.remove('border', 'border-white/10', 'bg-white/5', 'text-zinc-300');
+        target.className = selectedFilterClass;
 
         cards.forEach((card) => {
           const tags = card.dataset.tags?.split('|') ?? [];
@@ -97,6 +128,34 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
 
           card.classList.toggle('hidden', !shouldShow);
         });
+      });
+
+      const selectedSortClass =
+        'rounded-full bg-white px-4 py-2 font-display text-xs uppercase tracking-wide text-red-600 transition';
+
+      const unselectedSortClass =
+        'rounded-full border border-white/10 bg-white/5 px-4 py-2 font-display text-xs uppercase tracking-wide text-zinc-400 transition hover:border-white hover:text-white';
+
+      sortContainer?.addEventListener('click', (event) => {
+        const target = event.target.closest('button[data-sort]');
+        if (!target || !grid) return;
+
+        const sortType = target.dataset.sort;
+
+        sortContainer.querySelectorAll('button[data-sort]').forEach((button) => {
+          button.className = unselectedSortClass;
+        });
+
+        target.className = selectedSortClass;
+
+        const sortedCards = [...cards].sort((a, b) => {
+          const aValue = Number(sortType === 'date' ? a.dataset.date : a.dataset.publishedAt);
+          const bValue = Number(sortType === 'date' ? b.dataset.date : b.dataset.publishedAt);
+
+          return bValue - aValue;
+        });
+
+        sortedCards.forEach((card) => grid.appendChild(card));
       });
     });
   </script>
