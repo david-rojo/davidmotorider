@@ -76,6 +76,7 @@ const tripsCollection = defineCollection({
     category: z.string(),
     tags: z.array(z.string()),
     date: z.coerce.date(),
+    publishedAt: z.coerce.date(),
     type: z.enum(['viaje', 'escapada']),
     days: z.number(),
     km: z.number(),

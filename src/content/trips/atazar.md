@@ -10,6 +10,7 @@ tags:
   - Onroad
   - Curvas
 date: '2022-05-15'
+publishedAt: '2022-05-15'
 lang: 'es'
 type: 'escapada'
 days: 1

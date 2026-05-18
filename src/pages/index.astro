@@ -13,7 +13,7 @@ const heroImage = `${import.meta.env.BASE_URL}/images/hero-davidmotorider.jpg`;
 
 const lastPublishedTrips = (await getCollection('trips'))
   .filter((trip) => trip.data.type === 'viaje' && trip.data.status === 'published')
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime())
   .slice(0, 3);
 ---
 

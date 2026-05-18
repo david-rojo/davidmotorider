@@ -10,7 +10,7 @@ const metadata = {
 
 const publishedTrips = (await getCollection('trips'))
   .filter((trip) => trip.data.type === 'escapada' && trip.data.status === 'published')
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
 const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].sort();
 ---
 
