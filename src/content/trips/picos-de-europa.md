@@ -10,6 +10,7 @@ tags:
   - Montaña
   - España
 date: '2025-10-04'
+publishedAt: '2025-10-04'
 lang: 'es'
 type: 'viaje'
 days: 3

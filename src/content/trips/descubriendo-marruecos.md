@@ -10,6 +10,7 @@ tags:
   - Offroad
   - Desierto
 date: '2026-04-12'
+publishedAt: '2026-04-12'
 lang: 'es'
 type: 'viaje'
 days: 12
