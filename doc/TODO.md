@@ -16,6 +16,7 @@
 - añadido fecha de publicación y fecha del viaje
 - ordenar por fecha de publicación y fecha del viaje
 - añadir sobre mi
+- añadir fecha del viaje a la información del viaje mostrada
 
 # NEXT STEPS:
 

@@ -18,6 +18,13 @@ const metadata = {
   title: `${trip.data.title} | DavidMotoRider`,
   description: trip.data.description,
 };
+
+const travelDate = trip.data.date
+  .toLocaleDateString('es-ES', {
+    month: 'short',
+    year: 'numeric',
+  })
+  .toUpperCase();
 ---
 
 <Layout metadata={metadata}>
@@ -45,7 +52,7 @@ const metadata = {
           {trip.data.description}
         </p>
 
-        <div class="mt-10 flex flex-wrap gap-4">
+        <div class="mt-10 flex flex-wrap items-center gap-4">
           <div
             class="rounded-full border border-white/15 bg-black/40 px-5 py-2 font-display text-lg uppercase tracking-wide backdrop-blur-sm"
           >
@@ -58,6 +65,12 @@ const metadata = {
           >
             {trip.data.km.toLocaleString('es-ES')} km
           </div>
+
+          <span
+            class="rounded-full border border-white/10 bg-black/40 px-5 py-2 font-display text-lg uppercase tracking-wide text-white backdrop-blur-sm"
+          >
+            {travelDate}
+          </span>
         </div>
       </div>
     </div>
