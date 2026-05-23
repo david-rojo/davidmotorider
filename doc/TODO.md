@@ -20,7 +20,10 @@
 
 # NEXT STEPS:
 
-- añadir formulario de contacto
 - añadir blog
 - añadir mis motos
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
+
+# DISCARDED:
+
+- añadir formulario de contacto

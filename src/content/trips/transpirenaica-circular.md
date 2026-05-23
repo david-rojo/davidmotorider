@@ -26,49 +26,49 @@ itinerary:
     title: 'Irún - Isaba: Pirineos Atlánticos'
     km: 184
     image: '/images/trips/transpirenaica-circular/itinerario/dia-01.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/pirineos-atlanticos-onroad-ruta-irun-isaba-loop-transpirenaico-dia-1-6-244832252'
     googleMaps: 'https://maps.app.goo.gl/99LPavRheQ27qkyT6'
 
   - day: 2
     title: 'Isaba - Vielha: Altos Pirineos'
     km: 303
     image: '/images/trips/transpirenaica-circular/itinerario/dia-02.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/altos-pirineos-onroad-ruta-isaba-vielha-loop-transpirenaico-dia-2-6-244868673'
     googleMaps: 'https://maps.app.goo.gl/3JgB3pEJ41jh9ZSm6'
 
   - day: 3
     title: 'Vielha - Embalse del Llauset - Vielha'
     km: 65
     image: '/images/trips/transpirenaica-circular/itinerario/dia-03.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/embalse-del-llauset-onroad-ruta-circular-vielha-loop-transpirenaico-dia-extra-244887532'
     googleMaps: 'https://maps.app.goo.gl/AmNqs9RPtziPX52q9'
 
   - day: 4
     title: 'Vielha - Castellfollit de la Roca: Pirineos Orientales'
     km: 446
     image: '/images/trips/transpirenaica-circular/itinerario/dia-04.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/pirineos-orientales-onroad-ruta-vielha-castellfollit-de-la-roca-loop-transpirenaico-dia-3-6-245351104'
     googleMaps: 'https://maps.app.goo.gl/VxMXn34WVyHZh2Jr8'
 
   - day: 5
     title: 'Castellfollit de la Roca - Andorra'
     km: 186
     image: '/images/trips/transpirenaica-circular/itinerario/dia-05.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/toses-y-andorra-onroad-ruta-castellfollit-de-la-roca-andorra-loop-transpirenaico-dia-4-6-245118988'
     googleMaps: 'https://maps.app.goo.gl/6y3SojKTdHc7SyGH8'
 
   - day: 6
     title: 'Andorra - Aínsa'
     km: 250
     image: '/images/trips/transpirenaica-circular/itinerario/dia-06.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/coll-a-coll-hasta-ainsa-onroad-ruta-andorra-ainsa-loop-transpirenaico-dia-5-6-245235650'
     googleMaps: 'https://maps.app.goo.gl/5oQ6fW3yuhR4dXJX7'
 
   - day: 7
     title: 'Aínsa - Cañón del Añisclo - Irún'
     km: 387
     image: '/images/trips/transpirenaica-circular/itinerario/dia-07.jpg'
-    wikiloc: 'https://google.es'
+    wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/del-anisclo-a-irun-onroad-ruta-ainsa-irun-loop-transpirenaico-dia-6-6-245350564'
     googleMaps: 'https://maps.app.goo.gl/vyeBQ3WEZVMiabZX9'
 
 gallery:
