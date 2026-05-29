@@ -1,0 +1,105 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import ResourceCard from '~/components/resources/ResourceCard.astro';
+
+const metadata = {
+  title: 'Recursos | DavidMotoRider',
+  description: 'Guías, documentación y consejos para preparar viajes en moto.',
+};
+
+const resources = (await getCollection('resources'))
+  .filter((resource) => resource.data.status === 'published')
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))].sort();
+---
+
+<Layout metadata={metadata}>
+  <section class="bg-black px-6 pt-40 pb-28 text-white">
+    <div class="mx-auto max-w-7xl">
+      <header class="mb-16 max-w-4xl">
+        <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Guías y consejos</p>
+
+        <h1 class="mt-5 font-display text-7xl uppercase leading-none md:text-9xl">Recursos</h1>
+
+        <p class="mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
+          Documentación, preparación, equipamiento y consejos útiles para organizar viajes en moto.
+        </p>
+      </header>
+
+      <div class="mb-12 flex flex-wrap gap-3" data-resource-filters>
+        <button
+          type="button"
+          data-filter="all"
+          class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
+        >
+          Todos
+        </button>
+
+        {
+          allTags.map((tag) => (
+            <button
+              type="button"
+              data-filter={tag}
+              class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+            >
+              {tag}
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        {
+          resources.map((resource) => (
+            <div data-resource-card data-tags={resource.data.tags.join('|')}>
+              <ResourceCard
+                title={resource.data.title}
+                description={resource.data.description}
+                image={resource.data.image ? `${import.meta.env.BASE_URL}${resource.data.image}` : undefined}
+                tags={resource.data.tags.join(' · ')}
+                href={`${import.meta.env.BASE_URL}/recursos/${resource.data.slug}`}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterContainer = document.querySelector('[data-resource-filters]');
+      const cards = Array.from(document.querySelectorAll('[data-resource-card]'));
+
+      if (!filterContainer || !cards.length) return;
+
+      const selectedClass =
+        'rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700';
+
+      const unselectedClass =
+        'rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white';
+
+      filterContainer.addEventListener('click', (event) => {
+        const target = event.target.closest('button[data-filter]');
+        if (!target) return;
+
+        const selectedTag = target.dataset.filter;
+
+        filterContainer.querySelectorAll('button[data-filter]').forEach((button) => {
+          button.className = unselectedClass;
+        });
+
+        target.className = selectedClass;
+
+        cards.forEach((card) => {
+          const tags = card.dataset.tags?.split('|') ?? [];
+          const shouldShow = selectedTag === 'all' || tags.includes(selectedTag);
+
+          card.classList.toggle('hidden', !shouldShow);
+        });
+      });
+    });
+  </script>
+</Layout>

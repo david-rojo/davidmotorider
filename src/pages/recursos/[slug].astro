@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+
+export async function getStaticPaths() {
+  const resources = (await getCollection('resources')).filter((resource) => resource.data.status === 'published');
+
+  return resources.map((resource) => ({
+    params: { slug: resource.data.slug },
+    props: { resource },
+  }));
+}
+
+const { resource } = Astro.props;
+const { Content } = await render(resource);
+
+const metadata = {
+  title: `${resource.data.title} | DavidMotoRider`,
+  description: resource.data.description,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="bg-black px-6 pt-40 pb-24 text-white">
+    <div class="mx-auto max-w-5xl">
+      <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Recurso</p>
+
+      <h1 class="mt-5 font-display text-6xl uppercase leading-none md:text-8xl">
+        {resource.data.title}
+      </h1>
+
+      <p class="mt-8 text-xl leading-9 text-zinc-400">
+        {resource.data.description}
+      </p>
+
+      {
+        resource.data.image && (
+          <img
+            src={`${import.meta.env.BASE_URL}${resource.data.image}`}
+            alt={resource.data.title}
+            loading="lazy"
+            decoding="async"
+            class="mt-12 rounded-3xl border border-white/10"
+          />
+        )
+      }
+
+      <article
+        class="prose prose-invert mt-16 max-w-none prose-headings:font-display prose-headings:uppercase prose-h2:text-5xl prose-p:text-zinc-400 prose-p:leading-8 prose-li:text-zinc-400 prose-strong:text-white"
+      >
+        <Content />
+      </article>
+    </div>
+  </section>
+</Layout>

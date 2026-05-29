@@ -105,7 +105,22 @@ const tripsCollection = defineCollection({
   }),
 });
 
+const resourcesCollection = defineCollection({
+  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/resources' }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    image: z.string().optional(),
+    tags: z.array(z.string()),
+    date: z.coerce.date(),
+    publishedAt: z.coerce.date(),
+    status: z.enum(['draft', 'published']).default('draft'),
+  }),
+});
+
 export const collections = {
   post: postCollection,
   trips: tripsCollection,
+  resources: resourcesCollection,
 };

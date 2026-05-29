@@ -17,13 +17,15 @@
 - ordenar por fecha de publicación y fecha del viaje
 - añadir sobre mi
 - añadir fecha del viaje a la información del viaje mostrada
+- añadir recursos
 
 # NEXT STEPS:
 
-- añadir blog
+- añadir a la página inicial sobre mi y ultimo recurso añadido
 - añadir mis motos
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
 
 # DISCARDED:
 
 - añadir formulario de contacto
+- añadir blog
