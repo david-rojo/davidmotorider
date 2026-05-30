@@ -4,7 +4,6 @@ slug: 'documentacion-fuera-europa'
 description: 'Toda la documentación necesaria para viajar fuera de Europa con tu moto.'
 image: '/images/resources/documentacion-fuera-europa.jpg'
 tags:
-  - Preparación
   - Documentación
 date: '2026-05-30'
 publishedAt: '2026-05-30'

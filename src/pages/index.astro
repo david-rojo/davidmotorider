@@ -15,6 +15,12 @@ const lastPublishedTrips = (await getCollection('trips'))
   .filter((trip) => trip.data.type === 'viaje' && trip.data.status === 'published')
   .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime())
   .slice(0, 3);
+
+const latestResource = (await getCollection('resources'))
+  .filter((resource) => resource.data.status === 'published')
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
+
+const aboutImage = `${import.meta.env.BASE_URL}/images/sobre-mi-card.jpg`;
 ---
 
 <Layout metadata={metadata}>
@@ -145,6 +151,75 @@ const lastPublishedTrips = (await getCollection('trips'))
           <p class="mt-1 text-sm leading-6 text-zinc-600">Equipamiento, rutas y preparación</p>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="bg-black px-6 py-24 text-white">
+    <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center">
+      <!-- SOBRE MÍ -->
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Sobre mí</p>
+
+          <h2 class="mt-4 font-display text-5xl uppercase leading-none md:text-4xl lg:text-5xl">Quién soy</h2>
+
+          <p class="mt-6 text-base leading-8 text-zinc-400">
+            Viajo en moto desde Madrid y disfruto preparando rutas, descubriendo carreteras y aprendiendo en cada viaje.
+          </p>
+
+          <a
+            href={`${import.meta.env.BASE_URL}/sobre-mi`}
+            class="mt-8 inline-block rounded bg-red-600 px-7 py-3 font-display text-lg uppercase tracking-wide text-white transition hover:bg-red-700"
+          >
+            Conóceme mejor
+          </a>
+        </div>
+
+        <div class="h-full min-h-[280px] overflow-hidden rounded-3xl border border-white/10">
+          <img
+            src={aboutImage}
+            alt="viajando en moto"
+            loading="lazy"
+            decoding="async"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- ÚLTIMO RECURSO -->
+      {
+        latestResource && (
+          <div class="grid gap-8 lg:grid-cols-[1.4fr_0.8fr] lg:items-center">
+            <div>
+              <p class="font-display text-lg uppercase tracking-[0.35em] text-red-600">Último recurso</p>
+
+              <h2 class="mt-4 font-display text-5xl uppercase leading-none md:text-[3rem] lg:text-[3.5rem]">
+                {latestResource.data.title}
+              </h2>
+
+              <p class="mt-6 text-base leading-8 text-zinc-400">{latestResource.data.description}</p>
+
+              <a
+                href={`${import.meta.env.BASE_URL}/recursos/${latestResource.data.slug}`}
+                class="mt-8 inline-block font-display text-xl uppercase tracking-wide text-red-600 transition hover:text-red-500"
+              >
+                Leer recurso →
+              </a>
+            </div>
+
+            {latestResource.data.image && (
+              <div class="h-full min-h-[280px] overflow-hidden rounded-3xl border border-white/10">
+                <img
+                  src={`${import.meta.env.BASE_URL}${latestResource.data.image}`}
+                  alt={latestResource.data.title}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            )}
+          </div>
+        )
+      }
     </div>
   </section>
 </Layout>
