@@ -18,10 +18,11 @@
 - añadir sobre mi
 - añadir fecha del viaje a la información del viaje mostrada
 - añadir recursos
+- añadir a la página inicial sobre mi y ultimo recurso añadido
 
 # NEXT STEPS:
 
-- añadir a la página inicial sobre mi y ultimo recurso añadido
+- poner fondo negro tanto arriba y abajo en el menú móvil
 - añadir mis motos
 - mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
 
