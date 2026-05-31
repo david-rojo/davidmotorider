@@ -19,6 +19,7 @@
 - añadir fecha del viaje a la información del viaje mostrada
 - añadir recursos
 - añadir a la página inicial sobre mi y ultimo recurso añadido
+- añadir Inicio al menu en el header
 
 # NEXT STEPS:
 

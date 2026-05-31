@@ -52,6 +52,10 @@ const withBase = (href?: string) => {
     return href;
   }
 
+  if (href === '/') {
+    return base || '/';
+  }
+
   return `${base}${href.startsWith('/') ? href : `/${href}`}`;
 };
 ---
