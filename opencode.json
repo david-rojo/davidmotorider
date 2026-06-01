@@ -16,7 +16,7 @@
     "No añadir librerías o paquetes npm sin justificar claramente su necesidad.",
     "Mantener compatibilidad con GitHub Pages.",
     "Para cambios visuales utilizar una estética adventure motorcycle premium.",
-    "Inspiración visual: BMW Motorrad, Touratech, Mosko Moto, Rev'It y Long Way Round.",
+    "Inspiración visual: BMW Motorrad, Klim, Shoei, Arai, Mosko Moto, Rev'It y Long Way Round.",
     "Paleta principal: rojo, negro y blanco.",
     "Diseño limpio, moderno, visual y orientado a fotografía de viajes.",
     "Antes de modificar estructura global revisar astro.config.*, package.json, src/pages, src/layouts, src/components y src/content si existen.",
