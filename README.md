@@ -89,6 +89,12 @@ Para aplicar arreglos automáticos:
 npm run fix
 ```
 
+## 🤖 Desarrollo Asistido Por IA
+
+Este proyecto se desarrolla con apoyo de herramientas de inteligencia artificial como OpenCode y OpenAI para acelerar tareas de análisis, implementación, documentación y revisión.
+
+Las decisiones de producto, contenido, diseño y publicación se revisan manualmente para mantener la coherencia con el objetivo de DavidMotoRider: una web personal, útil y cuidada sobre viajes en moto trail.
+
 ## 🚀 Despliegue
 
 El proyecto está configurado para GitHub Pages en `astro.config.ts`:
