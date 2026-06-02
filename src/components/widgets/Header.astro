@@ -104,7 +104,11 @@ const withBase = (href?: string) => {
                     class="flex items-center whitespace-nowrap px-4 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:text-red-500"
                   >
                     {text}
-                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
+                    <Icon
+                      name="tabler:chevron-down"
+                      class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline"
+                      aria-hidden="true"
+                    />
                   </button>
                   <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
                     {links.map(({ text: text2, href: href2 }) => (
@@ -152,9 +156,10 @@ const withBase = (href?: string) => {
             href="https://instagram.com/davidmotorider"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
             class="text-white hover:text-red-500 transition"
           >
-            <Icon name="tabler:brand-instagram" class="w-5 h-5" />
+            <Icon name="tabler:brand-instagram" class="w-5 h-5" aria-hidden="true" />
           </a>
           <a
             href="https://es.wikiloc.com/wikiloc/user.do?id=1514299"
@@ -171,7 +176,7 @@ const withBase = (href?: string) => {
           </a>
 
           <a href="mailto:davidmotorider@gmail.com" aria-label="Email" class="text-white transition hover:text-red-500">
-            <Icon name="tabler:mail" class="h-5 w-5" />
+            <Icon name="tabler:mail" class="h-5 w-5" aria-hidden="true" />
           </a>
         </div>
         {

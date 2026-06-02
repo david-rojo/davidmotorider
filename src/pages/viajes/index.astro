@@ -32,6 +32,7 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
           <button
             type="button"
             data-filter="all"
+            aria-pressed="true"
             class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
           >
             Todos
@@ -42,6 +43,7 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
               <button
                 type="button"
                 data-filter={tag}
+                aria-pressed="false"
                 class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
               >
                 {tag}
@@ -54,6 +56,7 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
           <button
             type="button"
             data-sort="publishedAt"
+            aria-pressed="true"
             class="rounded-full bg-white px-4 py-2 font-display text-xs uppercase tracking-wide text-red-600 transition"
           >
             Publicación
@@ -62,6 +65,7 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
           <button
             type="button"
             data-sort="date"
+            aria-pressed="false"
             class="rounded-full border border-white/10 bg-white/5 px-4 py-2 font-display text-xs uppercase tracking-wide text-zinc-400 transition hover:border-white hover:text-white"
           >
             Fecha del viaje
@@ -118,9 +122,11 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
 
         filterContainer.querySelectorAll('button[data-filter]').forEach((button) => {
           button.className = unselectedFilterClass;
+          button.setAttribute('aria-pressed', 'false');
         });
 
         target.className = selectedFilterClass;
+        target.setAttribute('aria-pressed', 'true');
 
         cards.forEach((card) => {
           const tags = card.dataset.tags?.split('|') ?? [];
@@ -144,9 +150,11 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
 
         sortContainer.querySelectorAll('button[data-sort]').forEach((button) => {
           button.className = unselectedSortClass;
+          button.setAttribute('aria-pressed', 'false');
         });
 
         target.className = selectedSortClass;
+        target.setAttribute('aria-pressed', 'true');
 
         const sortedCards = [...cards].sort((a, b) => {
           const aValue = Number(sortType === 'date' ? a.dataset.date : a.dataset.publishedAt);

@@ -32,6 +32,7 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
         <button
           type="button"
           data-filter="all"
+          aria-pressed="true"
           class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
         >
           Todos
@@ -42,6 +43,7 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
             <button
               type="button"
               data-filter={tag}
+              aria-pressed="false"
               class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
             >
               {tag}
@@ -89,9 +91,11 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
 
         filterContainer.querySelectorAll('button[data-filter]').forEach((button) => {
           button.className = unselectedClass;
+          button.setAttribute('aria-pressed', 'false');
         });
 
         target.className = selectedClass;
+        target.setAttribute('aria-pressed', 'true');
 
         cards.forEach((card) => {
           const tags = card.dataset.tags?.split('|') ?? [];
