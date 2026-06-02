@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "Proyecto web personal davidmotorider.",
+    "Stack principal: Astro, Tailwind CSS, TypeScript y GitHub Pages.",
+    "Responder y trabajar siempre en español de España.",
+    "Explicar brevemente las decisiones técnicas importantes.",
+    "Priorizar soluciones simples y mantenibles.",
+    "Antes de proponer cambios, analizar la estructura actual del proyecto.",
+    "Objetivo principal: crear una web de referencia sobre viajes en moto trail en español.",
+    "Temáticas principales: viajes en moto, rutas, equipamiento trail, BMW F850GS, Picos de Europa, Transpirenaica, Marruecos y rutas desde Madrid.",
+    "Priorizar SEO, rendimiento, accesibilidad y experiencia móvil.",
+    "Mantener una puntuación Lighthouse alta.",
+    "Optimizar Core Web Vitals siempre que sea posible.",
+    "Priorizar funcionalidades nativas de Astro antes que dependencias externas.",
+    "No añadir librerías o paquetes npm sin justificar claramente su necesidad.",
+    "Mantener compatibilidad con GitHub Pages.",
+    "Para cambios visuales utilizar una estética adventure motorcycle premium.",
+    "Inspiración visual: BMW Motorrad, Klim, Shoei, Arai, Mosko Moto, Rev'It y Long Way Round.",
+    "Paleta principal: rojo, negro y blanco.",
+    "Diseño limpio, moderno, visual y orientado a fotografía de viajes.",
+    "Antes de modificar estructura global revisar astro.config.*, package.json, src/pages, src/layouts, src/components y src/content si existen.",
+    "No modificar secretos, credenciales o configuraciones sensibles.",
+    "No ejecutar git push.",
+    "No crear commits automáticamente.",
+    "Preguntar antes de realizar cambios destructivos o refactorizaciones grandes."
+  ],
+  "permission": {
+    "edit": "allow",
+    "bash": "ask"
+  }
+}
