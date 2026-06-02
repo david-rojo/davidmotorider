@@ -64,7 +64,7 @@ Voy a revisar las páginas clave y componentes visibles para evaluar SEO, accesi
 ✱Glob "src/data/\*_/_" in . (6 matches)
 ✱Grep "@fontsource-variable/inter|astro-embed|unpic|@astrolib/analytics|Splitbee|partytown|mdx|reading-time|js-yaml|tailwind-merge|unist-util-visit|mdast-util-to-string|lodash.merge|AstroSeo" in . (215 matches)
 ✱Grep "hero-davidmotorider|sobre-mi|favicon|default.png|hero-davidmotorider-vadeo" in src (12 matches)
-→Read .github/workflows/actions.yaml [offset=1, limit=220]
+→Read .github/workflows/ci.yaml [offset=1, limit=220]
 →Read netlify.toml [offset=1, limit=160]
 →Read vercel.json [offset=1, limit=160]
 
@@ -293,8 +293,8 @@ Mejoras:
 - Revisar 404: GitHub Pages usará /404.html; Astro lo genera.
 - Revisar enlaces con trailing slash: config actual trailingSlash: false en YAML, Astro build genera directorios index.html; externo funciona, pero canonical debe ser sin slash.
 - Workflow deploy.yml usa withastro/action@v6, correcto.
-- Hay dos workflows que corren en main: deploy.yml y actions.yaml; puede duplicar builds.
-- actions.yaml prueba Node 18/20/22; útil pero costoso. El deploy usa lo que configure withastro/action.
+- Hay dos workflows que corren en main: deploy.yml y ci.yaml; puede duplicar builds.
+- ci.yaml prueba Node 18/20/22; útil pero costoso. El deploy usa lo que configure withastro/action.
 - Añadir npm ci explícito no es necesario con withastro/action, pero se puede controlar Node si se quiere reproducibilidad.
 - Revisar site si se migra a dominio propio.
 
