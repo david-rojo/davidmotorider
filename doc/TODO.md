@@ -1,33 +1,66 @@
-# DONE:
+# Histórico De Cambios
 
-- añadir filtro por tags (offroad, montaña, etc.)
-- añadir escapadas
-- añadir metadata a los viajes: days, km. Mostrarlos en las cards y en las páginas individuales
-- añadir barra separadora blanca features strip
-- en cada viaje: imagen hero enorme, overlay oscuro y título encima de la imagen
-- añadir icono correo
-- añadir página alojamientos recomendados
-- 404 personalizada
-- mejorar la página de viaje (hero + galería + estructura tipo blog PRO)
-- mejorar galería, se muestran miniaturas y se puede navegar al verlas en grande
-- mejorar tripcards
-- ordenar secciones de la página del viaje
-- viajes en draft y published
-- añadido fecha de publicación y fecha del viaje
-- ordenar por fecha de publicación y fecha del viaje
-- añadir sobre mi
-- añadir fecha del viaje a la información del viaje mostrada
-- añadir recursos
-- añadir a la página inicial sobre mi y ultimo recurso añadido
-- añadir Inicio al menu en el header
+## Done
 
-# NEXT STEPS:
+### Base Y Limpieza
 
-- poner fondo negro tanto arriba y abajo en el menú móvil
-- añadir mis motos
-- mejorar galería para hacerla dinámica con frontmatter, pero de momento puedes meter imágenes dentro del Markdown
+- Eliminado código demo heredado de AstroWind que no formaba parte de DavidMotoRider.
+- Eliminadas páginas demo: `about`, `services`, `pricing`, `contact`, `homes`, `landing`.
+- Eliminado blog demo heredado: rutas `[...blog]`, contenido `src/data/post`, componentes `src/components/blog` y utilidades asociadas.
+- Eliminados widgets y componentes UI de AstroWind sin uso real en el proyecto.
+- Conservada la sección `_escapadas` para futura reutilización.
 
-# DISCARDED:
+### Contenido Y Funcionalidades
 
-- añadir formulario de contacto
-- añadir blog
+- Añadido filtro por tags en viajes.
+- Añadida sección de escapadas.
+- Añadidos metadatos de viajes: días, kilómetros, fecha del viaje y fecha de publicación.
+- Mostrados días y kilómetros en cards y páginas individuales.
+- Añadida barra separadora blanca de features.
+- Añadidas páginas de alojamientos recomendados, Sobre mí, Recursos y 404 personalizada.
+- Añadida información de Sobre mí y último recurso en la home.
+- Añadido enlace Inicio al menú principal.
+- Añadido icono de correo.
+- Añadidos estados `draft` y `published` en viajes y recursos.
+
+### Viajes Y Galería
+
+- Mejoradas las páginas de viaje con hero grande, overlay oscuro y título sobre imagen.
+- Mejorada la estructura de las páginas de viaje.
+- Mejoradas las trip cards.
+- Ordenadas las secciones de la página de viaje.
+- Añadida galería dinámica mediante frontmatter en los viajes.
+- Añadida galería con miniaturas y navegación en grande.
+
+### Diseño, Header Y Navegación
+
+- Ajustado menú móvil para usar fondo negro arriba, centro y abajo.
+- Activado header fijo al hacer scroll.
+- Ajustado el estado scroll del header para mantener estética negra premium.
+
+### README, OpenCode Y Documentación
+
+- Sustituido el README original de AstroWind por uno propio de DavidMotoRider.
+- Añadidas badges de CI, deploy, Lighthouse, Astro, Tailwind CSS, TypeScript y GitHub Pages.
+- Añadida sección sobre desarrollo asistido por IA con OpenCode y OpenAI.
+- Añadido `AGENTS.md` con instrucciones compactas para futuras sesiones OpenCode.
+
+### CI, Deploy Y Lighthouse
+
+- Simplificado CI a Node 22.
+- Actualizado `engines.node` a `>=22.12.0`.
+- Ajustado deploy de GitHub Pages para construir explícitamente con Node 22 y subir `dist`.
+- Añadido workflow manual de Lighthouse sobre la web ya publicada.
+- Configurados umbrales Lighthouse para performance, accessibility, best practices y SEO.
+
+### Rendimiento Y Accesibilidad
+
+- Añadidas mejoras de accesibilidad en header, footer y filtros.
+- Añadidos `aria-label`, `aria-hidden`, `aria-pressed` y `rel="noopener noreferrer"` donde correspondía.
+- Optimizada la imagen hero de la home con versiones WebP para desktop y móvil.
+- Añadido `<picture>` con WebP y fallback JPG en la home.
+
+## Discarded
+
+- Formulario de contacto.
+- Blog.
