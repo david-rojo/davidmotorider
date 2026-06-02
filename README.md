@@ -1,4 +1,4 @@
-# 🏍️ DavidMotoRider
+# 🏍️ 🌍 DavidMotoRider
 
 [![Deploy to GitHub Pages](https://github.com/david-rojo/davidmotorider/actions/workflows/deploy.yml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/deploy.yml)
 [![CI](https://github.com/david-rojo/davidmotorider/actions/workflows/ci.yaml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/ci.yaml)
@@ -6,9 +6,8 @@
 [![Astro](https://img.shields.io/badge/Astro-5.x-BC52EE?logo=astro&logoColor=white)](https://astro.build/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-publicado-222222?logo=githubpages&logoColor=white)](https://david-rojo.github.io/davidmotorider/)
 
-Web personal sobre viajes en moto trail, rutas, recursos y experiencias desde Madrid.
+Web personal sobre viajes en moto trail, recursos y rutas desde Madrid.
 
 Sitio publicado: <https://david-rojo.github.io/davidmotorider/>
 
