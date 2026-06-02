@@ -1,7 +1,8 @@
 # 🏍️ DavidMotoRider
 
 [![Deploy to GitHub Pages](https://github.com/david-rojo/davidmotorider/actions/workflows/deploy.yml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/deploy.yml)
-[![GitHub Actions](https://github.com/david-rojo/davidmotorider/actions/workflows/actions.yaml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/actions.yaml)
+[![CI](https://github.com/david-rojo/davidmotorider/actions/workflows/actions.yaml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/actions.yaml)
+[![Lighthouse](https://github.com/david-rojo/davidmotorider/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/david-rojo/davidmotorider/actions/workflows/lighthouse.yml)
 [![Astro](https://img.shields.io/badge/Astro-5.x-BC52EE?logo=astro&logoColor=white)](https://astro.build/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)

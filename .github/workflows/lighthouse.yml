@@ -1,0 +1,23 @@
+name: Lighthouse
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Run Lighthouse on published site
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://david-rojo.github.io/davidmotorider/
+            https://david-rojo.github.io/davidmotorider/viajes/
+            https://david-rojo.github.io/davidmotorider/recursos/
+            https://david-rojo.github.io/davidmotorider/sobre-mi/
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: ./.github/lighthouse/lighthouserc.json
