@@ -34,6 +34,7 @@ const {
   id = 'header',
   links = [],
   actions = [],
+  isSticky = false,
   isDark = false,
   isFullWidth = false,
   position = 'center',
@@ -62,10 +63,11 @@ const withBase = (href?: string) => {
 
 <header
   class:list={[
-    { absolute: true, dark: isDark },
+    { fixed: isSticky, absolute: !isSticky, dark: isDark },
     'left-0 top-0 z-40 w-full flex-none border-b border-white/10 bg-black/25 transition-[opacity] ease-in-out',
   ]}
   {...id ? { id } : {}}
+  {...isSticky ? { 'data-aw-sticky-header': true } : {}}
 >
   <div class="absolute inset-0"></div>
   <div
