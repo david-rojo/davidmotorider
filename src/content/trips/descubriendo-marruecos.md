@@ -2,12 +2,12 @@
 title: 'Descubriendo Marruecos'
 status: 'published'
 slug: 'descubriendo-marruecos'
-description: 'De Madrid al desierto: pistas sencillas, puertos de montaña, gargantas y noches junto a las dunas.'
+description: 'Tan sólo 14 kilómetros separan Europa de África. Al otro lado del Estrecho de Gibraltar, Marruecos ofrece algunos de los mejores paisajes del norte de África: las montañas del Atlas, las dunas de Merzouga, valles y gargantas esculpidas por los ríos y carreteras espectaculares con escenarios que recuerdan a los míticos rallies africanos, convirtiéndose en uno de los destinos mas apasionantes para viajar en moto.'
 image: '/images/trips/marruecos.jpg'
 category: 'Marruecos'
 tags:
   - Internacional
-  - Offroad
+  - Trail
   - Desierto
 date: '2026-04-12'
 publishedAt: '2026-04-12'
@@ -18,10 +18,13 @@ km: 2784
 map: '/images/trips/descubriendo-marruecos/mapa.jpg'
 
 tips:
-  - 'Fechas recomendadas para ir: marzo/abril y octubre/noviembre'
-  - 'El ferry cuanto mas temprano lo reserves, menos se retrasará'
+  - 'Fechas recomendadas para ir: marzo/abril y octubre/noviembre. A tener en cuenta que mayo a octubre, en la zona sur hace demasiado calor y de noviembre a febrero, el paso del Atlas se puede complicar por la nieve. Mi viaje lo hice en el mes de abril.'
+  - 'El ferry recomiendo reservarlo lo mas temprano posible, ya que es bastante probable que se retrase, en mi caso hice la ruta Algeciras -  Tanger Med, tanto a la ida como a la vuelta, supuestamente el trayecto dura hora y media, pero entre embarque (recomendado ir hora y media antes de la hora de salida del ferry), trayecto y desembarque se va bastante tiempo. Por tanto, también no planificar una ruta muy larga ese día para después del ferry.'
+  - 'Para el ferry hay varias compañías, en mi caso, fui con DFDS, compré los billetes a través de internet, tienen app para móvil y por whatsapp atienden muy bien (se canceló el ferry de vuelta y mediante mensajes escritos de whatsapp, pude cambiarlo para otro día)'
+  - 'No conducir de noche. El estado de las carreteras en varios lugares no es el mejor, con baches imprevisibles, objetos en mitad de las mismas (se pueden cruzar animales o personas donde menos te lo esperas) y no tienen muy buen alumbrado, aparte de los vehículos no siempre llevan las luces encendidas.'
   - 'Dinero en efectivo imprescindible, en muy pocos sitios se admite el pago con tarjeta, recomendado cambiar lo mínimo posible al cruzar la frontera para tener algo y mas adelante, ir sacando dinero en cajeros o cambiar en casas de cambio. Recomendado llevar tarjetas tipo WISE, REVOLUT, N26'
-  - 'Llevar internet mediante tarjeta eSIM o tarjeta SIM local, para no depender de internet de los alojamientos y tenerlo en ruta'
+  - 'Llevar internet mediante tarjeta eSIM o tarjeta SIM local (se pueden comprar nada mas pasar la aduana en el puerto), para no depender de internet de los alojamientos y tenerlo en ruta.'
+  - 'Un día de descanso en Merzouga es un gran complemento, para dedicarlo a las dunas de Erg Chebbi, en mi caso alquilé un buggy durante todo el día, pero también se puede hacer con quad, o con una moto de enduro. Si se desea un plan mas tranquilo, es muy habitual, el dormir en un campamento en las dunas, en una jaima con todas las comodidades. La ida se suele hacer en dromedario (muy propicio para hacerse fotos) a la tarde, para disfrutar de la noche en el desierto y la vuelta al día siguiente en 4x4. En mi caso preferí dormir en el mismo hotel dos noches en el mismo Merzouga y disfrutar del buggy.'
 
 itinerary:
   - day: 1
@@ -146,6 +149,10 @@ gallery:
     alt: 'Assilah'
 ---
 
-Una ruta pensada para descubrir Marruecos por primera vez, combinando ciudades, Atlas, gargantas, vadeos y desierto.
+Esta ruta está diseñada para recorrer los puntos mas importantes, huyendo de grandes ciudades y aglomeraciones, para descubrir el verdadero Marruecos, no el de los turistas.
+
+El viaje está diseñado para que sea 99% por carretera, las únicas partes offroad, es la visita al cedro Gouraud en el bosque de cedros (aunque se puede evitar en su totalidad prácticamente) y la visita a Gara Medouar, la cárcel portuguesa, aunque para mi personalmente es uno de los puntos fuertes del viaje.
+
+Esto no quita que de repente, pueda aparecer un desvío en la carretera al estar en obras y se acabe haciendo offroad, pero nada complicado.
 
 Es un recorrido completo, variado y muy recomendable si quieres tener una visión general del país viajando en moto.
