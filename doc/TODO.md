@@ -31,6 +31,7 @@
 - Ordenadas las secciones de la página de viaje.
 - Añadida galería dinámica mediante frontmatter en los viajes.
 - Añadida galería con miniaturas y navegación en grande.
+- Añadido soporte para enlaces Markdown externos en los consejos útiles de los viajes, con apertura en nueva pestaña y estilo integrado.
 
 ### Diseño, Header Y Navegación
 
