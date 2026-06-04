@@ -48,7 +48,7 @@ const travelDate = trip.data.date
           {trip.data.title}
         </h1>
 
-        <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-300">
+        <p class="mt-8 max-w-3xl text-justify text-xl leading-9 text-zinc-300">
           {trip.data.description}
         </p>
 
@@ -79,7 +79,7 @@ const travelDate = trip.data.date
   <section class="bg-black py-24 text-white">
     <div class="mx-auto max-w-7xl px-6">
       <article
-        class="prose prose-invert max-w-none prose-headings:font-display prose-headings:uppercase prose-h2:text-5xl prose-p:text-zinc-400 prose-p:leading-8 prose-li:text-zinc-400 prose-strong:text-white"
+        class="prose prose-invert max-w-none prose-headings:font-display prose-headings:uppercase prose-h2:text-5xl prose-p:text-justify prose-p:text-zinc-400 prose-p:leading-8 prose-li:text-zinc-400 prose-strong:text-white"
       >
         <Content />
 
@@ -175,7 +175,7 @@ const travelDate = trip.data.date
                 {trip.data.tips.map((tip) => (
                   <li class="flex items-start gap-4 text-zinc-400">
                     <span class="mt-3 h-2 w-2 shrink-0 rounded-full bg-red-600" />
-                    <span class="leading-8">{tip}</span>
+                    <span class="text-justify leading-8">{tip}</span>
                   </li>
                 ))}
               </ul>
