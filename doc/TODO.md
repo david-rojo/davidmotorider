@@ -8,6 +8,7 @@
 - Eliminadas páginas demo: `about`, `services`, `pricing`, `contact`, `homes`, `landing`.
 - Eliminado blog demo heredado: rutas `[...blog]`, contenido `src/data/post`, componentes `src/components/blog` y utilidades asociadas.
 - Eliminados widgets y componentes UI de AstroWind sin uso real en el proyecto.
+- Eliminada configuración demo heredada del footer que ya no se renderiza.
 - Conservada la sección `_escapadas` para futura reutilización.
 
 ### Contenido Y Funcionalidades
