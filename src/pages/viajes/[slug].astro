@@ -90,7 +90,7 @@ const renderTip = (tip: string) =>
     </div>
   </section>
 
-  <section class="bg-black py-24 text-white">
+  <section class="bg-black pb-24 pt-8 text-white">
     <div class="mx-auto max-w-7xl px-6">
       <article
         class="prose prose-invert max-w-none prose-headings:font-display prose-headings:uppercase prose-h2:text-5xl prose-p:text-justify prose-p:text-zinc-400 prose-p:leading-8 prose-li:text-zinc-400 prose-strong:text-white"
@@ -122,7 +122,19 @@ const renderTip = (tip: string) =>
 
               <div class="grid gap-6 md:grid-cols-2">
                 {trip.data.itinerary.map((day) => (
-                  <article class="overflow-hidden rounded-3xl border border-white/10 bg-zinc-950">
+                  <article
+                    class:list={[
+                      'group overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 transition duration-300',
+                      day.description &&
+                        'cursor-pointer hover:-translate-y-1 hover:border-red-600/70 hover:bg-zinc-900',
+                    ]}
+                    role={day.description ? 'button' : undefined}
+                    tabindex={day.description ? '0' : undefined}
+                    data-itinerary-item={day.description ? '' : undefined}
+                    data-itinerary-day={day.description ? day.day : undefined}
+                    data-itinerary-title={day.description ? day.title : undefined}
+                    data-itinerary-description={day.description}
+                  >
                     {day.image && (
                       <div class="relative h-52 overflow-hidden">
                         <img
@@ -130,7 +142,7 @@ const renderTip = (tip: string) =>
                           alt={day.title}
                           loading="lazy"
                           decoding="async"
-                          class="h-full w-full object-cover"
+                          class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                         />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                       </div>
@@ -149,27 +161,36 @@ const renderTip = (tip: string) =>
 
                       <h3 class="mt-5 font-display text-3xl uppercase leading-none text-white">{day.title}</h3>
 
-                      <div class="mt-6 flex flex-wrap gap-3">
-                        {day.wikiloc && (
-                          <a
-                            href={day.wikiloc}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="rounded-full border border-white/10 px-4 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
-                          >
-                            Wikiloc
-                          </a>
-                        )}
+                      <div class="mt-6 flex flex-wrap items-center gap-3">
+                        <div class="flex flex-wrap gap-3">
+                          {day.wikiloc && (
+                            <a
+                              href={day.wikiloc}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="rounded-full border border-white/10 px-4 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+                            >
+                              Wikiloc
+                            </a>
+                          )}
 
-                        {day.googleMaps && (
-                          <a
-                            href={day.googleMaps}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="rounded-full border border-white/10 px-4 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
-                          >
-                            Google Maps
-                          </a>
+                          {day.googleMaps && (
+                            <a
+                              href={day.googleMaps}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="rounded-full border border-white/10 px-4 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+                            >
+                              Google Maps
+                            </a>
+                          )}
+                        </div>
+
+                        {day.description && (
+                          <span class="ml-auto inline-flex items-center gap-2 font-display text-sm uppercase tracking-wide text-red-500 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+                            Ver día
+                            <span aria-hidden="true">→</span>
+                          </span>
                         )}
                       </div>
                     </div>
@@ -199,6 +220,34 @@ const renderTip = (tip: string) =>
             </div>
           ) : null
         }
+
+        <dialog
+          id="itinerary-dialog"
+          class="m-auto w-[92vw] max-w-3xl rounded-3xl border border-white/10 bg-black p-0 text-white backdrop:bg-black/80"
+        >
+          <div class="relative px-6 pb-8 pt-6 md:px-10 md:pb-10 md:pt-8">
+            <div class="flex items-center justify-between gap-4">
+              <p id="itinerary-dialog-day" class="font-display text-sm uppercase tracking-[0.3em] text-red-600"></p>
+
+              <button
+                id="itinerary-close"
+                type="button"
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-black/50 font-display text-2xl text-white backdrop-blur-sm transition hover:bg-red-600 md:h-14 md:w-14 md:text-4xl"
+                aria-label="Cerrar detalle del día"
+              >
+                ✕
+              </button>
+            </div>
+
+            <h3
+              id="itinerary-dialog-title"
+              class="mt-6 text-center font-display text-4xl uppercase leading-none text-white md:text-5xl"
+            >
+            </h3>
+
+            <p id="itinerary-dialog-description" class="mt-8 text-justify text-lg leading-8 text-zinc-300"></p>
+          </div>
+        </dialog>
 
         {
           trip.data.gallery?.length ? (
@@ -271,9 +320,48 @@ const renderTip = (tip: string) =>
     const closeButton = document.getElementById('gallery-close');
     const prevButton = document.getElementById('gallery-prev');
     const nextButton = document.getElementById('gallery-next');
+    const itineraryDialog = document.getElementById('itinerary-dialog');
+    const itineraryDay = document.getElementById('itinerary-dialog-day');
+    const itineraryTitle = document.getElementById('itinerary-dialog-title');
+    const itineraryDescription = document.getElementById('itinerary-dialog-description');
+    const itineraryCloseButton = document.getElementById('itinerary-close');
 
     const galleryButtons = Array.from(document.querySelectorAll('[data-gallery-image]'));
+    const itineraryItems = Array.from(document.querySelectorAll('[data-itinerary-item]'));
     let currentIndex = 0;
+
+    const showItineraryDay = (item) => {
+      if (!(itineraryDialog instanceof HTMLDialogElement)) return;
+
+      if (itineraryDay) itineraryDay.textContent = `Día ${item.dataset.itineraryDay ?? ''}`;
+      if (itineraryTitle) itineraryTitle.textContent = item.dataset.itineraryTitle ?? '';
+      if (itineraryDescription) itineraryDescription.textContent = item.dataset.itineraryDescription ?? '';
+
+      itineraryDialog.showModal();
+    };
+
+    itineraryItems.forEach((item) => {
+      item.addEventListener('click', (event) => {
+        if (event.target instanceof Element && event.target.closest('a')) return;
+        showItineraryDay(item);
+      });
+
+      item.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        showItineraryDay(item);
+      });
+    });
+
+    itineraryCloseButton?.addEventListener('click', () => {
+      if (itineraryDialog instanceof HTMLDialogElement) itineraryDialog.close();
+    });
+
+    itineraryDialog?.addEventListener('click', (event) => {
+      if (event.target === itineraryDialog && itineraryDialog instanceof HTMLDialogElement) {
+        itineraryDialog.close();
+      }
+    });
 
     const showImage = (index) => {
       const button = galleryButtons[index];

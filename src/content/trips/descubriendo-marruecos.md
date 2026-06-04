@@ -30,6 +30,7 @@ tips:
 itinerary:
   - day: 1
     title: 'Tanger Med - Chefchaouen'
+    description: 'Primera toma de contacto con Marruecos tras cruzar el Estrecho. La etapa es corta para absorber posibles retrasos del ferry, completar los trámites de entrada con calma y llegar a Chefchaouen sin apurar la luz del día.'
     km: 112
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-01.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-1-12-onroad-tanger-med-chefchaouen-261540527'

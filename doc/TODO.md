@@ -32,6 +32,8 @@
 - Añadida galería dinámica mediante frontmatter en los viajes.
 - Añadida galería con miniaturas y navegación en grande.
 - Añadido soporte para enlaces Markdown externos en los consejos útiles de los viajes, con apertura en nueva pestaña y estilo integrado.
+- Añadido soporte para enlaces Markdown internos en los consejos útiles de los viajes usando `BASE_URL`, compatible con GitHub Pages y futuro dominio propio.
+- Añadido popup de detalle para días del itinerario con tarjetas clicables, CTA `Ver día`, título centrado y descripción justificada.
 
 ### Diseño, Header Y Navegación
 
