@@ -22,7 +22,7 @@ const tripsCollection = defineCollection({
         z.object({
           day: z.number(),
           title: z.string(),
-          description: z.string().optional(),
+          description: z.union([z.string(), z.array(z.string())]).optional(),
           km: z.number(),
           image: z.string().optional(),
           wikiloc: z.string().url().optional(),

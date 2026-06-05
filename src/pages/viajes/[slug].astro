@@ -39,6 +39,9 @@ const renderTip = (tip: string) =>
     .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_match, text, href) => {
       return `<a href="${getInternalUrl(href)}">${text}</a>`;
     });
+
+const getItineraryDescription = (description: string | string[] | undefined) =>
+  description ? JSON.stringify(Array.isArray(description) ? description : [description]) : undefined;
 ---
 
 <Layout metadata={metadata}>
@@ -133,7 +136,7 @@ const renderTip = (tip: string) =>
                     data-itinerary-item={day.description ? '' : undefined}
                     data-itinerary-day={day.description ? day.day : undefined}
                     data-itinerary-title={day.description ? day.title : undefined}
-                    data-itinerary-description={day.description}
+                    data-itinerary-description={getItineraryDescription(day.description)}
                   >
                     {day.image && (
                       <div class="relative h-52 overflow-hidden">
@@ -245,7 +248,8 @@ const renderTip = (tip: string) =>
             >
             </h3>
 
-            <p id="itinerary-dialog-description" class="mt-8 text-justify text-lg leading-8 text-zinc-300"></p>
+            <div id="itinerary-dialog-description" class="mt-8 space-y-5 text-justify text-lg leading-8 text-zinc-300">
+            </div>
           </div>
         </dialog>
 
@@ -335,7 +339,16 @@ const renderTip = (tip: string) =>
 
       if (itineraryDay) itineraryDay.textContent = `Día ${item.dataset.itineraryDay ?? ''}`;
       if (itineraryTitle) itineraryTitle.textContent = item.dataset.itineraryTitle ?? '';
-      if (itineraryDescription) itineraryDescription.textContent = item.dataset.itineraryDescription ?? '';
+      if (itineraryDescription) {
+        itineraryDescription.textContent = '';
+
+        const paragraphs = JSON.parse(item.dataset.itineraryDescription ?? '[]');
+        paragraphs.forEach((paragraph) => {
+          const element = document.createElement('p');
+          element.textContent = paragraph;
+          itineraryDescription.appendChild(element);
+        });
+      }
 
       itineraryDialog.showModal();
     };

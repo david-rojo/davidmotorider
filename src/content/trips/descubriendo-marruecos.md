@@ -30,7 +30,9 @@ tips:
 itinerary:
   - day: 1
     title: 'Tanger Med - Chefchaouen'
-    description: 'Primera toma de contacto con Marruecos tras cruzar el Estrecho. La etapa es corta para absorber posibles retrasos del ferry, completar los trámites de entrada con calma y llegar a Chefchaouen sin apurar la luz del día.'
+    description:
+      - 'Primera toma de contacto con Marruecos tras cruzar el Estrecho. La etapa es corta para absorber posibles retrasos del ferry, completar los trámites de entrada con calma y abandonar el puerto de Tanger Med sin tener que mirar el reloj.'
+      - 'El camino hacia Chefchaouen empieza a romper el tópico del Marruecos puramente desértico: la R301 y la N2 atraviesan zonas muy verdes, presas y carreteras tranquilas hasta llegar a la ciudad azul, idealmente con luz suficiente para perderse por su centro y cenar en los alrededores de la plaza de Outa el Hammam.'
     km: 112
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-01.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-1-12-onroad-tanger-med-chefchaouen-261540527'
