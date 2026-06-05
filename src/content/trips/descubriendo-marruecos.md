@@ -31,8 +31,8 @@ itinerary:
   - day: 1
     title: 'Tanger Med - Chefchaouen'
     description:
-      - 'Primera toma de contacto con Marruecos tras cruzar el Estrecho. La etapa es corta para absorber posibles retrasos del ferry, completar los trámites de entrada con calma y abandonar el puerto de Tanger Med sin tener que mirar el reloj.'
-      - 'El camino hacia Chefchaouen empieza a romper el tópico del Marruecos puramente desértico: la R301 y la N2 atraviesan zonas muy verdes, presas y carreteras tranquilas hasta llegar a la ciudad azul, idealmente con luz suficiente para perderse por su centro y cenar en los alrededores de la plaza de Outa el Hammam.'
+      - 'Primera toma de contacto con Marruecos tras cruzar el Estrecho. La etapa es corta para absorber posibles retrasos del ferry, completar los trámites de entrada con calma y abandonar el puerto de **Tanger Med** sin tener que mirar el reloj.'
+      - 'El camino hacia **Chefchaouen** empieza a romper el tópico del Marruecos puramente desértico: la **R301** y la **N2** atraviesan zonas muy verdes, presas y carreteras tranquilas hasta llegar a la ciudad azul, idealmente con luz suficiente para perderse por su centro y cenar en los alrededores de la **plaza de Outa el Hammam**.'
     km: 112
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-01.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-1-12-onroad-tanger-med-chefchaouen-261540527'
@@ -40,6 +40,9 @@ itinerary:
 
   - day: 2
     title: 'Chefchaouen - Ifrane - Azrou'
+    description:
+      - 'El viaje continúa hacia el sur atravesando algunas de las zonas más verdes y montañosas del norte de Marruecos. El recorrido ofrece buenas vistas sobre el **Embalse de Al Wahda** y alterna carreteras secundarias con pistas sencillas, debido a las obras que están realizando en la carretera y que añaden variedad a una jornada marcada por los cambios de paisajes.'
+      - 'Conforme se gana altitud, aparecen los bosques de cedros del Medio Atlas hasta llegar a **Ifrane**, conocida como la Suiza marroquí por su arquitectura, su clima y su aspecto, únicos en el país. Una parada junto al emblemático **León de Ifrane** marca el tramo final de la etapa antes de terminar la jornada en los alrededores de **Azrou**.'
     km: 301
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-02.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-2-12-onroad-chefchaouen-azrou-261558530'
@@ -47,6 +50,9 @@ itinerary:
 
   - day: 3
     title: 'Azrou - Bosque de Cedros - Bin el Ouidane'
+    description:
+      - 'La jornada comienza atravesando los bosques de cedros del Medio Atlas, con una parada en el histórico **Cedro Gouraud**, de 40 metros de altura y más de 800 años de antigüedad. Considerado durante décadas uno de los símbolos naturales de la región, es también un punto habitual de encuentro con los macacos de Berbería que habitan estas montañas.'
+      - 'La ruta continúa hacia el sur dejando atrás las zonas boscosas para adentrarse en paisajes cada vez más abiertos. Tras **Beni Mellal**, la carretera **P311** ofrece algunas de las mejores vistas de la jornada, con amplias panorámicas sobre las montañas y el valle. El día termina descendiendo hasta el **Embalse de Bin el Ouidane**, uno de los rincones más espectaculares del Atlas Medio.'
     km: 283
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-03.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-3-12-onroad-azrou-bin-el-ouidane-261564188'

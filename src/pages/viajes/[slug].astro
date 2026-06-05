@@ -248,7 +248,10 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
             >
             </h3>
 
-            <div id="itinerary-dialog-description" class="mt-8 space-y-5 text-justify text-lg leading-8 text-zinc-300">
+            <div
+              id="itinerary-dialog-description"
+              class="mt-8 space-y-5 text-justify text-lg leading-8 text-zinc-300 [&_a]:font-semibold [&_a]:text-white [&_a]:underline [&_a]:decoration-white/50 [&_a]:underline-offset-4 [&_a]:transition hover:[&_a]:text-red-500 hover:[&_a]:decoration-red-600/70 [&_strong]:font-semibold [&_strong]:text-white"
+            >
             </div>
           </div>
         </dialog>
@@ -334,6 +337,23 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
     const itineraryItems = Array.from(document.querySelectorAll('[data-itinerary-item]'));
     let currentIndex = 0;
 
+    const escapeHtml = (value) =>
+      value
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+    const renderItineraryMarkdown = (value) =>
+      escapeHtml(value)
+        .replace(
+          /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+          '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+        )
+        .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, '<a href="$2">$1</a>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
     const showItineraryDay = (item) => {
       if (!(itineraryDialog instanceof HTMLDialogElement)) return;
 
@@ -345,7 +365,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
         const paragraphs = JSON.parse(item.dataset.itineraryDescription ?? '[]');
         paragraphs.forEach((paragraph) => {
           const element = document.createElement('p');
-          element.textContent = paragraph;
+          element.innerHTML = renderItineraryMarkdown(paragraph);
           itineraryDescription.appendChild(element);
         });
       }
