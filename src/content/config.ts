@@ -2,7 +2,7 @@ import { z, defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const tripsCollection = defineCollection({
-  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/trips' }),
+  loader: glob({ pattern: '*.{md,mdx}', base: 'src/content/trips' }),
   schema: z.object({
     title: z.string(),
     status: z.enum(['draft', 'published']).default('draft'),
@@ -43,7 +43,7 @@ const tripsCollection = defineCollection({
 });
 
 const resourcesCollection = defineCollection({
-  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/resources' }),
+  loader: glob({ pattern: '*.{md,mdx}', base: 'src/content/resources' }),
   schema: z.object({
     title: z.string(),
     slug: z.string(),
