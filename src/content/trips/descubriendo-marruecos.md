@@ -24,8 +24,8 @@ tips:
   - 'No conducir de noche. El estado de las carreteras en varios lugares no es el mejor, con baches imprevisibles, objetos en mitad de las mismas (se pueden cruzar animales o personas donde menos te lo esperas) y no tienen muy buen alumbrado, aparte de los vehículos no siempre llevan las luces encendidas.'
   - 'Antes de cruzar a Marruecos revisa bien la [documentación para viajar fuera de Europa](/recursos/documentacion-fuera-europa): carta verde, permiso internacional de conducción, permiso de circulación, ITV, seguro de viaje y requisitos actualizados.'
   - 'Dinero en efectivo imprescindible, en muy pocos sitios se admite el pago con tarjeta, recomendado cambiar lo mínimo posible al cruzar la frontera para tener algo y mas adelante, ir sacando dinero en cajeros o cambiar en casas de cambio. Recomendado llevar tarjetas tipo [WISE](https://wise.com/es/?lang=es), REVOLUT, N26'
-  - 'Llevar internet mediante tarjeta eSIM o tarjeta SIM local (se pueden comprar nada mas pasar la aduana en el puerto), para no depender de internet de los alojamientos y tenerlo en ruta.'
-  - 'Un día de descanso en Merzouga es un gran complemento, para dedicarlo a las dunas de Erg Chebbi, en mi caso alquilé un buggy con [Sahara Buggy](https://saharabuggy.com/) durante todo el día, pero también se puede hacer con quad, o con una moto de enduro. Si se desea un plan mas tranquilo, es muy habitual, el dormir en un campamento en las dunas, en una jaima con todas las comodidades. La ida se suele hacer en dromedario (muy propicio para hacerse fotos) a la tarde, para disfrutar de la noche en el desierto y la vuelta al día siguiente en 4x4. En mi caso preferí dormir en el mismo hotel dos noches en el mismo Merzouga y disfrutar del buggy.'
+  - 'Llevar internet mediante tarjeta eSIM o tarjeta SIM local (se pueden comprar nada mas pasar la aduana en el puerto), para no depender de internet de los alojamientos y tenerlo en ruta. En mi caso, fui con la eSIM de [Holafly](https://esim.holafly.com/es/) por primera vez y muy bien, repetiré'
+  - 'Un día de descanso en Merzouga es un gran complemento, para dedicarlo a las dunas de Erg Chebbi, yo alquilé un buggy con [Sahara Buggy](https://saharabuggy.com/), también se puede hacer con quad, o con una moto de enduro. Si se desea un plan mas tranquilo, es muy habitual, el dormir en un campamento en las dunas, en una jaima con todas las comodidades. La ida se suele hacer en dromedario (muy propicio para hacerse fotos) a la tarde, para disfrutar de la noche en el desierto y la vuelta al día siguiente en 4x4. En mi caso preferí dormir en el mismo hotel dos noches en el mismo Merzouga y disfrutar del buggy.'
 
 itinerary:
   - day: 1
@@ -111,6 +111,10 @@ itinerary:
 
   - day: 9
     title: 'Merzouga - Valle del Ziz - Midelt'
+    description:
+      - 'Tras dejar atrás las dunas de **Merzouga**, la ruta pone rumbo al norte siguiendo el curso del **río Ziz**, uno de los más importantes del sur de Marruecos. Nacido en las montañas del Atlas, sus aguas recorren oasis, gargantas y palmerales antes de desaparecer progresivamente en el Sáhara.'
+      - 'A medida que avanza la jornada, la carretera se adentra en el espectacular **Valle del Ziz**, uno de los mayores oasis de Marruecos. Durante decenas de kilómetros, el recorrido discurre junto a extensos palmerales y pequeñas poblaciones que contrastan con la aridez del entorno, ofreciendo algunos de los paisajes más característicos del sur marroquí.'
+      - 'La ruta continúa ganando altitud de forma gradual hasta llegar a **Midelt**, donde las montañas vuelven a dominar el horizonte y anuncian el regreso al Atlas.'
     km: 257
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-09.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-9-12-onroad-merzouga-midelt-261960334'
@@ -118,6 +122,9 @@ itinerary:
 
   - day: 10
     title: 'Midelt - Walili'
+    description:
+      - 'La ruta abandona **Midelt** para dirigirse hacia el norte atravesando las montañas y bosques del Medio Atlas. El recorrido pasa por los alrededores de **Azrou** e **Ifrane**, dejando atrás los paisajes áridos de los días anteriores para regresar a una de las regiones más verdes de Marruecos.'
+      - 'Tras pasar por **Meknés**, una de las ciudades imperiales del país, la etapa finaliza en **Walili (Volubilis)**, el conjunto arqueológico romano mejor conservado de Marruecos, donde las ruinas se integran en un entorno de olivares y campos cultivados muy diferente al de las etapas anteriores.'
     km: 221
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-10.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-10-12-onroad-midelt-walili-261991179'
@@ -125,6 +132,9 @@ itinerary:
 
   - day: 11
     title: 'Walili - Assilah'
+    description:
+      - 'Desde **Walili**, el recorrido pone rumbo al norte atravesando las colinas y zonas agrícolas del Rif occidental. Tras pasar por los alrededores de **Ouezzane**, la carretera continúa en dirección a la costa atlántica, dejando atrás los paisajes de montaña y el interior de Marruecos que han acompañado buena parte del viaje.'
+      - 'La etapa finaliza en **Assilah**, una de las ciudades más agradables de la costa atlántica marroquí. Su medina amurallada, las casas blancas decoradas con murales y su ubicación junto al océano le confieren una personalidad muy diferente a la de las ciudades visitadas durante los días anteriores.'
     km: 217
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-11.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-11-12-onroad-walili-assilah-261995037'
@@ -132,6 +142,9 @@ itinerary:
 
   - day: 12
     title: 'Assilah - Tanger Med'
+    description:
+      - 'La ruta abandona la costa de **Assilah** para dirigirse hacia **Tanger Med**, recorriendo los últimos kilómetros por territorio marroquí antes del embarque. Se trata de una etapa corta y sencilla, ideal para afrontar con margen los trámites del ferry y disfrutar sin prisas del recorrido junto al Atlántico.'
+      - 'La llegada al puerto marca el final de una ruta que ha atravesado montañas, oasis, gargantas, palmerales y desiertos, mostrando algunas de las caras más sorprendentes de Marruecos. Tras los trámites de embarque, solo queda cruzar de nuevo el Estrecho y comenzar el viaje de vuelta a casa.'
     km: 108
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-12.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-11-12-onroad-assilah-tanger-med-261997630'
@@ -175,10 +188,12 @@ gallery:
     alt: 'Assilah'
 ---
 
-Esta ruta está diseñada para recorrer los puntos mas importantes, huyendo de grandes ciudades y aglomeraciones, para descubrir el verdadero Marruecos, no el de los turistas.
+Esta ruta recorre algunos de los lugares más emblemáticos de Marruecos, priorizando carreteras secundarias y zonas poco masificadas para descubrir una cara más auténtica del país, lejos de las grandes ciudades y de los itinerarios más habituales.
 
-El viaje está diseñado para que sea 99% por carretera, las únicas partes offroad, es la visita al cedro Gouraud en el bosque de cedros (aunque se puede evitar en su totalidad prácticamente) y la visita a Gara Medouar, la cárcel portuguesa, aunque para mi personalmente es uno de los puntos fuertes del viaje.
+El recorrido es prácticamente íntegro por asfalto. Los únicos tramos offroad corresponden al acceso al **Cedro Gouraud**, en el bosque de cedros del Medio Atlas — fácilmente evitable si se desea — y la visita a **Gara Medouar**, la conocida Cárcel Portuguesa, uno de los lugares más sorprendentes de todo el viaje.
 
-Esto no quita que de repente, pueda aparecer un desvío en la carretera al estar en obras y se acabe haciendo offroad, pero nada complicado.
+Como ocurre en cualquier ruta por Marruecos, es posible encontrar obras, desvíos o pequeños cambios en el estado de las carreteras que obliguen a recorrer algún tramo sin asfaltar. En cualquier caso, no se trata de una ruta pensada para la conducción offroad ni requiere experiencia específica fuera del asfalto.
 
-Es un recorrido completo, variado y muy recomendable si quieres tener una visión general del país viajando en moto.
+El resultado es un recorrido variado que combina montañas, gargantas, oasis, palmerales, desiertos y costa atlántica, ofreciendo una visión muy completa de Marruecos para quienes desean descubrir el país viajando en moto.
+
+Si tuviera que recomendar una única ruta para una primera toma de contacto con Marruecos en moto, probablemente sería esta.
