@@ -250,7 +250,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
 
             <div
               id="itinerary-dialog-description"
-              class="mt-8 space-y-5 text-justify text-lg leading-8 text-zinc-300 [&_a]:font-semibold [&_a]:text-white [&_a]:underline [&_a]:decoration-white/50 [&_a]:underline-offset-4 [&_a]:transition hover:[&_a]:text-red-500 hover:[&_a]:decoration-red-600/70 [&_strong]:font-semibold [&_strong]:text-white"
+              class="mt-8 space-y-5 text-justify text-lg leading-8 text-zinc-300 [&_a]:font-semibold [&_a]:text-white [&_a]:underline [&_a]:decoration-white/50 [&_a]:underline-offset-4 [&_a]:transition hover:[&_a]:text-red-500 hover:[&_a]:decoration-red-600/70 [&_em]:italic [&_em]:text-zinc-200 [&_strong]:font-semibold [&_strong]:text-white"
             >
             </div>
           </div>
@@ -352,7 +352,8 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
           '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
         )
         .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, '<a href="$2">$1</a>')
-        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/(^|[^_])_([^_]+)_(?!_)/g, '$1<em>$2</em>');
 
     const showItineraryDay = (item) => {
       if (!(itineraryDialog instanceof HTMLDialogElement)) return;
