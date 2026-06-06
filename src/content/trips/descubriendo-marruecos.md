@@ -62,7 +62,7 @@ itinerary:
     title: "Bin el Ouidane - Tizi n'Tichka - Ait Ben Haddou"
     description:
       - 'La jornada arranca junto al **Embalse de Bin el Ouidane** y avanza hacia el sur por carreteras cada vez más montañosas. En el tramo entre **Silate** y la **N9** aparecen varios vadeos sobre asfalto que, en condiciones normales, no presentan dificultad, aunque tras lluvias intensas pueden dejar barro y complicar ligeramente el recorrido.'
-      - "La ruta continúa ascendiendo hasta el **Tizi n'Tichka** (2260 m), el puerto de montaña más famoso de Marruecos y principal puerta de entrada al Alto Atlas. Tras coronarlo, un desvío por el **Valle de Ounila** permite abandonar la carretera principal para adentrarse en un paisaje de kasbahs, pueblos de adobe y oasis que marca la transición entre las montañas del Atlas y el sur marroquí. La etapa finaliza en **Ait Ben Haddou**, uno de los ksares mejor conservados del país y escenario de numerosas producciones cinematográficas y televisivas, entre ellas _Gladiator_, _La Momia_ o _Juego de Tronos_."
+      - "La ruta continúa ascendiendo hasta el **Tizi n'Tichka** (2.260 m), el puerto de montaña más famoso de Marruecos y principal puerta de entrada al Alto Atlas. Tras coronarlo, un desvío por el **Valle de Ounila** permite abandonar la carretera principal para adentrarse en un paisaje de kasbahs, pueblos de adobe y oasis que marca la transición entre las montañas del Atlas y el sur marroquí. La etapa finaliza en **Ait Ben Haddou**, uno de los ksares mejor conservados del país y escenario de numerosas producciones cinematográficas y televisivas, entre ellas _Gladiator_, _La Momia_ o _Juego de Tronos_."
     km: 280
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-04.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-4-12-onroad-bin-el-ouidane-ait-ben-haddou-261689182'
@@ -81,7 +81,7 @@ itinerary:
   - day: 6
     title: "Zagora - Tizi n'Tazazert - Tinerhir"
     description:
-      - "La jornada deja atrás **Zagora** y se dirige hacia **Nkob**, donde el paisaje comienza a transformarse a medida que la ruta se acerca de nuevo a las montañas del Atlas. A partir de aquí, la carretera gana altitud progresivamente hasta alcanzar el **Tizi n'Tazazert** (2300 m), uno de los puertos más espectaculares y menos transitados del viaje."
+      - "La jornada deja atrás **Zagora** y se dirige hacia **Nkob**, donde el paisaje comienza a transformarse a medida que la ruta se acerca de nuevo a las montañas del Atlas. A partir de aquí, la carretera gana altitud progresivamente hasta alcanzar el **Tizi n'Tazazert** (2.300 m), uno de los puertos más espectaculares y menos transitados del viaje."
       - 'Tras coronar el puerto, la ruta desciende entre amplios paisajes de montaña y pequeños pueblos bereberes hasta llegar a **Tinerhir**, donde finaliza una etapa marcada por los cambios de paisaje y las carreteras solitarias.'
     km: 206
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-06.jpg'
