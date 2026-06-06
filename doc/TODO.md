@@ -35,6 +35,7 @@
 - Añadido soporte para enlaces Markdown externos en los consejos útiles de los viajes, con apertura en nueva pestaña y estilo integrado.
 - Añadido soporte para enlaces Markdown internos en los consejos útiles de los viajes usando `BASE_URL`, compatible con GitHub Pages y futuro dominio propio.
 - Añadido popup de detalle para días del itinerario con tarjetas clicables, CTA `Ver día`, título centrado y descripción justificada.
+- Añadido soporte Markdown básico en descripciones del itinerario: negrita, cursiva, enlaces externos e internos compatibles con GitHub Pages/dominio propio, evitando que los guiones bajos en URLs rompan el renderizado.
 
 ### Diseño, Header Y Navegación
 
