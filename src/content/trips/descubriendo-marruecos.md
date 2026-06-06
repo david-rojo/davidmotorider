@@ -59,14 +59,20 @@ itinerary:
     googleMaps: 'https://maps.app.goo.gl/nJ5ASGmu9sRDs5WZ7'
 
   - day: 4
-    title: "Bin el Ouidane - Tizi n'Tichka - Ait Ben Haddu"
+    title: "Bin el Ouidane - Tizi n'Tichka - Ait Ben Haddou"
+    description:
+      - 'La jornada arranca junto al **Embalse de Bin el Ouidane** y avanza hacia el sur por carreteras cada vez más montañosas. En el tramo entre **Silate** y la **N9** aparecen varios vadeos sobre asfalto que, en condiciones normales, no presentan dificultad, aunque tras lluvias intensas pueden dejar barro y complicar ligeramente el recorrido.'
+      - "La ruta continúa ascendiendo hasta el **Tizi n'Tichka** (2260 m), el puerto de montaña más famoso de Marruecos y principal puerta de entrada al Alto Atlas. Tras coronarlo, un desvío por el **Valle de Ounila** permite abandonar la carretera principal para adentrarse en un paisaje de kasbahs, pueblos de adobe y oasis que marca la transición entre las montañas del Atlas y el sur marroquí. La etapa finaliza en **Ait Ben Haddou**, uno de los ksares mejor conservados del país y escenario de numerosas producciones cinematográficas y televisivas, entre ellas _Gladiator_, _La Momia_ o _Juego de Tronos_."
     km: 280
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-04.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-4-12-onroad-bin-el-ouidane-ait-ben-haddou-261689182'
     googleMaps: 'https://maps.app.goo.gl/Vfweb1saYwGbeVPj9'
 
   - day: 5
-    title: 'Ait Ben Haddu - Valle del Draa - Zagora'
+    title: 'Ait Ben Haddou - Valle del Draa - Zagora'
+    description:
+      - 'La jornada comienza dejando atrás **Ait Ben Haddou** y pone rumbo a **Ouarzazate**, considerada la puerta del desierto. Tras bordear la ciudad, la ruta se dirige hacia **Agdz** para adentrarse en el **Valle del Draa**, uno de los paisajes más característicos del sur de Marruecos.'
+      - 'A partir de aquí, la carretera discurre junto a un extenso palmeral salpicado de kasbahs y pequeños pueblos de adobe que acompañan el curso del **río Draa**. Este paisaje acompañará gran parte de la jornada hasta la llegada a **Zagora**, histórica ciudad caravanera y uno de los últimos grandes núcleos urbanos antes del Sáhara.'
     km: 188
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-05.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-5-12-onroad-ait-ben-haddou-zagora-261692154'
@@ -74,6 +80,9 @@ itinerary:
 
   - day: 6
     title: "Zagora - Tizi n'Tazazert - Tinerhir"
+    description:
+      - "La jornada deja atrás **Zagora** y se dirige hacia **Nkob**, donde el paisaje comienza a transformarse a medida que la ruta se acerca de nuevo a las montañas del Atlas. A partir de aquí, la carretera gana altitud progresivamente hasta alcanzar el **Tizi n'Tazazert** (2300 m), uno de los puertos más espectaculares y menos transitados del viaje."
+      - 'Tras coronar el puerto, la ruta desciende entre amplios paisajes de montaña y pequeños pueblos bereberes hasta llegar a **Tinerhir**, donde finaliza una etapa marcada por los cambios de paisaje y las carreteras solitarias.'
     km: 206
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-06.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-6-12-onroad-zagora-tinerhir-261703906'
@@ -81,6 +90,9 @@ itinerary:
 
   - day: 7
     title: 'Tinerhir - Todra - Dades - Tinerhir'
+    description:
+      - 'El día arranca remontando las impresionantes **Gargantas del Todra**, uno de los accidentes geográficos más conocidos de Marruecos. Tras dejar atrás sus paredes verticales, la ruta continúa junto al **Embalse de Todra** para adentrarse en zonas cada vez más remotas y montañosas.'
+      - 'La carretera gana altitud progresivamente hasta alcanzar el **Tizi Tigherrhouzine** (2.645 m), uno de los puntos más elevados de todo el recorrido. Desde allí, la ruta desciende hacia **Agoudal**, antes de tomar la carretera recientemente asfaltada que conecta con las **Gargantas del Dades**. El regreso a Tinerhir permite completar una de las jornadas más variadas del viaje, combinando puertos de montaña, altiplanos de altura y dos de los cañones más emblemáticos del Alto Atlas.'
     km: 263
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-07.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-7-12-onroad-tinerhir-tinerhir-ruta-de-las-gargantas-261708421'
@@ -88,6 +100,10 @@ itinerary:
 
   - day: 8
     title: 'Tinerhir - Cárcel Portuguesa - Merzouga'
+    description:
+      - 'La ruta vuelve a internarse en las **Gargantas del Todra** para tomar el desvío por las carreteras **P7103** y **P701** en dirección a **Goulmima**. Este tramo recorre cañones y paisajes muy poco transitados, con varios vadeos sobre asfalto que normalmente no presentan dificultad, aunque tras episodios de lluvia pueden llevar demasiada agua. En caso de duda, siempre es recomendable valorar la situación sobre el terreno y dar la vuelta si las condiciones no son adecuadas.'
+      - 'Tras pasar por **Erfoud**, la ruta se desvía hacia **Gara Medouar**, conocida popularmente como la _Cárcel Portuguesa_. Un corto tramo de pista desde la carretera permite alcanzarla y llegar a la parte superior de esta singular formación rocosa y disfrutar de amplias vistas sobre el entorno desértico. El lugar ha servido además como escenario para varias producciones cinematográficas, entre ellas _La Momia_ y _007: Spectre_. Si se tiene la oportunidad, merece la pena detenerse unos minutos para conversar con **Hassan** [@hassan_pajaros](https://www.instagram.com/hassan_pajaros/) y la gente de la zona. Su trato cercano y hospitalario contribuye a que la visita resulte especialmente agradable.'
+      - 'La etapa continúa hacia **Merzouga**, donde las primeras vistas de las dunas del Erg Chebbi anuncian la llegada al desierto. A medida que se aproxima el destino, las dunas comienzan a dominar el horizonte hasta acompañar los últimos kilómetros de la jornada.'
     km: 348
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-08.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-8-12-onroad-tinerhir-merzouga-261853862'
