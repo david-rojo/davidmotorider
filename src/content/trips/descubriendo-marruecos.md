@@ -154,8 +154,14 @@ gallery:
   - src: '/images/trips/descubriendo-marruecos/galeria/chefchaouen.jpg'
     alt: 'Calles de Chefchaouen, la ciudad azul'
 
+  - src: '/images/trips/descubriendo-marruecos/galeria/embalse-al-wahda.jpg'
+    alt: 'Embalse de Al Wahda'
+
   - src: '/images/trips/descubriendo-marruecos/galeria/cedro-gouraud.jpg'
     alt: 'Cedro Gouraud, 40 metros de alto y vivió durante unos 800 años'
+
+  - src: '/images/trips/descubriendo-marruecos/galeria/tizi-tichka.jpg'
+    alt: "Tizi n'Tichka"
 
   - src: '/images/trips/descubriendo-marruecos/galeria/te-marroqui.jpg'
     alt: 'Té marroquí'
@@ -165,6 +171,9 @@ gallery:
 
   - src: '/images/trips/descubriendo-marruecos/galeria/presa-todra.jpg'
     alt: 'Presa del Todra'
+
+  - src: '/images/trips/descubriendo-marruecos/galeria/r704.jpg'
+    alt: 'R704 entre Agoudal y Msemrir, pista recientemente asfaltada'
 
   - src: '/images/trips/descubriendo-marruecos/galeria/gargantas-dades.jpg'
     alt: 'Gargantas del Dades'
