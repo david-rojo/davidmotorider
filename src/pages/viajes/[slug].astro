@@ -33,12 +33,22 @@ const getInternalUrl = (href: string) => {
   return `${baseUrl}/${cleanHref}`;
 };
 
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
 const renderTip = (tip: string) =>
-  tip
+  escapeHtml(tip)
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
     .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_match, text, href) => {
       return `<a href="${getInternalUrl(href)}">${text}</a>`;
-    });
+    })
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[\s([{])_([^_\n]+)_(?=[\s.,;:!?)}\]]|$)/g, '$1<em>$2</em>');
 
 const getItineraryDescription = (description: string | string[] | undefined) =>
   description ? JSON.stringify(Array.isArray(description) ? description : [description]) : undefined;
@@ -214,7 +224,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
                   <li class="flex items-start gap-4 text-zinc-400">
                     <span class="mt-3 h-2 w-2 shrink-0 rounded-full bg-red-600" />
                     <span
-                      class="text-justify leading-8 [&_a]:font-semibold [&_a]:text-white [&_a]:underline [&_a]:decoration-white/50 [&_a]:underline-offset-4 [&_a]:transition hover:[&_a]:text-red-500 hover:[&_a]:decoration-red-600/70"
+                      class="text-justify leading-8 [&_a]:font-semibold [&_a]:text-white [&_a]:underline [&_a]:decoration-white/50 [&_a]:underline-offset-4 [&_a]:transition hover:[&_a]:text-red-500 hover:[&_a]:decoration-red-600/70 [&_em]:italic [&_em]:text-zinc-200 [&_strong]:font-semibold [&_strong]:text-white"
                       set:html={renderTip(tip)}
                     />
                   </li>
