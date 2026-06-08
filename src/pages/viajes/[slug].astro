@@ -14,9 +14,17 @@ export async function getStaticPaths() {
 const { trip } = Astro.props;
 const { Content } = await render(trip);
 
+const getDescriptionParagraphs = (description: string | string[]) =>
+  Array.isArray(description) ? description : [description];
+
+const getDescriptionText = (description: string | string[]) => getDescriptionParagraphs(description).join(' ');
+
+const descriptionParagraphs = getDescriptionParagraphs(trip.data.description);
+const descriptionText = getDescriptionText(trip.data.description);
+
 const metadata = {
   title: `${trip.data.title} | DavidMotoRider`,
-  description: trip.data.description,
+  description: descriptionText,
 };
 
 const travelDate = trip.data.date
@@ -75,9 +83,9 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
           {trip.data.title}
         </h1>
 
-        <p class="mt-8 max-w-3xl text-justify text-xl leading-9 text-zinc-300">
-          {trip.data.description}
-        </p>
+        <div class="mt-8 max-w-3xl space-y-5 text-xl leading-9 text-zinc-300">
+          {descriptionParagraphs.map((paragraph) => <p class="text-justify">{paragraph}</p>)}
+        </div>
 
         <div class="mt-10 flex flex-wrap items-center gap-4">
           <div

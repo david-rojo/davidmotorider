@@ -37,6 +37,8 @@
 - Añadido soporte Markdown básico en los consejos útiles de los viajes: negrita, cursiva, enlaces externos e internos compatibles con GitHub Pages/dominio propio, escapando HTML antes del renderizado.
 - Añadido popup de detalle para días del itinerario con tarjetas clicables, CTA `Ver día`, título centrado y descripción justificada.
 - Añadido soporte Markdown básico en descripciones del itinerario: negrita, cursiva, enlaces externos e internos compatibles con GitHub Pages/dominio propio, evitando que los guiones bajos en URLs rompan el renderizado.
+- Añadido soporte para descripción multipárrafo en viajes mediante `description` como texto o lista, renderizada como párrafos en la página detalle.
+- Eliminado `description` de `TripCard` al no mostrarse en las tarjetas de viajes.
 
 ### Diseño, Header Y Navegación
 

@@ -112,7 +112,6 @@ const aboutImage = `${import.meta.env.BASE_URL}/images/sobre-mi-card.jpg`;
           lastPublishedTrips.map((trip) => (
             <TripCard
               title={trip.data.title}
-              description={trip.data.description}
               image={`${import.meta.env.BASE_URL}${trip.data.image}`}
               category={trip.data.category}
               tags={trip.data.tags.join(' · ')}

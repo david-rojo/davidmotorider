@@ -7,7 +7,7 @@ const tripsCollection = defineCollection({
     title: z.string(),
     status: z.enum(['draft', 'published']).default('draft'),
     slug: z.string(),
-    description: z.string(),
+    description: z.union([z.string(), z.array(z.string())]),
     image: z.string(),
     category: z.string(),
     tags: z.array(z.string()),

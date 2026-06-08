@@ -55,7 +55,6 @@ const allTags = [...new Set(publishedTrips.flatMap((trip) => trip.data.tags))].s
             <div data-trip-card data-tags={trip.data.tags.join('|')}>
               <TripCard
                 title={trip.data.title}
-                description={trip.data.description}
                 image={`${import.meta.env.BASE_URL}${trip.data.image}`}
                 category={trip.data.category}
                 tags={trip.data.tags.join(' · ')}
