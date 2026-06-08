@@ -2,7 +2,8 @@
 title: 'Transpirenaica circular'
 status: 'published'
 slug: 'transpirenaica-circular'
-description: 'Del Cantábrico al Mediterráneo y vuelta, cruzando puertos, valles y algunos de los mejores paisajes del norte.'
+description:
+  - 'Más de 800 kilómetros separan el Cantábrico del Mediterráneo a través de la cordillera pirenaica. Esta ruta circular permite unir ambos mares y regresar posteriormente por otro camino, descubriendo algunos de los mejores paisajes y carreteras de Europa para viajar en moto.'
 image: '/images/trips/transpirenaica.jpg'
 category: 'Pirineos'
 tags:
@@ -141,4 +142,12 @@ gallery:
     alt: 'Foz de Arbayún'
 ---
 
-Aquí irá el contenido del viaje de la Transpirenaica
+Esta ruta recorre algunos de los lugares más emblemáticos de los Pirineos a través de España, Francia y Andorra, combinando grandes puertos de montaña, carreteras secundarias y algunos de los paisajes más espectaculares de la cordillera.
+
+El recorrido es íntegramente por asfalto y no presenta dificultades técnicas reseñables más allá de las propias de la conducción en montaña. Se trata de una ruta apta para cualquier moto de carretera o trail, siempre que se afronte con la prudencia necesaria en puertos de montaña, cambios meteorológicos y carreteras estrechas.
+
+La jornada dedicada al **Embalse de Llauset** no forma parte de la Transpirenaica propiamente dicha y puede omitirse sin afectar al recorrido principal entre el Cantábrico y el Mediterráneo. Sin embargo, por la singularidad de la carretera de acceso, el entorno de alta montaña y las vistas que ofrece, considero que merece plenamente la pena reservarle un día adicional y constituye uno de los puntos más especiales de todo el viaje.
+
+La ida hasta el Mediterráneo y el regreso por un itinerario diferente permiten descubrir dos vertientes muy distintas de los Pirineos. A lo largo del viaje se enlazan algunos de los puertos más legendarios de Europa, como **Aubisque, Tourmalet, Aspin, Envalira** o **Bonaigua**, junto a lugares tan singulares como el **Cañón de Añisclo**, los miradores de Andorra o la **Foz de Arbayún**.
+
+El resultado es un recorrido variado que combina alta montaña, bosques, valles glaciares, gargantas y carreteras reviradas, ofreciendo una visión muy completa de la cordillera pirenaica a ambos lados de la frontera.
