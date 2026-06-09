@@ -1,12 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import { withBase } from '~/utils/paths';
 
 const metadata = {
   title: 'Sobre mí | DavidMotoRider',
   description: 'Quién está detrás de DavidMotoRider y por qué comparto mis viajes en moto.',
 };
 
-const profileImage = `${import.meta.env.BASE_URL}/images/sobre-mi.jpg`;
+const profileImage = withBase('/images/sobre-mi.jpg');
 ---
 
 <Layout metadata={metadata}>

@@ -1,9 +1,9 @@
 ---
 import Logo from '~/components/Logo.astro';
 import { Icon } from 'astro-icon/components';
+import { withBase } from '~/utils/paths';
 
 const year = new Date().getFullYear();
-const base = import.meta.env.BASE_URL;
 ---
 
 <footer class="bg-black text-white">
@@ -42,7 +42,7 @@ const base = import.meta.env.BASE_URL;
           class="text-zinc-400 transition hover:text-red-500"
         >
           <img
-            src={`${base}/images/wikiloc.svg`}
+            src={withBase('/images/wikiloc.svg')}
             alt="Wikiloc"
             class="h-4 w-auto brightness-0 invert opacity-60 transition hover:opacity-100 hover:[filter:brightness(0)_saturate(100%)_invert(36%)_sepia(84%)_saturate(2477%)_hue-rotate(343deg)_brightness(92%)_contrast(94%)]"
           />
@@ -61,13 +61,13 @@ const base = import.meta.env.BASE_URL;
     <div class="md:justify-self-center">
       <h3 class="font-display text-xl uppercase tracking-wide text-red-600">Enlaces</h3>
       <ul class="mt-4 space-y-2 text-sm text-zinc-400">
-        <li><a href={`${base}/`} class="hover:text-white">Inicio</a></li>
-        <li><a href={`${base}/viajes`} class="hover:text-white">Viajes</a></li>
+        <li><a href={withBase()} class="hover:text-white">Inicio</a></li>
+        <li><a href={withBase('/viajes')} class="hover:text-white">Viajes</a></li>
         <!--disable escapadas -->
-        <!-- <li><a href={`${base}/escapadas`} class="hover:text-white">Escapadas</a></li> -->
-        <li><a href={`${base}/recursos`} class="hover:text-white">Recursos</a></li>
-        <li><a href={`${base}/donde-dormir`} class="hover:text-white">Dónde dormir</a></li>
-        <li><a href={`${base}/sobre-mi`} class="hover:text-white">Sobre mí</a></li>
+        <!-- <li><a href={withBase('/escapadas')} class="hover:text-white">Escapadas</a></li> -->
+        <li><a href={withBase('/recursos')} class="hover:text-white">Recursos</a></li>
+        <li><a href={withBase('/donde-dormir')} class="hover:text-white">Dónde dormir</a></li>
+        <li><a href={withBase('/sobre-mi')} class="hover:text-white">Sobre mí</a></li>
       </ul>
     </div>
 
@@ -94,7 +94,7 @@ const base = import.meta.env.BASE_URL;
             class="group flex items-center gap-2 hover:text-white"
           >
             <img
-              src={`${base}/images/wikiloc.svg`}
+              src={withBase('/images/wikiloc.svg')}
               alt="Wikiloc"
               class="h-4 w-auto brightness-0 invert opacity-60 transition group-hover:opacity-100"
             />
@@ -115,11 +115,11 @@ const base = import.meta.env.BASE_URL;
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-4 md:justify-start">
-        <a href={`${base}/aviso-legal`} class="transition hover:text-white"> Aviso legal </a>
+        <a href={withBase('/aviso-legal')} class="transition hover:text-white"> Aviso legal </a>
 
-        <a href={`${base}/privacidad`} class="transition hover:text-white"> Privacidad </a>
+        <a href={withBase('/privacidad')} class="transition hover:text-white"> Privacidad </a>
 
-        <a href={`${base}/cookies`} class="transition hover:text-white"> Cookies </a>
+        <a href={withBase('/cookies')} class="transition hover:text-white"> Cookies </a>
       </div>
 
       <p class="hidden md:block">Viajes reales, experiencias auténticas</p>
