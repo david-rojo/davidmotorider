@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
+import { withBase } from '~/utils/paths';
 
 export async function getStaticPaths() {
   const publishedTrips = (await getCollection('trips')).filter((trip) => trip.data.status === 'published');
@@ -34,12 +35,7 @@ const travelDate = trip.data.date
   })
   .toUpperCase();
 
-const getInternalUrl = (href: string) => {
-  const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-  const cleanHref = href.replace(/^\//, '');
-
-  return `${baseUrl}/${cleanHref}`;
-};
+const getInternalUrl = (href: string) => withBase(href);
 
 const escapeHtml = (value: string) =>
   value
@@ -64,11 +60,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
 
 <Layout metadata={metadata}>
   <section class="relative overflow-hidden bg-black text-white">
-    <img
-      src={`${import.meta.env.BASE_URL}${trip.data.image}`}
-      alt={trip.data.title}
-      class="absolute inset-0 h-full w-full object-cover"
-    />
+    <img src={withBase(trip.data.image)} alt={trip.data.title} class="absolute inset-0 h-full w-full object-cover" />
 
     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
@@ -124,7 +116,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
               <h2 class="font-display text-4xl uppercase leading-none text-white md:text-5xl">Mapa de la ruta</h2>
 
               <img
-                src={`${import.meta.env.BASE_URL}${trip.data.map}`}
+                src={withBase(trip.data.map)}
                 alt={`Mapa general de ${trip.data.title}`}
                 loading="lazy"
                 decoding="async"
@@ -159,7 +151,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
                     {day.image && (
                       <div class="relative h-52 overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}${day.image}`}
+                          src={withBase(day.image)}
                           alt={day.title}
                           loading="lazy"
                           decoding="async"
@@ -286,11 +278,11 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
                       type="button"
                       class="group block overflow-hidden rounded-2xl bg-transparent p-0"
                       data-gallery-image
-                      data-src={`${import.meta.env.BASE_URL}${image.src}`}
+                      data-src={withBase(image.src)}
                       data-alt={image.alt}
                     >
                       <img
-                        src={`${import.meta.env.BASE_URL}${image.src}`}
+                        src={withBase(image.src)}
                         alt={image.alt}
                         loading="lazy"
                         decoding="async"
@@ -338,7 +330,7 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
     </div>
   </section>
 
-  <script is:inline data-base-url={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+  <script is:inline data-base-url={withBase()}>
     const dialog = document.getElementById('gallery-dialog');
     const dialogImage = document.getElementById('gallery-dialog-image');
     const dialogCaption = document.getElementById('gallery-dialog-caption');
@@ -370,7 +362,10 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
           /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
           '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
         )
-        .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_match, text, href) => `<a href="${baseUrl}${href}">${text}</a>`)
+        .replace(/\[([^\]]+)\]\((\/[^)\s]+)\)/g, (_match, text, href) => {
+          const normalizedBaseUrl = baseUrl.replace(/\/$/, '');
+          return `<a href="${normalizedBaseUrl}${href}">${text}</a>`;
+        })
         .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
         .replace(/(^|[\s([{])_([^_\n]+)_(?=[\s.,;:!?)}\]]|$)/g, '$1<em>$2</em>');
 

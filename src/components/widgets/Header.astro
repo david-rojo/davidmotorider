@@ -5,6 +5,7 @@ import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Button from '~/components/ui/Button.astro';
 
 import { trimSlash } from '~/utils/permalinks';
+import { withBase as withBasePath } from '~/utils/paths';
 import type { CallToAction } from '~/types';
 
 interface Link {
@@ -40,9 +41,8 @@ const {
   position = 'center',
 } = Astro.props;
 
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const pathname = Astro.url.pathname;
-const pathWithoutBase = pathname.replace(base, '') || '/';
+const pathWithoutBase = pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
 
 const currentPath = `/${trimSlash(pathWithoutBase)}`;
 
@@ -53,11 +53,7 @@ const withBase = (href?: string) => {
     return href;
   }
 
-  if (href === '/') {
-    return base || '/';
-  }
-
-  return `${base}${href.startsWith('/') ? href : `/${href}`}`;
+  return withBasePath(href);
 };
 ---
 
@@ -171,7 +167,7 @@ const withBase = (href?: string) => {
             class="flex items-center"
           >
             <img
-              src={`${base}/images/wikiloc.svg`}
+              src={withBasePath('/images/wikiloc.svg')}
               alt="Wikiloc"
               class="h-4 w-auto brightness-0 invert transition hover:[filter:brightness(0)_saturate(100%)_invert(21%)_sepia(99%)_saturate(4184%)_hue-rotate(357deg)_brightness(96%)_contrast(103%)]"
             />

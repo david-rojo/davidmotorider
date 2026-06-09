@@ -271,20 +271,20 @@ Mejoras:
 
 6. Mejoras Específicas Para GitHub Pages
 
-Configuración actual:
+Configuración actual con dominio propio:
 
-- astro.config.ts:25: site: 'https://david-rojo.github.io'
-- astro.config.ts:26: base: '/davidmotorider'
-- src/config.yaml:3: site: 'https://david-rojo.github.io/davidmotorider'
-- src/config.yaml:4: base: '/davidmotorider'
+- astro.config.ts:25: site: 'https://davidmotorider.com'
+- astro.config.ts:26: base: '/'
+- src/config.yaml:3: site: 'https://davidmotorider.com'
+- src/config.yaml:4: base: '/'
 
-Esto funciona, pero hay riesgo de inconsistencia: Astro site no incluye base, mientras src/config.yaml sí lo incluye. Según Astro, site suele ser origen y base el subpath. AstroWind puede esperar SITE.site con base completa. Conviene unificar criterio y comprobar canonical final generado.
+La configuración ya no usa subruta de GitHub Pages. Conviene comprobar canonical y sitemap finales tras cada cambio de despliegue.
 
 Mejoras:
 
-- Validar que todos los canonical finales incluyen /davidmotorider.
-- Confirmar que sitemap-index.xml lista URLs con /davidmotorider.
-- Mantener base: '/davidmotorider' mientras sea repo project page.
+- Validar que todos los canonical finales usan https://davidmotorider.com.
+- Confirmar que sitemap-index.xml lista URLs bajo https://davidmotorider.com.
+- Mantener base: '/' mientras se use dominio propio.
 - Evitar rutas absolutas manuales; usar helpers consistentes.
 - No depender de netlify.toml ni vercel.json para GitHub Pages.
 - Eliminar o archivar configs de Netlify/Vercel si no se usan.
@@ -296,7 +296,7 @@ Mejoras:
 - Hay dos workflows que corren en main: deploy.yml y ci.yaml; puede duplicar builds.
 - ci.yaml prueba Node 18/20/22; útil pero costoso. El deploy usa lo que configure withastro/action.
 - Añadir npm ci explícito no es necesario con withastro/action, pero se puede controlar Node si se quiere reproducibilidad.
-- Revisar site si se migra a dominio propio.
+- Revisar DNS y GitHub Pages si se cambia de dominio propio.
 
 7. Código Muerto, Duplicado O Innecesario
 

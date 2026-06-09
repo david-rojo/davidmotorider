@@ -14,7 +14,7 @@
 - Comprar o configurar `davidmotorider.com`.
 - Configurar DNS para GitHub Pages.
 - Configurar dominio custom en GitHub Pages.
-- Actualizar `astro.config.ts`: cambiar `site` a `https://davidmotorider.com` y quitar `base: '/davidmotorider'`.
+- Actualizar `astro.config.ts`: mantener `site` en `https://davidmotorider.com` y `base: '/'`.
 - Revisar todas las rutas internas y assets tras quitar `base`.
 
 ## Prioridad 3: Analítica E Indexación

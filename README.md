@@ -9,7 +9,7 @@
 
 Web personal sobre viajes en moto trail, recursos y rutas desde Madrid.
 
-Sitio publicado: <https://david-rojo.github.io/davidmotorider/>
+Sitio publicado: <https://davidmotorider.com/>
 
 ## 🗺️ Sobre El Proyecto
 
@@ -97,14 +97,14 @@ Las decisiones de producto, contenido, diseño y publicación se revisan manualm
 
 ## 🚀 Despliegue
 
-El proyecto está configurado para GitHub Pages en `astro.config.ts`:
+El proyecto está configurado para GitHub Pages con dominio propio en `astro.config.ts`:
 
-- `site: https://david-rojo.github.io`.
-- `base: /davidmotorider`.
+- `site: https://davidmotorider.com`.
+- `base: /`.
 - `output: static`.
 
 La publicación se realiza mediante GitHub Actions al hacer push a `main`.
 
 ## 🔗 Nota Sobre Rutas
 
-Usar `import.meta.env.BASE_URL` o utilidades internas para rutas y assets, ya que el sitio se sirve bajo `/davidmotorider`.
+Usar `import.meta.env.BASE_URL` o utilidades internas para rutas y assets, manteniendo compatibilidad con la configuración de Astro.

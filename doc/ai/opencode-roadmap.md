@@ -113,7 +113,7 @@ Objetivo: eliminar riesgos evidentes de SEO, marca y accesibilidad sin tocar arq
 
 8. Revisar configuración GitHub Pages.
 
-- Confirmar canonical con /davidmotorider.
+- Confirmar canonical con https://davidmotorider.com.
 - Confirmar sitemap final.
 - Revisar site y base.
 

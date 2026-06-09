@@ -10,6 +10,7 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import { withBase } from '~/utils/paths';
 
 // Comment the line below to disable View Transitions
 //import { ClientRouter } from 'astro:transitions';
@@ -34,7 +35,7 @@ const { language, textDirection } = I18N;
     <SiteVerification />
     <Analytics />
 
-    <link rel="icon" href={`${import.meta.env.BASE_URL}/images/favicon.ico`} />
+    <link rel="icon" href={withBase('/images/favicon.ico')} />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet" />
 
     <!-- Comment the line below to disable View Transitions -->

@@ -10,8 +10,8 @@
 ## Stack y Deploy
 
 - Astro 5 + Tailwind CSS + TypeScript, con salida estática para GitHub Pages.
-- `astro.config.ts` fija `site: 'https://david-rojo.github.io'`, `base: '/davidmotorider'`, `output: 'static'` e i18n solo `es`.
-- Usar `import.meta.env.BASE_URL` o utilidades existentes para URLs internas/assets; no hardcodear `/` porque rompe GitHub Pages.
+- `astro.config.ts` fija `site: 'https://davidmotorider.com'`, `base: '/'`, `output: 'static'` e i18n solo `es`.
+- Usar `import.meta.env.BASE_URL` o utilidades existentes para URLs internas/assets; no hardcodear rutas si existe una utilidad del proyecto.
 - La configuración SEO/global vive en `src/config.yaml` y la consume la integración local `vendor/integration`.
 
 ## Comandos

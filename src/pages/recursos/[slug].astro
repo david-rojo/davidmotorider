@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '~/layouts/PageLayout.astro';
+import { withBase } from '~/utils/paths';
 
 export async function getStaticPaths() {
   const resources = (await getCollection('resources')).filter((resource) => resource.data.status === 'published');
@@ -36,7 +37,7 @@ const metadata = {
       {
         resource.data.image && (
           <img
-            src={`${import.meta.env.BASE_URL}${resource.data.image}`}
+            src={withBase(resource.data.image)}
             alt={resource.data.title}
             loading="lazy"
             decoding="async"
