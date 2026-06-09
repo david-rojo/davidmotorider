@@ -2,7 +2,8 @@
 title: 'Descubriendo Marruecos'
 status: 'published'
 slug: 'descubriendo-marruecos'
-description: 'Tan sólo 14 kilómetros separan Europa de África. Al otro lado del Estrecho de Gibraltar, Marruecos ofrece algunos de los mejores paisajes del norte de África: las montañas del Atlas, las dunas de Merzouga, valles y gargantas esculpidas por los ríos y carreteras espectaculares con escenarios que recuerdan a los míticos rallies africanos, convirtiéndose en uno de los destinos mas apasionantes para viajar en moto.'
+description:
+  - 'Tan sólo 14 kilómetros separan Europa de África. Al otro lado del Estrecho de Gibraltar, Marruecos ofrece algunos de los mejores paisajes del norte de África: las montañas del Atlas, las dunas de Merzouga, valles y gargantas esculpidas por los ríos y carreteras espectaculares con escenarios que recuerdan a los míticos rallies africanos, convirtiéndose en uno de los destinos mas apasionantes para viajar en moto.'
 image: '/images/trips/marruecos.jpg'
 category: 'Marruecos'
 tags:
@@ -205,4 +206,4 @@ Como ocurre en cualquier ruta por Marruecos, es posible encontrar obras, desvío
 
 El resultado es un recorrido variado que combina montañas, gargantas, oasis, palmerales, desiertos y costa atlántica, ofreciendo una visión muy completa de Marruecos para quienes desean descubrir el país viajando en moto.
 
-Si tuviera que recomendar una única ruta para una primera toma de contacto con Marruecos en moto, probablemente sería esta.
+Por la variedad de paisajes y regiones que atraviesa, esta ruta permite obtener una visión muy completa de Marruecos en un único viaje.
