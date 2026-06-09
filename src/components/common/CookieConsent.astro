@@ -1,0 +1,91 @@
+---
+import { ANALYTICS } from 'astrowind:config';
+import { withBase } from '~/utils/paths';
+
+const hasAnalytics = Boolean(ANALYTICS?.vendors?.googleAnalytics?.id);
+---
+
+{
+  hasAnalytics ? (
+    <div
+      id="cookie-consent"
+      class="fixed inset-x-0 bottom-0 z-50 hidden border-t border-white/10 bg-black/95 px-4 py-4 text-white shadow-2xl backdrop-blur-md md:px-6"
+      role="region"
+      aria-label="Preferencias de cookies"
+      data-cookie-consent
+    >
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div class="max-w-3xl">
+          <p class="font-display text-xl uppercase tracking-wide text-white">Cookies de analítica</p>
+          <p class="mt-2 text-sm leading-6 text-zinc-400">
+            Este sitio usa Google Analytics 4 para entender qué contenidos interesan más y mejorar la web. Solo se
+            activará si aceptas la analítica.
+            <a
+              href={withBase('/cookies')}
+              class="font-semibold text-white underline underline-offset-4 hover:text-red-500"
+            >
+              Ver política de cookies
+            </a>
+          </p>
+        </div>
+
+        <div class="flex shrink-0 flex-col gap-3 sm:flex-row">
+          <button
+            type="button"
+            class="rounded border border-white/20 px-5 py-3 font-display text-sm uppercase tracking-wide text-white transition hover:border-white hover:bg-white hover:text-black"
+            data-cookie-reject
+          >
+            Rechazar
+          </button>
+          <button
+            type="button"
+            class="rounded bg-red-600 px-5 py-3 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
+            data-cookie-accept
+          >
+            Aceptar
+          </button>
+        </div>
+      </div>
+    </div>
+  ) : null
+}
+
+<script is:inline define:vars={{ hasAnalytics }}>
+  if (hasAnalytics) {
+    const consentKey = 'davidmotorider_analytics_consent';
+    const consentBanner = document.querySelector('[data-cookie-consent]');
+    const acceptButton = document.querySelector('[data-cookie-accept]');
+    const rejectButton = document.querySelector('[data-cookie-reject]');
+    const settingsButtons = document.querySelectorAll('[data-cookie-settings]');
+
+    const showConsentBanner = () => {
+      consentBanner?.classList.remove('hidden');
+    };
+
+    const hideConsentBanner = () => {
+      consentBanner?.classList.add('hidden');
+    };
+
+    if (!localStorage.getItem(consentKey)) {
+      showConsentBanner();
+    }
+
+    acceptButton?.addEventListener('click', () => {
+      localStorage.setItem(consentKey, 'accepted');
+      window.davidMotoriderLoadAnalytics?.();
+      hideConsentBanner();
+    });
+
+    rejectButton?.addEventListener('click', () => {
+      localStorage.setItem(consentKey, 'rejected');
+      hideConsentBanner();
+    });
+
+    settingsButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        localStorage.removeItem(consentKey);
+        showConsentBanner();
+      });
+    });
+  }
+</script>
