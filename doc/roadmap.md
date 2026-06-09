@@ -9,23 +9,24 @@
 - Optimizar imágenes de viajes, recursos y galerías.
 - Mejorar accesibilidad de la galería: foco, navegación por teclado y etiquetas ARIA.
 
-## Prioridad 2: Dominio Propio
+## Completado: Dominio Propio Y Analítica
 
-- Comprar o configurar `davidmotorider.com`.
-- Configurar DNS para GitHub Pages.
-- Configurar dominio custom en GitHub Pages.
-- Actualizar `astro.config.ts`: mantener `site` en `https://davidmotorider.com` y `base: '/'`.
-- Revisar todas las rutas internas y assets tras quitar `base`.
+- Configurado dominio propio `https://davidmotorider.com` sobre GitHub Pages.
+- Actualizados `astro.config.ts` y `src/config.yaml` con `site: https://davidmotorider.com` y `base: /`.
+- Añadido `public/CNAME` para mantener el dominio personalizado en el despliegue.
+- Revisadas y ajustadas rutas internas/assets con `withBase()` para evitar enlaces e imágenes rotas con `base: '/'`.
+- Actualizado workflow de Lighthouse para auditar el dominio propio.
+- Configurado Google Analytics 4 con consentimiento previo mediante banner de cookies.
+- Actualizada la política de cookies para reflejar el uso de analítica.
 
-## Prioridad 3: Analítica E Indexación
+## Prioridad 2: Indexación
 
 - Configurar Google Search Console.
-- Configurar Google Analytics 4 si se decide medir tráfico.
 - Validar sitemap generado.
 - Revisar `robots.txt`.
 - Solicitar indexación de páginas principales.
 
-## Prioridad 4: SEO Y Contenido
+## Prioridad 3: SEO Y Contenido
 
 - Revisar metadata global en `src/config.yaml`.
 - Mejorar títulos y descripciones de páginas principales.
@@ -33,7 +34,7 @@
 - Completar contenido de viajes publicados.
 - Revisar enlazado interno entre viajes, recursos y páginas principales.
 
-## Prioridad 5: Calidad Continua
+## Prioridad 4: Calidad Continua
 
 - Ejecutar Lighthouse manual tras cambios importantes.
 - Mantener `npm run check` y `npm run build` antes de publicar.

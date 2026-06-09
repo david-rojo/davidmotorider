@@ -60,6 +60,20 @@
 - Ajustado deploy de GitHub Pages para construir explícitamente con Node 22 y subir `dist`.
 - Añadido workflow manual de Lighthouse sobre la web ya publicada.
 - Configurados umbrales Lighthouse para performance, accessibility, best practices y SEO.
+- Configurado dominio propio `https://davidmotorider.com` para GitHub Pages.
+- Actualizados `astro.config.ts` y `src/config.yaml` con `site: 'https://davidmotorider.com'` y `base: '/'`.
+- Añadido `public/CNAME` con `davidmotorider.com` para conservar el dominio personalizado en cada build.
+- Actualizado Lighthouse para auditar URLs bajo `https://davidmotorider.com`.
+- Ajustadas rutas internas y assets para dominio propio usando utilidad `withBase()`, evitando URLs rotas con doble barra al usar `base: '/'`.
+
+### Analítica Y Cookies
+
+- Configurado Google Analytics 4 con el ID `G-C5B4C4EJ0E`.
+- Añadido banner de consentimiento para cookies de analítica.
+- Implementada carga diferida de Google Analytics: el script de Google solo se carga si el usuario acepta la analítica.
+- Guardada la preferencia de consentimiento en `localStorage` mediante `davidmotorider_analytics_consent`.
+- Añadido botón `Configurar cookies` en el footer para reabrir el banner y cambiar la decisión.
+- Actualizada la política de cookies para explicar el uso de Google Analytics 4 y el consentimiento previo.
 
 ### Rendimiento Y Accesibilidad
 
