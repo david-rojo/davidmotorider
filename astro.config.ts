@@ -22,8 +22,8 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://david-rojo.github.io',
-  base: '/davidmotorider',
+  site: 'https://davidmotorider.com',
+  base: '/',
 
   i18n: {
     defaultLocale: 'es',
