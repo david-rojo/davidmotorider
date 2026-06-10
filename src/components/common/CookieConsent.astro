@@ -72,12 +72,13 @@ const hasAnalytics = Boolean(ANALYTICS?.vendors?.googleAnalytics?.id);
 
     acceptButton?.addEventListener('click', () => {
       localStorage.setItem(consentKey, 'accepted');
-      window.davidMotoriderLoadAnalytics?.();
+      window.davidMotoriderGrantAnalyticsConsent?.();
       hideConsentBanner();
     });
 
     rejectButton?.addEventListener('click', () => {
       localStorage.setItem(consentKey, 'rejected');
+      window.davidMotoriderDenyAnalyticsConsent?.();
       hideConsentBanner();
     });
 

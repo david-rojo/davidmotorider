@@ -70,7 +70,7 @@
 
 - Configurado Google Analytics 4 con el ID `G-C5B4C4EJ0E`.
 - Añadido banner de consentimiento para cookies de analítica.
-- Implementada carga diferida de Google Analytics: el script de Google solo se carga si el usuario acepta la analítica.
+- Implementado Google Consent Mode v2: la etiqueta de Google se carga con consentimiento denegado por defecto y GA4 solo activa la medición analítica tras aceptar.
 - Guardada la preferencia de consentimiento en `localStorage` mediante `davidmotorider_analytics_consent`.
 - Añadido botón `Configurar cookies` en el footer para reabrir el banner y cambiar la decisión.
 - Actualizada la política de cookies para explicar el uso de Google Analytics 4 y el consentimiento previo.
