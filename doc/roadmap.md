@@ -16,7 +16,7 @@
 - Añadido `public/CNAME` para mantener el dominio personalizado en el despliegue.
 - Revisadas y ajustadas rutas internas/assets con `withBase()` para evitar enlaces e imágenes rotas con `base: '/'`.
 - Actualizado workflow de Lighthouse para auditar el dominio propio.
-- Configurado Google Analytics 4 con consentimiento previo mediante banner de cookies.
+- Configurado Google Analytics 4 con Google Consent Mode v2 y consentimiento previo mediante banner de cookies.
 - Actualizada la política de cookies para reflejar el uso de analítica.
 
 ## Prioridad 2: Indexación

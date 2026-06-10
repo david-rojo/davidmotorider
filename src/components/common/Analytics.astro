@@ -1,29 +1,46 @@
 ---
 import { ANALYTICS } from 'astrowind:config';
 
-const googleAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id;
+const googleAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALYTICS.vendors.googleAnalytics.id) : '';
 ---
 
-<script is:inline define:vars={{ googleAnalyticsId: googleAnalyticsId ? String(googleAnalyticsId) : '' }}>
-  window.davidMotoriderLoadAnalytics = function () {
-    if (!googleAnalyticsId || window.davidMotoriderAnalyticsLoaded) return;
+{
+  googleAnalyticsId ? (
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
+  ) : null
+}
 
-    window.davidMotoriderAnalyticsLoaded = true;
+<script is:inline define:vars={{ googleAnalyticsId }}>
+  if (googleAnalyticsId) {
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function (...args) {
+    window.gtag = function gtag(...args) {
       window.dataLayer.push(args);
     };
 
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
-    document.head.appendChild(script);
+    window.gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+    });
 
     window.gtag('js', new Date());
-    window.gtag('config', googleAnalyticsId);
-  };
 
-  if (localStorage.getItem('davidmotorider_analytics_consent') === 'accepted') {
-    window.davidMotoriderLoadAnalytics();
+    window.davidMotoriderGrantAnalyticsConsent = function () {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      });
+      window.gtag('config', googleAnalyticsId);
+    };
+
+    window.davidMotoriderDenyAnalyticsConsent = function () {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'denied',
+      });
+    };
+
+    if (localStorage.getItem('davidmotorider_analytics_consent') === 'accepted') {
+      window.davidMotoriderGrantAnalyticsConsent();
+    }
   }
 </script>
