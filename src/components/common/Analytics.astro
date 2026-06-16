@@ -12,13 +12,17 @@ const googleAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALY
 
 <script is:inline define:vars={{ googleAnalyticsId }}>
   if (googleAnalyticsId) {
+    const hasAnalyticsConsent = localStorage.getItem('davidmotorider_analytics_consent') === 'accepted';
+
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function gtag(...args) {
-      window.dataLayer.push(args);
+    window.gtag = function gtag() {
+      // Match Google's official gtag snippet shape.
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer.push(arguments);
     };
 
     window.gtag('consent', 'default', {
-      analytics_storage: 'denied',
+      analytics_storage: hasAnalyticsConsent ? 'granted' : 'denied',
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',
@@ -26,11 +30,19 @@ const googleAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALY
 
     window.gtag('js', new Date());
 
+    if (hasAnalyticsConsent) {
+      window.gtag('config', googleAnalyticsId, {
+        page_path: window.location.pathname,
+      });
+    }
+
     window.davidMotoriderGrantAnalyticsConsent = function () {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
       });
-      window.gtag('config', googleAnalyticsId);
+      window.gtag('config', googleAnalyticsId, {
+        page_path: window.location.pathname,
+      });
     };
 
     window.davidMotoriderDenyAnalyticsConsent = function () {
@@ -38,9 +50,5 @@ const googleAnalyticsId = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALY
         analytics_storage: 'denied',
       });
     };
-
-    if (localStorage.getItem('davidmotorider_analytics_consent') === 'accepted') {
-      window.davidMotoriderGrantAnalyticsConsent();
-    }
   }
 </script>
