@@ -30,6 +30,7 @@
 - Navegación principal y footer: `src/navigation.ts`; puede contener contenido placeholder de AstroWind.
 - Layouts principales: `src/layouts/PageLayout.astro` y `src/layouts/Layout.astro`.
 - Alias `~/*` apunta a `src/*`.
+- Recursos internos no publicados: usar `assets/private/` para archivos versionados que no deben servirse en la web; no mover a `public/` salvo intención explícita de publicarlos.
 
 ## Contenido
 
