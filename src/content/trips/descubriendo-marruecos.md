@@ -11,7 +11,7 @@ tags:
   - Trail
   - Desierto
 date: '2026-04-12'
-publishedAt: '2026-04-12'
+publishedAt: '2026-06-04'
 lang: 'es'
 type: 'viaje'
 days: 12

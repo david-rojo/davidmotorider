@@ -35,6 +35,14 @@ const travelDate = trip.data.date
   })
   .toUpperCase();
 
+const publishedDate = trip.data.publishedAt
+  .toLocaleDateString('es-ES', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  })
+  .toUpperCase();
+
 const getInternalUrl = (href: string) => withBase(href);
 
 const escapeHtml = (value: string) =>
@@ -96,7 +104,15 @@ const getItineraryDescription = (description: string | string[] | undefined) =>
           <span
             class="rounded-full border border-white/10 bg-black/40 px-5 py-2 font-display text-lg uppercase tracking-wide text-white backdrop-blur-sm"
           >
+            Viaje ·
             {travelDate}
+          </span>
+
+          <span
+            class="rounded-full border border-white/10 bg-black/40 px-5 py-2 font-display text-lg uppercase tracking-wide text-zinc-300 backdrop-blur-sm"
+          >
+            Publicado ·
+            {publishedDate}
           </span>
         </div>
       </div>
