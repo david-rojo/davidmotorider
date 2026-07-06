@@ -11,7 +11,7 @@ tags:
   - Montaña
   - Paisajes
 date: '2025-10-11'
-publishedAt: '2026-06-20'
+publishedAt: '2026-05-20'
 lang: 'es'
 type: 'viaje'
 days: 7
