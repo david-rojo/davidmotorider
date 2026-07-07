@@ -15,7 +15,7 @@ lang: 'es'
 type: 'viaje'
 days: 3
 km: 427
-map: '/images/trips/picos-de-europa/mapa.jpg'
+map: '/images/trips/picos-de-europa-y-liebana/mapa.jpg'
 
 tips:
   - '**Mejor época:** la primavera y el otoño son, probablemente, las mejores estaciones para hacer este viaje. Las temperaturas suelen ser agradables, los bosques muestran sus mejores colores y el tráfico es sensiblemente menor que durante los meses de verano. Mi viaje lo realicé en la primera quincena de octubre, disfrutando de unas condiciones excelentes para conducir y de carreteras muy poco concurridas.'
@@ -31,7 +31,7 @@ itinerary:
       - 'La ruta desciende después hacia la costa para visitar el **Faro de Lastres** y la villa marinera de **Lastres**, uno de los pueblos más bonitos de Asturias y conocido por haber sido el escenario principal de la popular serie de televisión _Doctor Mateo_. Desde allí, el recorrido continúa hasta **Ribadesella**, donde un mirador ofrece una magnífica panorámica de toda la localidad y la desembocadura del río Sella.'
       - 'El regreso a Cangas de Onís se realiza por el **Alto del Torno**, un puerto de montaña muy entretenido que combina una carretera revirada con excelentes vistas del interior asturiano, antes de regresar a Cangas de Onís tras una ruta que combina algunos de los paisajes más representativos de la costa oriental de Asturias y la Sierra del Sueve.'
     km: 119
-    image: '/images/trips/picos-de-europa/itinerario/dia-01.jpg'
+    image: '/images/trips/picos-de-europa-y-liebana/itinerario/dia-01.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/costa-oriental-asturiana-onroad-ruta-circular-cangas-de-onis-245359100'
     googleMaps: 'https://maps.app.goo.gl/38uqPbjU1sCNVdxN7'
 
@@ -42,7 +42,7 @@ itinerary:
       - 'Desde Riaño, el recorrido se adentra en el corazón de los Picos de Europa atravesando el **Puerto de Panderrueda** hasta llegar al **Mirador de Valdeón** y al **Mirador del Tombo**, dos balcones privilegiados desde los que contemplar el macizo central y el valle de Valdeón. La carretera, repleta de curvas y paisajes de alta montaña, ofrece algunos de los tramos más memorables de toda la ruta.'
       - 'La jornada continúa superando el **Mirador de Pandetrave**, el **Collado de Llesba** y el **Puerto de San Glorio**, tres enclaves que regalan magníficas panorámicas antes de descender hacia **Potes**. Desde allí, un último tramo conduce hasta **Fuente Dé**, donde la imponente pared rocosa que cierra el valle pone el broche final a una de las mejores jornadas de conducción por los Picos de Europa.'
     km: 191
-    image: '/images/trips/picos-de-europa/itinerario/dia-02.jpg'
+    image: '/images/trips/picos-de-europa-y-liebana/itinerario/dia-02.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/picos-de-europa-suroccidental-onroad-ruta-cangas-de-onis-fuente-de-245430419'
     googleMaps: 'https://maps.app.goo.gl/FogTWVemadMURdBB6'
 
@@ -53,45 +53,45 @@ itinerary:
       - 'Poco después, la ruta se desvía para ascender hasta el **Mirador de Santa Catalina**, un balcón natural situado sobre el desfiladero que regala unas magníficas vistas del valle y de los Picos de Europa. A partir de aquí, el recorrido continúa por una sucesión de carreteras secundarias repletas de curvas, atravesando pequeños pueblos y paisajes de media montaña hasta alcanzar **Ruente**.'
       - 'Desde allí, la jornada pone rumbo a **Santillana del Mar**, considerada una de las villas medievales mejor conservadas de España. Sus calles empedradas y su arquitectura tradicional lo convierten en el lugar perfecto para concluir esta ruta por los Picos de Europa.'
     km: 117
-    image: '/images/trips/picos-de-europa/itinerario/dia-03.jpg'
+    image: '/images/trips/picos-de-europa-y-liebana/itinerario/dia-03.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/picos-de-europa-oriental-onroad-ruta-fuente-de-santillana-del-mar-245441396'
     googleMaps: 'https://maps.app.goo.gl/ZcBfeqepGUGk3Xs8A'
 
 gallery:
-  - src: '/images/trips/picos-de-europa/galeria/puente-romano-cangas-onis.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/puente-romano-cangas-onis.jpg'
     alt: 'Puente Romano de Cangas de Onís'
 
-  - src: '/images/trips/picos-de-europa/galeria/covadonga.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/covadonga.jpg'
     alt: 'Basílica de Santa María la Real de Covadonga'
 
-  - src: '/images/trips/picos-de-europa/galeria/faro-cabo-lastres.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/faro-cabo-lastres.jpg'
     alt: 'Faro del Cabo Lastres'
 
-  - src: '/images/trips/picos-de-europa/galeria/casa-doctor-mateo.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/casa-doctor-mateo.jpg'
     alt: 'Casa del Doctor Mateo en Lastres'
 
-  - src: '/images/trips/picos-de-europa/galeria/moto-picapedrera.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/moto-picapedrera.jpg'
     alt: 'Moto Picapedrera'
 
-  - src: '/images/trips/picos-de-europa/galeria/riano.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/riano.jpg'
     alt: 'Embalse de Riaño'
 
-  - src: '/images/trips/picos-de-europa/galeria/caballos-hispano-bretones.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/caballos-hispano-bretones.jpg'
     alt: 'Caballos Hispano-Bretones'
 
-  - src: '/images/trips/picos-de-europa/galeria/mirador-tombo.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/mirador-tombo.jpg'
     alt: 'Mirador del Tombo'
 
-  - src: '/images/trips/picos-de-europa/galeria/collado-llesba.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/collado-llesba.jpg'
     alt: 'Collado de Llesba'
 
-  - src: '/images/trips/picos-de-europa/galeria/mirador-corzo.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/mirador-corzo.jpg'
     alt: 'Mirador del Corzo'
 
-  - src: '/images/trips/picos-de-europa/galeria/teleferico-fuente-de.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/teleferico-fuente-de.jpg'
     alt: 'Teleférico de Fuente Dé'
 
-  - src: '/images/trips/picos-de-europa/galeria/mirador-santa-catalina.jpg'
+  - src: '/images/trips/picos-de-europa-y-liebana/galeria/mirador-santa-catalina.jpg'
     alt: 'Mirador de Santa Catalina'
 ---
 
