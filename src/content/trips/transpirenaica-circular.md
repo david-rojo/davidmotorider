@@ -20,12 +20,9 @@ map: '/images/trips/transpirenaica-circular/mapa.jpg'
 
 tips:
   - '**Mejor época:** esta ruta puede realizarse entre junio y octubre, cuando los principales puertos de montaña permanecen abiertos y las condiciones meteorológicas suelen ser favorables. Mi viaje lo hice en la primera quincena de octubre. Durante esos días todos los puertos estaban abiertos, el tráfico fue escaso y las temperaturas resultaron agradables.'
-  - '**Alojamientos:** todos los alojamientos fueron reservados a través de [Booking.com](https://www.booking.com/index.es.html) para tener toda la información centralizada en una única plataforma. Siempre que fue posible, se priorizaron hoteles con parking privado propio o con opciones de aparcamiento próximas.'
+  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
   - '**Datos móviles en Andorra:** Andorra no forma parte del acuerdo europeo de roaming. Conviene desactivar los datos móviles antes de cruzar la frontera y volver a activarlos al regresar a España o Francia para evitar cargos inesperados.'
   - '**Datos móviles en Francia:** Francia sí está incluida en el roaming europeo, por lo que podrás utilizar llamadas y datos móviles en condiciones similares a las de tu tarifa española.'
-  - '**Mapas offline:** recomendable descargar previamente todos los mapas en el teléfono o dispositivo GPS que vayas a utilizar. De esta forma podrás navegar sin depender de la cobertura móvil, especialmente en algunas zonas de montaña.'
-  - '**Dinero en efectivo:** aunque fue siempre posible pagar con tarjeta bancaria, es buena idea llevar algo de efectivo como respaldo para pequeños establecimientos o situaciones imprevistas.'
-  - '**Gasolina:** aunque no suele haber dificultades, en algunas zonas de montaña la distancia entre gasolineras puede ser considerable. Es recomendable no apurar demasiado el depósito, especialmente en las etapas más largas. Las rutas incluidas incorporan puntos de repostaje para facilitar la planificación del viaje.'
 
 itinerary:
   - day: 1
