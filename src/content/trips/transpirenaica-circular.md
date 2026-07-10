@@ -18,12 +18,6 @@ days: 7
 km: 1821
 map: '/images/trips/transpirenaica-circular/mapa.jpg'
 
-tips:
-  - '**Mejor época:** esta ruta puede realizarse entre junio y octubre, cuando los principales puertos de montaña permanecen abiertos y las condiciones meteorológicas suelen ser favorables. Mi viaje lo hice en la primera quincena de octubre. Durante esos días todos los puertos estaban abiertos, el tráfico fue escaso y las temperaturas resultaron agradables.'
-  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
-  - '**Datos móviles en Andorra:** Andorra no forma parte del acuerdo europeo de roaming. Conviene desactivar los datos móviles antes de cruzar la frontera y volver a activarlos al regresar a España o Francia para evitar cargos inesperados.'
-  - '**Datos móviles en Francia:** Francia sí está incluida en el roaming europeo, por lo que podrás utilizar llamadas y datos móviles en condiciones similares a las de tu tarifa española.'
-
 itinerary:
   - day: 1
     title: 'Irún - Isaba: Pirineos Atlánticos'
@@ -100,6 +94,12 @@ itinerary:
     image: '/images/trips/transpirenaica-circular/itinerario/dia-07.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/del-anisclo-a-irun-onroad-ruta-ainsa-irun-loop-transpirenaico-dia-6-6-245350564'
     googleMaps: 'https://maps.app.goo.gl/vyeBQ3WEZVMiabZX9'
+
+tips:
+  - '**Mejor época:** esta ruta puede realizarse entre junio y octubre, cuando los principales puertos de montaña permanecen abiertos y las condiciones meteorológicas suelen ser favorables. Mi viaje lo hice en la primera quincena de octubre. Durante esos días todos los puertos estaban abiertos, el tráfico fue escaso y las temperaturas resultaron agradables.'
+  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
+  - '**Datos móviles en Andorra:** Andorra no forma parte del acuerdo europeo de roaming. Conviene desactivar los datos móviles antes de cruzar la frontera y volver a activarlos al regresar a España o Francia para evitar cargos inesperados.'
+  - '**Datos móviles en Francia:** Francia sí está incluida en el roaming europeo, por lo que podrás utilizar llamadas y datos móviles en condiciones similares a las de tu tarifa española.'
 
 gallery:
   - src: '/images/trips/transpirenaica-circular/galeria/faro-higuer.jpg'

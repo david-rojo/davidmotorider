@@ -17,12 +17,6 @@ days: 3
 km: 427
 map: '/images/trips/picos-de-europa-y-liebana/mapa.jpg'
 
-tips:
-  - '**Mejor época:** la primavera y el otoño son, probablemente, las mejores estaciones para hacer este viaje. Las temperaturas suelen ser agradables, los bosques muestran sus mejores colores y el tráfico es sensiblemente menor que durante los meses de verano. Mi viaje lo realicé en la primera quincena de octubre, disfrutando de unas condiciones excelentes para conducir y de carreteras muy poco concurridas.'
-  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
-  - '**Lagos de Covadonga (opcional):** si las condiciones de acceso lo permiten, merece la pena dedicar unas horas a visitar los Lagos de Covadonga, uno de los lugares más emblemáticos del Parque Nacional de los Picos de Europa. Durante determinadas épocas del año el acceso en vehículo particular está regulado, por lo que conviene consultar previamente el estado de los accesos en la web de los [Lagos de Covadonga](https://lagosdecovadonga.org/accesos). Cuando realicé este viaje, el acceso a los lagos estaba cerrado, por lo que aproveché para visitar al menos la Basílica de Covadonga, una excelente alternativa que permite conocer uno de los lugares con mayor valor histórico y cultural de Asturias.'
-  - '**Teleférico de Fuente Dé (opcional):** al finalizar la segunda jornada, el viaje hace noche en Fuente Dé, por lo que una excelente opción es comenzar el día siguiente ascendiendo en el teleférico para disfrutar de las impresionantes vistas sobre el macizo central de los Picos de Europa antes de continuar el viaje. Si se dispone de más días, también es posible dedicar una jornada completa a recorrer alguno de los muchos senderos de montaña que parten desde la estación superior. Los horarios, tarifas y el estado del servicio pueden consultarse en [Teleférico de Fuente Dé](https://telefericodefuentede.com/)'
-
 itinerary:
   - day: 1
     title: 'Circular desde Cangas de Onís: Costa oriental asturiana y Sierra del Sueve'
@@ -56,6 +50,12 @@ itinerary:
     image: '/images/trips/picos-de-europa-y-liebana/itinerario/dia-03.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/picos-de-europa-oriental-onroad-ruta-fuente-de-santillana-del-mar-245441396'
     googleMaps: 'https://maps.app.goo.gl/ZcBfeqepGUGk3Xs8A'
+
+tips:
+  - '**Mejor época:** la primavera y el otoño son, probablemente, las mejores estaciones para hacer este viaje. Las temperaturas suelen ser agradables, los bosques muestran sus mejores colores y el tráfico es sensiblemente menor que durante los meses de verano. Mi viaje lo realicé en la primera quincena de octubre, disfrutando de unas condiciones excelentes para conducir y de carreteras muy poco concurridas.'
+  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
+  - '**Lagos de Covadonga (opcional):** si las condiciones de acceso lo permiten, merece la pena dedicar unas horas a visitar los Lagos de Covadonga, uno de los lugares más emblemáticos del Parque Nacional de los Picos de Europa. Durante determinadas épocas del año el acceso en vehículo particular está regulado, por lo que conviene consultar previamente el estado de los accesos en la web de los [Lagos de Covadonga](https://lagosdecovadonga.org/accesos). Cuando realicé este viaje, el acceso a los lagos estaba cerrado, por lo que aproveché para visitar al menos la Basílica de Covadonga, una excelente alternativa que permite conocer uno de los lugares con mayor valor histórico y cultural de Asturias.'
+  - '**Teleférico de Fuente Dé (opcional):** al finalizar la segunda jornada, el viaje hace noche en Fuente Dé, por lo que una excelente opción es comenzar el día siguiente ascendiendo en el teleférico para disfrutar de las impresionantes vistas sobre el macizo central de los Picos de Europa antes de continuar el viaje. Si se dispone de más días, también es posible dedicar una jornada completa a recorrer alguno de los muchos senderos de montaña que parten desde la estación superior. Los horarios, tarifas y el estado del servicio pueden consultarse en [Teleférico de Fuente Dé](https://telefericodefuentede.com/)'
 
 gallery:
   - src: '/images/trips/picos-de-europa-y-liebana/galeria/puente-romano-cangas-onis.jpg'

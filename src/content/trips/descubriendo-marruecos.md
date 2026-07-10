@@ -18,16 +18,6 @@ days: 12
 km: 2784
 map: '/images/trips/descubriendo-marruecos/mapa.jpg'
 
-tips:
-  - '**Mejor época:** marzo/abril y octubre/noviembre suelen ofrecer las mejores condiciones. Entre mayo y septiembre, en la zona sur las temperaturas pueden ser muy elevadas, mientras que de noviembre a febrero, los pasos del Atlas pueden verse afectados por la nieve. Este viaje se realizó en el mes de abril.'
-  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
-  - '**Reserva del ferry:** conviene reservar el ferry lo más temprano posible, ya que los retrasos son relativamente frecuentes. En mi caso utilicé la ruta Algeciras - Tánger Med tanto a la ida como a la vuelta. Aunque la travesía dura aproximadamente una hora y media, entre la llegada anticipada al puerto, el embarque y el desembarque se emplea bastante más tiempo. Por ello, es recomendable no planificar una etapa demasiado larga el mismo día del cruce.'
-  - '**Compañías de ferry:** existen varias opciones para cruzar el Estrecho. En este viaje utilicé [DFDS](https://dfds.frs.es/), con billetes comprados por internet. Disponen de aplicación móvil y atención por WhatsApp, que resultó especialmente útil cuando tuve que cambiar de hora el ferry de regreso tras una cancelación.'
-  - '**No conducir de noche:** En algunas zonas el firme puede presentar baches e irregularidades, es habitual encontrar peatones o animales cerca de la calzada y la iluminación suele ser escasa. Además, no todos los vehículos circulan con una iluminación adecuada.'
-  - '**Documentación:** Antes de cruzar a Marruecos revisa bien la [documentación para viajar fuera de Europa](/recursos/documentacion-fuera-europa): carta verde, permiso de conducción, permiso de circulación, ITV, seguro de viaje y requisitos actualizados.'
-  - '**Dinero en efectivo imprescindible:** en muy pocos sitios se admite el pago con tarjeta, recomendado cambiar lo mínimo posible al cruzar la frontera para tener algo y mas adelante, ir sacando dinero en cajeros o cambiar en casas de cambio. Aparte de llevar tarjetas, para pagar cuando sea posible.'
-  - '**Día extra en Merzouga (opcional):** si dispones de tiempo, añadir una jornada de descanso en Merzouga es una excelente decisión. Puede dedicarse a recorrer las dunas del Erg Chebbi en buggy, quad o moto de enduro. En mi caso alquilé un buggy con [Sahara Buggy](https://saharabuggy.com/) y fue una de las mejores experiencias del viaje. Como alternativa, es muy habitual pasar una noche en una jaima en pleno desierto, llegando al atardecer en dromedario y regresando al día siguiente en 4x4. Personalmente preferí alojarme dos noches en el mismo hotel de Merzouga y dedicar el día intermedio a disfrutar de las dunas.'
-
 itinerary:
   - day: 1
     title: 'Tanger Med - Chefchaouen'
@@ -150,6 +140,16 @@ itinerary:
     image: '/images/trips/descubriendo-marruecos/itinerario/dia-12.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/discover-marruecos-dia-11-12-onroad-assilah-tanger-med-261997630'
     googleMaps: 'https://maps.app.goo.gl/diNhFGwurQJr2Jbg6'
+
+tips:
+  - '**Mejor época:** marzo/abril y octubre/noviembre suelen ofrecer las mejores condiciones. Entre mayo y septiembre, en la zona sur las temperaturas pueden ser muy elevadas, mientras que de noviembre a febrero, los pasos del Atlas pueden verse afectados por la nieve. Este viaje se realizó en el mes de abril.'
+  - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
+  - '**Reserva del ferry:** conviene reservar el ferry lo más temprano posible, ya que los retrasos son relativamente frecuentes. En mi caso utilicé la ruta Algeciras - Tánger Med tanto a la ida como a la vuelta. Aunque la travesía dura aproximadamente una hora y media, entre la llegada anticipada al puerto, el embarque y el desembarque se emplea bastante más tiempo. Por ello, es recomendable no planificar una etapa demasiado larga el mismo día del cruce.'
+  - '**Compañías de ferry:** existen varias opciones para cruzar el Estrecho. En este viaje utilicé [DFDS](https://dfds.frs.es/), con billetes comprados por internet. Disponen de aplicación móvil y atención por WhatsApp, que resultó especialmente útil cuando tuve que cambiar de hora el ferry de regreso tras una cancelación.'
+  - '**No conducir de noche:** En algunas zonas el firme puede presentar baches e irregularidades, es habitual encontrar peatones o animales cerca de la calzada y la iluminación suele ser escasa. Además, no todos los vehículos circulan con una iluminación adecuada.'
+  - '**Documentación:** Antes de cruzar a Marruecos revisa bien la [documentación para viajar fuera de Europa](/recursos/documentacion-fuera-europa): carta verde, permiso de conducción, permiso de circulación, ITV, seguro de viaje y requisitos actualizados.'
+  - '**Dinero en efectivo imprescindible:** en muy pocos sitios se admite el pago con tarjeta, recomendado cambiar lo mínimo posible al cruzar la frontera para tener algo y mas adelante, ir sacando dinero en cajeros o cambiar en casas de cambio. Aparte de llevar tarjetas, para pagar cuando sea posible.'
+  - '**Día extra en Merzouga (opcional):** si dispones de tiempo, añadir una jornada de descanso en Merzouga es una excelente decisión. Puede dedicarse a recorrer las dunas del Erg Chebbi en buggy, quad o moto de enduro. En mi caso alquilé un buggy con [Sahara Buggy](https://saharabuggy.com/) y fue una de las mejores experiencias del viaje. Como alternativa, es muy habitual pasar una noche en una jaima en pleno desierto, llegando al atardecer en dromedario y regresando al día siguiente en 4x4. Personalmente preferí alojarme dos noches en el mismo hotel de Merzouga y dedicar el día intermedio a disfrutar de las dunas.'
 
 gallery:
   - src: '/images/trips/descubriendo-marruecos/galeria/chefchaouen.jpg'
