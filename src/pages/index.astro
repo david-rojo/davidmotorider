@@ -15,10 +15,10 @@ const heroMobileWebp = withBase('/images/hero/home-mobile.webp');
 const heroDesktopJpg = withBase('/images/hero/home-desktop.jpg');
 const heroMobileJpg = withBase('/images/hero/home-mobile.jpg');
 
-const lastPublishedTrips = (await getCollection('trips'))
+const publishedTrips = (await getCollection('trips'))
   .filter((trip) => trip.data.type === 'viaje' && trip.data.status === 'published')
-  .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime())
-  .slice(0, 3);
+  .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
+const lastPublishedTrips = publishedTrips.slice(0, 3);
 
 const latestResource = (await getCollection('resources'))
   .filter((resource) => resource.data.status === 'published')
@@ -104,7 +104,7 @@ const aboutImage = withBase('/images/sobre-mi-card.jpg');
           href={withBase('/viajes')}
           class="font-display text-xl uppercase tracking-wide text-white transition hover:text-red-600"
         >
-          Ver todos →
+          Ver todos ({publishedTrips.length}) →
         </a>
       </div>
 
