@@ -20,9 +20,10 @@ const publishedTrips = (await getCollection('trips'))
   .sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
 const lastPublishedTrips = publishedTrips.slice(0, 3);
 
-const latestResource = (await getCollection('resources'))
+const publishedResources = (await getCollection('resources'))
   .filter((resource) => resource.data.status === 'published')
-  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const latestResource = publishedResources[0];
 
 const aboutImage = withBase('/images/sobre-mi-card.jpg');
 ---
@@ -214,12 +215,21 @@ const aboutImage = withBase('/images/sobre-mi-card.jpg');
 
               <p class="mt-6 text-base leading-8 text-zinc-400">{latestResource.data.description}</p>
 
-              <a
-                href={withBase(`/recursos/${latestResource.data.slug}`)}
-                class="mt-8 inline-block font-display text-xl uppercase tracking-wide text-red-600 transition hover:text-red-500"
-              >
-                Leer recurso →
-              </a>
+              <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+                <a
+                  href={withBase(`/recursos/${latestResource.data.slug}`)}
+                  class="font-display text-xl uppercase tracking-wide text-red-600 transition hover:text-red-500"
+                >
+                  Leer recurso →
+                </a>
+
+                <a
+                  href={withBase('/recursos')}
+                  class="font-display text-xl uppercase tracking-wide text-white transition hover:text-red-600"
+                >
+                  Ver todos ({publishedResources.length}) →
+                </a>
+              </div>
             </div>
 
             {latestResource.data.image && (

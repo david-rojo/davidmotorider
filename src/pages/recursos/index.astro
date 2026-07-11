@@ -29,28 +29,34 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
         </p>
       </header>
 
-      <div class="mb-12 flex flex-wrap gap-3" data-resource-filters>
-        <button
-          type="button"
-          data-filter="all"
-          aria-pressed="true"
-          class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
-        >
-          Todos
-        </button>
+      <div class="mb-12 space-y-4">
+        <div class="flex flex-wrap gap-3" data-resource-filters>
+          <button
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+            class="rounded-full bg-red-600 px-5 py-2 font-display text-sm uppercase tracking-wide text-white transition hover:bg-red-700"
+          >
+            Todos
+          </button>
 
-        {
-          allTags.map((tag) => (
-            <button
-              type="button"
-              data-filter={tag}
-              aria-pressed="false"
-              class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
-            >
-              {tag}
-            </button>
-          ))
-        }
+          {
+            allTags.map((tag) => (
+              <button
+                type="button"
+                data-filter={tag}
+                aria-pressed="false"
+                class="rounded-full border border-white/10 bg-white/5 px-5 py-2 font-display text-sm uppercase tracking-wide text-zinc-300 transition hover:border-red-600 hover:text-white"
+              >
+                {tag}
+              </button>
+            ))
+          }
+        </div>
+
+        <p class="font-display text-sm uppercase tracking-wide text-white" data-resource-count>
+          {resources.length === 1 ? '1 recurso' : `${resources.length} recursos`}
+        </p>
       </div>
 
       <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
@@ -75,6 +81,7 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
     document.addEventListener('DOMContentLoaded', () => {
       const filterContainer = document.querySelector('[data-resource-filters]');
       const cards = Array.from(document.querySelectorAll('[data-resource-card]'));
+      const count = document.querySelector('[data-resource-count]');
 
       if (!filterContainer || !cards.length) return;
 
@@ -104,6 +111,12 @@ const allTags = [...new Set(resources.flatMap((resource) => resource.data.tags))
 
           card.classList.toggle('hidden', !shouldShow);
         });
+
+        const visibleCount = cards.filter((card) => !card.classList.contains('hidden')).length;
+
+        if (count) {
+          count.textContent = visibleCount === 1 ? '1 recurso' : `${visibleCount} recursos`;
+        }
       });
     });
   </script>
