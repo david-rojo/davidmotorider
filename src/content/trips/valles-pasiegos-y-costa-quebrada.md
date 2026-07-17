@@ -1,8 +1,8 @@
 ---
 title: 'Valles Pasiegos y Costa Quebrada'
-status: 'draft'
+status: 'published'
 slug: 'valles-pasiegos-y-costa-quebrada'
-description: 'Descripción del viaje.'
+description: 'Cantabria es mucho más que una sucesión de playas y acantilados. Tierra adentro, los Valles Pasiegos esconden algunos de los puertos de montaña más espectaculares del norte de España, mientras que la Costa Quebrada ofrece un paisaje único donde el mar ha modelado el litoral durante millones de años. Este viaje combina ambos escenarios en tres jornadas pensadas para disfrutar de la conducción y descubrir algunos de los rincones más singulares de la región.'
 image: '/images/trips/valles-pasiegos-y-costa-quebrada.jpg'
 category: 'Cantabria'
 tags:
@@ -15,6 +15,7 @@ lang: 'es'
 type: 'viaje'
 days: 3
 km: 515
+map: '/images/trips/valles-pasiegos-y-costa-quebrada/mapa.jpg'
 
 itinerary:
   - day: 1
@@ -26,7 +27,7 @@ itinerary:
     km: 179
     image: '/images/trips/valles-pasiegos-y-costa-quebrada/itinerario/dia-01.jpg'
     wikiloc: 'https://es.wikiloc.com/rutas-moto-trail/valles-pasiegos-onroad-ruta-circular-santillana-del-mar-245448182'
-    googleMaps: 'https://maps.app.goo.gl/z9q6oYB6T8rbD1Lz5'
+    googleMaps: 'https://maps.app.goo.gl/faxszxrnhGu3iBu26'
 
   - day: 2
     title: 'Puerto de las Estacas de Trueba y Puentedey'
@@ -51,7 +52,10 @@ itinerary:
     googleMaps: 'https://maps.app.goo.gl/r4qyTCAcZb5AQt1c9'
 
 tips:
+  - '**Mejor época:** aunque esta ruta puede realizarse durante buena parte del año, la primavera y el otoño ofrecen las mejores condiciones para disfrutarla. Las temperaturas son más agradables, el paisaje muestra todo su esplendor y el tráfico suele ser inferior al de los meses de ver'
   - 'Antes de salir, revisa estos [básicos para preparar un viaje en moto](/recursos/basicos-preparar-viaje-moto): alojamientos, mapas offline, gasolina, dinero, documentación y datos móviles.'
+  - '**Santillana del Mar:** aunque suele conocerse como "la villa de las tres mentiras" (ni es santa, ni llana, ni tiene mar), es uno de los pueblos medievales mejor conservados de España. Merece la pena recorrer sus calles empedradas al caer la tarde después de la ruta, cuando disminuye la afluencia de visitantes y el ambiente resulta mucho más tranquilo.'
+  - '**Alojamiento recomendado:** durante este viaje me alojé en el [Hotel Cuevas](https://hotelcuevas.com/), en Santillana del Mar. Su ubicación resulta ideal para realizar las tres rutas sin cambiar de alojamiento y, además, cuenta con aparcamiento privado, habitaciones muy cómodas, un excelente desayuno y un trato exquisito por parte de todo el personal.'
   - '**Portillo de Lunada:** esta ruta fue realizada en octubre de 2025, antes del inicio de las obras de mejora de la carretera que arrancaron en mayo de 2026. En la actualidad, el tramo de la CA-643 entre La Concha y el Portillo de Lunada permanece cerrado por obras, cuya finalización está prevista para mayo de 2027. Antes de viajar, conviene consultar el estado de la carretera y las posibles restricciones de circulación, ya que puede ser necesario modificar el recorrido.'
 
 gallery:
@@ -92,4 +96,10 @@ gallery:
     alt: 'Peña Cabarga, al fondo Santander'
 ---
 
-Texto del viaje a Asturias
+Esta ruta propone descubrir algunos de los lugares más representativos de **Cantabria** mediante tres recorridos circulares con **Santillana del Mar** como punto de partida y regreso. Utilizar la villa como base permite recorrer cada jornada sin necesidad de transportar todo el equipaje, haciendo la conducción más cómoda y ligera, especialmente en los numerosos puertos de montaña del interior.
+
+El recorrido es íntegramente por asfalto y no presenta dificultades técnicas reseñables más allá de las propias de la conducción en carreteras de montaña. Se trata de una ruta apta para cualquier moto de carretera o trail, siempre que se afronte con la prudencia necesaria en puertos de montaña, carreteras estrechas y cambios meteorológicos, habituales en el interior de Cantabria.
+
+A lo largo del viaje se enlazan algunos de los lugares más emblemáticos de la comunidad, como los **Valles Pasiegos**, el **Portillo de Lunada**, el **Portillo de la Sía**, el **Puerto de las Estacas de Trueba**, **Puentedey**, **Costa Quebrada** o **Peña Cabarga**, combinando carreteras reviradas, paisajes de montaña, pueblos con encanto y espectaculares vistas sobre el mar Cantábrico.
+
+La combinación de estos tres recorridos permite descubrir una Cantabria muy diversa, alternando montaña, valles, patrimonio histórico y costa, sin necesidad de cambiar de alojamiento y disfrutando de algunas de las mejores carreteras del norte peninsular.
