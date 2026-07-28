@@ -8,6 +8,15 @@ import { withBase } from '~/utils/paths';
 const metadata = {
   title: 'DavidMotoRider | Experiencias sobre dos ruedas',
   description: 'Viajes en moto, rutas GPX y aventuras desde Madrid al mundo.',
+  openGraph: {
+    images: [
+      {
+        url: '/images/social/davidmotorider.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 const heroDesktopWebp = withBase('/images/hero/home-desktop.webp');

@@ -11,16 +11,16 @@ metadata:
   title:
     default: DavidMotoRider
     template: '%s'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: 'Viajes en moto, rutas GPX y aventuras desde Madrid al mundo.'
   robots:
     index: true
     follow: true
   openGraph:
     site_name: DavidMotoRider
     images:
-      - url: '~/assets/images/default.png'
+      - url: '/images/social/davidmotorider.jpg'
         width: 1200
-        height: 628
+        height: 630
     type: website
 
 i18n:

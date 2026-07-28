@@ -74,6 +74,14 @@ export const adaptOpenGraphImages = async (
           };
         }
 
+        if (typeof resolvedImage === 'string' && resolvedImage.startsWith('/')) {
+          return {
+            url: String(new URL(resolvedImage, astroSite)),
+            width: image.width,
+            height: image.height,
+          };
+        }
+
         let _image: OptimizedImage | undefined;
 
         if (
