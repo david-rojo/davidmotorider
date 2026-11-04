@@ -9,7 +9,7 @@
 
 ## Stack y Deploy
 
-- Astro 5 + Tailwind CSS + TypeScript, con salida estática para GitHub Pages.
+- Astro 7 + Tailwind CSS 4 + TypeScript, con salida estática para GitHub Pages. Node.js mínimo: `22.23.4`.
 - `astro.config.ts` fija `site: 'https://davidmotorider.com'`, `base: '/'`, `output: 'static'` e i18n solo `es`.
 - Usar `import.meta.env.BASE_URL` o utilidades existentes para URLs internas/assets; no hardcodear rutas si existe una utilidad del proyecto.
 - La configuración SEO/global vive en `src/config.yaml` y la consume la integración local `vendor/integration`.
@@ -21,7 +21,7 @@
 - Verificación completa: `npm run check` ejecuta `astro check`, `eslint .` y `prettier --check .`.
 - Build: `npm run build`.
 - Arreglos automáticos: `npm run fix`, o enfocado `npm run fix:eslint` / `npm run fix:prettier`.
-- No hay suite de tests configurada; CI valida `npm run build` en Node 18/20/22 y `npm run check` en Node 22.
+- No hay suite de tests configurada; CI valida `npm run check` y `npm run build` con Node.js 22.23.4.
 
 ## Estructura Importante
 
@@ -34,7 +34,7 @@
 
 ## Contenido
 
-- Colecciones Astro en `src/content/config.ts`.
+- Colecciones Astro en `src/content.config.ts` (Content Layer API).
 - Viajes: `src/content/trips/*.md`, colección `trips`, ruta `src/pages/viajes/[slug].astro`; solo se publican entradas con `status: published`.
 - Recursos: `src/content/resources/*.md`, colección `resources`, ruta `src/pages/recursos/[slug].astro`; solo se publican entradas con `status: published`.
 - Blog AstroWind heredado usa `src/data/post`; no mezclarlo con `trips`/`resources` salvo intención explícita.

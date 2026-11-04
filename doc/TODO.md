@@ -56,7 +56,7 @@
 ### CI, Deploy Y Lighthouse
 
 - Simplificado CI a Node 22.
-- Actualizado `engines.node` a `>=22.12.0`.
+- Actualizado `engines.node` a `>=22.23.4` para Astro 7.
 - Ajustado deploy de GitHub Pages para construir explícitamente con Node 22 y subir `dist`.
 - Añadido workflow manual de Lighthouse sobre la web ya publicada.
 - Configurados umbrales Lighthouse para performance, accessibility, best practices y SEO.

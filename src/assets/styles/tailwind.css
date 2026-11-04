@@ -1,23 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../../../tailwind.config.js';
+@plugin '@tailwindcss/typography';
 
-@layer utilities {
-  .bg-page {
-    background-color: var(--aw-color-bg-page);
-  }
-  .bg-dark {
-    background-color: var(--aw-color-bg-page-dark);
-  }
-  .bg-light {
-    background-color: var(--aw-color-bg-page);
-  }
-  .text-page {
-    color: var(--aw-color-text-page);
-  }
-  .text-muted {
-    color: var(--aw-color-text-muted);
-  }
+@theme {
+  --color-primary: var(--aw-color-primary);
+  --color-secondary: var(--aw-color-secondary);
+  --color-accent: var(--aw-color-accent);
+  --color-default: var(--aw-color-text-default);
+  --color-muted: var(--aw-color-text-muted);
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-logo: Anton, sans-serif;
+}
+
+@utility bg-page {
+  background-color: var(--aw-color-bg-page);
+}
+
+@utility bg-dark {
+  background-color: var(--aw-color-bg-page-dark);
+}
+
+@utility bg-light {
+  background-color: var(--aw-color-bg-page);
+}
+
+@utility text-page {
+  color: var(--aw-color-text-page);
+}
+
+@utility text-muted {
+  color: var(--aw-color-text-muted);
 }
 
 @layer components {
@@ -26,15 +38,15 @@
   }
 
   .btn-primary {
-    @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    @apply inline-flex items-center justify-center rounded-full border border-primary bg-primary px-6 py-3.5 text-center text-base font-semibold leading-snug text-white transition duration-200 ease-in hover:border-secondary hover:bg-secondary hover:text-white focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 dark:border-primary dark:bg-primary dark:text-white dark:hover:border-secondary dark:hover:bg-secondary md:px-8;
   }
 
   .btn-secondary {
-    @apply btn;
+    @apply inline-flex items-center justify-center rounded-full border border-gray-400 bg-transparent px-6 py-3.5 text-center text-base font-medium leading-snug text-page transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800 md:px-8;
   }
 
   .btn-tertiary {
-    @apply btn border-none shadow-none text-muted hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+    @apply inline-flex items-center justify-center rounded-full border-0 bg-transparent px-6 py-3.5 text-center text-base font-medium leading-snug text-muted shadow-none transition duration-200 ease-in hover:bg-transparent hover:text-gray-900 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 dark:text-gray-400 dark:hover:text-white md:px-8;
   }
 }
 
