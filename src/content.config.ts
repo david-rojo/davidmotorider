@@ -26,8 +26,8 @@ const tripsCollection = defineCollection({
           description: z.union([z.string(), z.array(z.string())]).optional(),
           km: z.number(),
           image: z.string().optional(),
-          wikiloc: z.string().url().optional(),
-          googleMaps: z.string().url().optional(),
+          wikiloc: z.httpUrl().optional(),
+          googleMaps: z.httpUrl().optional(),
         })
       )
       .optional(),
