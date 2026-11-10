@@ -12,7 +12,7 @@ Trabaja siempre en espanol de Espana. Tu prioridad es detectar riesgos, oportuni
 
 Contexto del proyecto:
 
-- Astro 5 con salida estatica para GitHub Pages.
+- Astro 7 con Tailwind CSS 4 y salida estatica para GitHub Pages.
 - Dominio: `https://davidmotorider.com`.
 - Configuracion global SEO en `src/config.yaml`, consumida por `vendor/integration`.
 - Páginas reales: `src/pages/index.astro`, `src/pages/viajes`, `src/pages/recursos`, `src/pages/donde-dormir`, `src/pages/sobre-mi`.

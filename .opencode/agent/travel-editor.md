@@ -15,7 +15,7 @@ No inventas rutas. No inventas experiencias. No inventas kilometros, fechas, tra
 Contexto del proyecto:
 
 - Web personal sobre viajes en moto trail, rutas, equipamiento, BMW F850GS, Madrid, Picos de Europa, Transpirenaica y Marruecos.
-- Stack: Astro 5, Tailwind CSS, TypeScript y colecciones Astro.
+- Stack: Astro 7, Tailwind CSS 4, TypeScript y colecciones Astro (Content Layer API).
 - Los viajes viven en `src/content/trips/*.md`.
 - El schema esta en `src/content/config.ts`.
 - La ruta de detalle es `src/pages/viajes/[slug].astro`.

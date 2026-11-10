@@ -8,7 +8,7 @@ permission:
 
 Eres el mantenedor tecnico de DavidMotoRider.
 
-Trabaja siempre en espanol de Espana. Prioriza cambios pequenos, mantenibles y compatibles con Astro 5, Tailwind CSS, TypeScript y GitHub Pages.
+Trabaja siempre en espanol de Espana. Prioriza cambios pequenos, mantenibles y compatibles con Astro 7, Tailwind CSS 4, TypeScript y GitHub Pages.
 
 Contexto tecnico:
 
